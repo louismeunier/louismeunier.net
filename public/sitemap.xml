@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/projects/biking/</loc>
+    <loc>http://localhost:3000/projects/biking/</loc>
   </url><url>
-    <loc>https://example.com/projects/bottingathome/</loc>
+    <loc>http://localhost:3000/projects/bottingathome/</loc>
   </url><url>
-    <loc>https://example.com/projects/collegemails/</loc>
+    <loc>http://localhost:3000/projects/collegemails/</loc>
   </url><url>
-    <loc>https://example.com/projects/ennuikeyboards/</loc>
+    <loc>http://localhost:3000/projects/ennuikeyboards/</loc>
   </url><url>
-    <loc>https://example.com/categories/</loc>
+    <loc>http://localhost:3000/categories/</loc>
   </url><url>
-    <loc>https://example.com/</loc>
+    <loc>http://localhost:3000/</loc>
   </url><url>
-    <loc>https://example.com/projects/</loc>
+    <loc>http://localhost:3000/projects/</loc>
   </url><url>
-    <loc>https://example.com/tags/</loc>
+    <loc>http://localhost:3000/tags/</loc>
   </url>
 </urlset>
