@@ -1,0 +1,27 @@
+{{ define "main" }}
+    {{ partial "header" . }}
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <div class="markdown">
+                        {{ partial "content" . }}
+                    </div>
+                    <div class="mx-0 mx-md-4 posts">
+                        {{ partial "list" .}}
+                    </div>
+                    <div class="back-temp">
+                        <a class="fake-button" href="/">
+                            <button class="btn btn-outline-secondary text-center">
+                            go home
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ partial "footer" . }}
+{{ end }}

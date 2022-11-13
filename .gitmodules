@@ -1,0 +1,6 @@
+[submodule "hugo-tania"]
+	path = hugo-tania
+	url = https://github.com/WingLim/hugo-tania
+[submodule "tanka"]
+	path = tanka
+	url = https://github.com/nanxstats/hugo-tanka

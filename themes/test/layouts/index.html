@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{ partial "header" . }}
+
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+                <div class="mx-0 mx-md-4 posts">
+                    <div class="image-wrapper title-page">
+                        <img src="/images/head.png">
+                    </div>
+                    <p class="about-paragraph">
+                    I'm a first year math student at McGill University. This site is meant to be a place to share my programming projects and more. Enjoy!~
+                    </p>
+                    <!-- <h1 class="mx-0 blog-post-title text-bold">projects</h1> -->
+                    {{ range sort .Pages  }}
+                        {{ partial "list" . }}
+                    {{ end }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ partial "footer" . }}
+{{ end }}
