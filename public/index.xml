@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>louis meunier</title>
+    <link>https://example.com/</link>
+    <description>Recent content on louis meunier</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🚲 biking</title>
+      <link>https://example.com/projects/biking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/projects/biking/</guid>
+      <description>source code live site An interactive map and analyzer of my bike rides. Data is automatically updated every time I enter a ride into Strava. The map is created with Leaflet, the site is made with Svelte, and the data is automatically synced to Firesbase from Strava&amp;rsquo;s API.</description>
+    </item>
+    
+    <item>
+      <title>🤖 BottingAtHome</title>
+      <link>https://example.com/projects/bottingathome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/projects/bottingathome/</guid>
+      <description>source code A Discord bot for CubingUSA&amp;rsquo;s CubingAtHome (an online international Rubik&amp;rsquo;s Cube competition series) server, written in Javascript and hosted on Heroku. It was used primarily to provide basic utilities (such as scramble generation, event announcement, etc) to the server, and while CubingAtHome is no longer active, the bot is still active today! You can add it here.</description>
+    </item>
+    
+    <item>
+      <title>✉️ college email analysis</title>
+      <link>https://example.com/projects/collegemails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/projects/collegemails/</guid>
+      <description>source code live site A set of scripts and website I created as a senior in high school to analyze the emails I received from colleges. The data was generated using the gmail API and ran automatically using Github Actions. The actual site is made with Svelte, and while the data isn&amp;rsquo;t updated anymore (as I, thankfully, no longer receive hundreds of college emails a week), the site is still live!</description>
+    </item>
+    
+    <item>
+      <title>⌨️ ennuikeyboards</title>
+      <link>https://example.com/projects/ennuikeyboards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/projects/ennuikeyboards/</guid>
+      <description>live site A portfolio website for a friend&amp;rsquo;s custom keyboard business. The site is made with Next.js and Firebase is used for authentication, database storage, analytics, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

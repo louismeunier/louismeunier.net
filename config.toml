@@ -1,9 +1,9 @@
-baseurl = "https://example.com"
+baseurl = "https://louismeunier.net"
 title = "louis meunier"
 author = "louis meunier"
 canonifyurls = true
 languagecode = "en-us"
-theme = "test"
+
 
 enableEmoji = true
 hasCJKLanguage = false
