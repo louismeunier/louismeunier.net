@@ -22,6 +22,6 @@ weight: 1
 </a>
 </div>
 
-An interactive map and analyzer of my bike rides. Data is automatically updated every time I enter a ride into Strava. The map is created with [Leaflet](https://leafletjs.com/), the site is made with [Svelte](https://svelte.dev/), and the data is automatically synced to [Firesbase](https://firebase.google.com/) from [Strava's API](https://developers.strava.com/).
+An interactive map and analyzer of my bike rides. Data is automatically updated every time I enter a ride into Strava. The map is created with <a class="in-text-link" href="https://leafletjs.com/">Leaflet</a>, the site is made with <a class="in-text-link" href="https://svelte.dev/">Svelte</a>, and the data is automatically synced to <a class="in-text-link" href="https://firebase.google.com/">Firebase</a> from <a class="in-text-link" href="https://developers.strava.com/">Strava's API</a>.
 
 <iframe class="website-preview" src="https://bike.louismeunier.net" width="100%" height="550px"></iframe>

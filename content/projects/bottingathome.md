@@ -22,4 +22,4 @@ weight: 1
 </a> -->
 </div>
 
-A Discord bot for CubingUSA's CubingAtHome (an online international Rubik's Cube competition series) server, written in Javascript and hosted on Heroku. It was used primarily to provide basic utilities (such as scramble generation, event announcement, etc) to the server, and while CubingAtHome is no longer active, the bot is still active today! You can add it [here](https://discord.com/api/oauth2/authorize?client_id=809433538851897404&permissions=139855325248&scope=bot).
+A Discord bot for CubingUSA's CubingAtHome (an online international Rubik's Cube competition series) server, written in Javascript and hosted on Heroku. It was used primarily to provide basic utilities (such as scramble generation, event announcement, etc) to the server, and while CubingAtHome is no longer active, the bot is still active today! You can add it <a class="in-text-link" href="https://discord.com/api/oauth2/authorize?client_id=809433538851897404&permissions=139855325248&scope=bot">here</a>.

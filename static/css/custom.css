@@ -335,6 +335,15 @@ hr {
 
 .about-paragraph {
     margin-bottom: 3em;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-style: italic;
 }
+
+/* .in-text-link {
+    transition: 0.3s ease-in-out;
+}
+
+.in-text-link:hover {
+    background-color: #738491!important;
+    border-radius: 5%;
+} */

@@ -1,0 +1,85 @@
+[{
+    "name": "Jonatan Kłosko's WCA statistics",
+    "url": "https://jonatanklosko.github.io/wca_statistics/",
+    "description": "Huge variety of WCA statistics created by Jonatan Kłosko",
+    "tags": [
+        "stats",
+        "competitions"
+    ]
+},
+{
+    "name": "4x4 L2E",
+    "url": "https://www.cubeskills.com/uploads/pdf/tutorials/useful-last-2-edges-algorithms-4x4.pdf",
+    "description": "Useful last 2 edges algorithms for 4x4",
+    "tags": [
+        "algs"
+    ]
+},
+{
+    "name": "Cubing Github",
+    "url": "https://github.com/cubing",
+    "description": "The open source community for cubing",
+    "tags": [
+        "stats",
+        "software"
+    ]
+},
+{
+    "name": "CubingChina Statistics",
+    "url": "https://cubing.com/results/statistics",
+    "description": "Variety of cubing statistics by CubingChina",
+    "tags": [
+        "stats",
+        "competitions"
+    ]
+},
+{
+    "name": "Nemesizer",
+    "url": "https://www.nemesizer.com/",
+    "description": "Great site comparing competitors' results",
+    "tags": [
+        "stats"
+    ]
+},
+{
+    "name": "Sarah's Cubing Site",
+    "url": "https://sarah.cubing.net/",
+    "description": "Sarah Strong's site, with a huge variety of useful algorithms",
+    "tags": [
+        "algs"
+    ]
+},
+{
+    "name": "4x4 POLL",
+    "url": "https://meep.cubing.net/poll.html",
+    "description": "Kris De Asis's Partity OLL algorithms for 4x4",
+    "tags": [
+        "algs"
+    ]
+},
+{
+    "name": "Reconstructions",
+    "url": "https://reconstructions.jonatanklosko.com/",
+    "description": "Incredibly useful tool for reconstructing solves",
+    "tags": [
+        "software"
+    ]
+},
+{
+    "name": "Squanmate",
+    "url": "https://squanmate.cuber.pro/#/",
+    "description": "Square-1 algorithm trainer and resources",
+    "tags": [
+        "algs",
+        "software"
+    ]
+},
+{
+    "name": "PR Streak Spreadsheet",
+    "url": "https://docs.google.com/spreadsheets/d/1TjDFh9dFy25u57rYLwHzK3tpAwdadoNDnLJaMMVaysk/edit#gid=0",
+    "description": "Auto-updating PR streak spreadsheet (made by me!)",
+    "tags": [
+        "software",
+        "stats"
+    ]
+}]

@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ partial "header" . }}
+
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+                <div class="mx-0 mx-md-4 posts">
+                    <h1 class="mx-0 blog-post-title text-bold"><a href="/cubing">cubing</a></h1>
+                    <p>I've been speedcubing since 2015, and competing since 2016. In that time, I've found a large number of useful resources, which I've compiled here.
+                    </p>
+                    <ul >
+                    {{ range $.Site.Data.cubing  }}
+                        <li style="padding: 0.5em;">
+                            <a style="font-weight: bold" target="_blank" href="{{ .url }}">{{ .name }}:</a>
+                            <i>{{.description}}</i>
+                        </li>
+                    {{ end }}
+                    </ul>
+                </div>
+                <div class="back-temp">
+                    <a class="fake-button" href="/">
+                        <button class="btn btn-outline-secondary text-center">
+                        go home
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ partial "footer" . }}
+{{ end }}
