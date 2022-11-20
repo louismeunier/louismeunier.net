@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> calculus - louis meunier </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="miscellaneous calculus-related visuals and code" />
+    <meta property="og:site_name" content="louis meunier" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://louismeunier.net/math/caculus/" />
+    <meta property="og:title" content="calculus" />
+    <meta property="og:image" content="https://louismeunier.net/" />
+    <meta property="og:description" content="miscellaneous calculus-related visuals and code" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:title" content="calculus" />
+    <meta name="twitter:description" content="miscellaneous calculus-related visuals and code" />
+    <meta name="twitter:image" content="https://louismeunier.net/" />
+
+    <link rel="canonical" href="https://louismeunier.net/math/caculus/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://louismeunier.net/css/custom.css" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github-gist.min.css" integrity="sha512-od7JLoOTxM8w/HSKGzP9Kexc20K9p/M2zxSWsd7H1e4Ctf+8SQFtCWEZnW5u6ul5ehSECa5QmOk9ju2nQMmlVA==" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://louismeunier.net/images/favicon.svg">
+
+    
+    <link href="https://louismeunier.net/index.xml" rel="alternate" type="application/rss+xml" title="louis meunier" />
+    
+
+    
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+
+</head>
+
+<body>
+    
+    <div class="mt-xl header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="https://louismeunier.net/">
+                    <h1 class="name">louis meunier</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <ul class="nav nav-primary justify-content-center">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://louismeunier.net/">
+                        
+                        Home
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://louismeunier.net/projects">
+                        
+                        Projects
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://louismeunier.net/math">
+                        
+                        Math
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://notes.louismeunier.net">
+                        
+                        Notes
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://louismeunier.net/cubing">
+                        
+                        Cubing
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/louismeunier">
+                        
+                        Github
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://linkedin.louismeunier.net">
+                        
+                        Linkedin
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <h1 class="mx-0 mx-md-4 text-center display-5 ">calculus</h1>
+                    <div class="markdown">
+                        
+    <p><u class="subtitle">chain rule tree diagrams</u></p>
+<div class="image-wrapper">
+<img src="https://louismeunier.net/images/treegraph.png" style="height:250px!important;"/>
+</div>
+<p>How I make trees to visualize the chain rule of derivatives (in Mathematica). I used the <code>MaTeX</code> package to render the labels as latex, but this could be replace with just normal text strings.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mathematica" data-lang="mathematica"><span style="display:flex;"><span><span style="color:#008000">(* mathematica *)</span>
+</span></span><span style="display:flex;"><span>&lt;&lt; MaTeX`
+</span></span><span style="display:flex;"><span>Graph[
+</span></span><span style="display:flex;"><span> {
+</span></span><span style="display:flex;"><span>  Labeled[1, MaTeX[<span style="color:#a31515">&#34;z&#34;</span>, FontSize -&gt; 16]],
+</span></span><span style="display:flex;"><span>  Labeled[2, MaTeX[<span style="color:#a31515">&#34;x&#34;</span>, FontSize -&gt; 16]],
+</span></span><span style="display:flex;"><span>  Labeled[3, MaTeX[<span style="color:#a31515">&#34;y&#34;</span>, FontSize -&gt; 16]],
+</span></span><span style="display:flex;"><span>  Labeled[4, MaTeX[<span style="color:#a31515">&#34;s&#34;</span>, FontSize -&gt; 16]],
+</span></span><span style="display:flex;"><span>  Labeled[5, MaTeX[<span style="color:#a31515">&#34;t&#34;</span>, FontSize -&gt; 16]],
+</span></span><span style="display:flex;"><span>  Labeled[6, MaTeX[<span style="color:#a31515">&#34;s&#34;</span>, FontSize -&gt; 16]],
+</span></span><span style="display:flex;"><span>  Labeled[7, MaTeX[<span style="color:#a31515">&#34;t&#34;</span>, FontSize -&gt; 16]]
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span> {
+</span></span><span style="display:flex;"><span>  1 &lt;-&gt; 2,
+</span></span><span style="display:flex;"><span>  2 &lt;-&gt; 4,
+</span></span><span style="display:flex;"><span>  1 &lt;-&gt; 3,
+</span></span><span style="display:flex;"><span>  2 &lt;-&gt; 5,
+</span></span><span style="display:flex;"><span>  3 &lt;-&gt; 6,
+</span></span><span style="display:flex;"><span>  3 &lt;-&gt; 7
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span> EdgeLabels -&gt; {
+</span></span><span style="display:flex;"><span>   1 &lt;-&gt; 2 -&gt; 
+</span></span><span style="display:flex;"><span>    MaTeX[<span style="color:#a31515">&#34;\\frac{\partial z}{\partial x}&#34;</span>, FontSize -&gt; 16],
+</span></span><span style="display:flex;"><span>   2 &lt;-&gt; 4 -&gt; 
+</span></span><span style="display:flex;"><span>    MaTeX[<span style="color:#a31515">&#34;\\frac{\partial x}{\partial s}&#34;</span>, FontSize -&gt; 16],
+</span></span><span style="display:flex;"><span>   1 &lt;-&gt; 3 -&gt; 
+</span></span><span style="display:flex;"><span>    MaTeX[<span style="color:#a31515">&#34;\\frac{\partial z}{\partial y}&#34;</span>, FontSize -&gt; 16],
+</span></span><span style="display:flex;"><span>   2 &lt;-&gt; 5 -&gt; 
+</span></span><span style="display:flex;"><span>    MaTeX[<span style="color:#a31515">&#34;\\frac{\partial x}{\partial t}&#34;</span>, FontSize -&gt; 16],
+</span></span><span style="display:flex;"><span>   3 &lt;-&gt; 6 -&gt; 
+</span></span><span style="display:flex;"><span>    MaTeX[<span style="color:#a31515">&#34;\\frac{\partial y}{\partial s}&#34;</span>, FontSize -&gt; 16],
+</span></span><span style="display:flex;"><span>   3 &lt;-&gt; 7 -&gt; MaTeX[<span style="color:#a31515">&#34;\\frac{\partial y}{\partial t}&#34;</span>, FontSize -&gt; 16]
+</span></span><span style="display:flex;"><span>   },
+</span></span><span style="display:flex;"><span> GraphLayout -&gt; <span style="color:#a31515">&#34;LayeredEmbedding&#34;</span>,
+</span></span><span style="display:flex;"><span> EdgeStyle -&gt; {
+</span></span><span style="display:flex;"><span>   1 &lt;-&gt; 2 -&gt; Red,
+</span></span><span style="display:flex;"><span>   2 &lt;-&gt; 4 -&gt; Red,
+</span></span><span style="display:flex;"><span>   1 &lt;-&gt; 3 -&gt; Red,
+</span></span><span style="display:flex;"><span>   2 &lt;-&gt; 5 -&gt; Gray,
+</span></span><span style="display:flex;"><span>   3 &lt;-&gt; 6 -&gt; Red,
+</span></span><span style="display:flex;"><span>   3 &lt;-&gt; 7 -&gt; Gray
+</span></span><span style="display:flex;"><span>   },
+</span></span><span style="display:flex;"><span> VertexSize -&gt; 0.05,
+</span></span><span style="display:flex;"><span> VertexStyle -&gt; LightPurple
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div>
+
+
+                    </div>
+                    <div class="back-temp">
+                        <a class="fake-button" href="https://louismeunier.net/math">
+                            <button class="btn btn-outline-secondary text-center">
+                            back to: math
+                            </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footers">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+             <p class="text-muted">© 2022 louis meunier</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/julia.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/mathematica.min.js" defer></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+<script src="https://louismeunier.net/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+      
+
+
+    
+</body>
+
+</html>

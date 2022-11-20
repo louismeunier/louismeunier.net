@@ -173,6 +173,7 @@ hr {
 .content .markdown pre {
     /* Hugo specific: consider using the 'highlight' shortcode */
     display: block;
+    /* width: 100%; */
     margin-top: 1rem;
     margin-bottom: 2rem;
     padding: 1rem;
@@ -339,11 +340,29 @@ hr {
     font-style: italic;
 }
 
-/* .in-text-link {
-    transition: 0.3s ease-in-out;
+.svg-container > svg {
+    background: transparent !important;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
-.in-text-link:hover {
-    background-color: #738491!important;
-    border-radius: 5%;
-} */
+#scene {
+    height: 100%!important;
+    width: 100%!important;
+    top: 0!important;
+    bottom: 0!important;
+    left: 0!important;
+    right: 0!important;
+
+}
+
+.math-toc {
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.subtitle {
+    /* margin-top: 50vh !important; */
+    font-size: 1.3em;
+    font-weight: 700;
+}

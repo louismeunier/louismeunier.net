@@ -2,20 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:3000/projects/biking/</loc>
+    <loc>https://louismeunier.net/projects/biking/</loc>
   </url><url>
-    <loc>http://localhost:3000/projects/bottingathome/</loc>
+    <loc>https://louismeunier.net/projects/</loc>
   </url><url>
-    <loc>http://localhost:3000/projects/collegemails/</loc>
+    <loc>https://louismeunier.net/projects/bottingathome/</loc>
   </url><url>
-    <loc>http://localhost:3000/projects/ennuikeyboards/</loc>
+    <loc>https://louismeunier.net/math/</loc>
   </url><url>
-    <loc>http://localhost:3000/categories/</loc>
+    <loc>https://louismeunier.net/projects/collegemails/</loc>
   </url><url>
-    <loc>http://localhost:3000/</loc>
+    <loc>https://louismeunier.net/projects/ennuikeyboards/</loc>
   </url><url>
-    <loc>http://localhost:3000/projects/</loc>
+    <loc>https://louismeunier.net/cubing/</loc>
   </url><url>
-    <loc>http://localhost:3000/tags/</loc>
+    <loc>https://louismeunier.net/math/caculus/</loc>
+  </url><url>
+    <loc>https://louismeunier.net/categories/</loc>
+  </url><url>
+    <loc>https://louismeunier.net/</loc>
+  </url><url>
+    <loc>https://louismeunier.net/tags/</loc>
+  </url><url>
+    <loc>https://louismeunier.net/math/visualizing-tangent-planes/</loc>
   </url>
 </urlset>

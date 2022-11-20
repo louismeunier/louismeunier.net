@@ -5,14 +5,14 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-lg-8">
-                    <h1 class="mx-0 mx-md-4 text-center">{{ .Title }}</h1>
+                    <h1 class="mx-0 mx-md-4 text-center display-5 ">{{ .Title }}</h1>
                     <div class="markdown">
                         {{ partial "content" . }}
                     </div>
                     <div class="back-temp">
-                        <a class="fake-button" href="/projects">
+                        <a class="fake-button" href="/{{ .Section }}">
                             <button class="btn btn-outline-secondary text-center">
-                            see all projects
+                            back to: {{.Section}}
                             </button>
                         </a>
                         </div>
