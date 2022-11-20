@@ -12,7 +12,7 @@ t(x,y) - z_0 = \frac{\partial f}{\partial x}(x,y)(x-x_0) + \frac{\partial f}{\pa
 $$
 $$t(x,y) = -18x-5y-22$$
 
-{{< plotly json="./testgraph.json" height="550px" modebar="false">}}
+{{< plotly json="/math/testgraph.json" height="550px" modebar="false">}}
 
 ```julia
 # Julia
@@ -91,7 +91,7 @@ For instance, take $P = (x,y,z) = (1,1,\sqrt{2})$. The tangent plane at this poi
 
 $$z = \frac{1}{2}x + \frac{1}{2}y - \sqrt{2}$$
 
-{{< plotly json="./tangent_plane_sphere.json" height="550px" modebar="false">}}
+{{< plotly json="/math/tangent_plane_sphere.json" height="550px" modebar="false">}}
 
 ```julia
 # Julia
