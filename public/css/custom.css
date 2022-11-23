@@ -328,10 +328,12 @@ hr {
 
 .title-page img {
     border: 2px solid black;
-    max-width: 100%;
-    min-height: 400px;
+    /* max-width: 100%; */
+    height: 500px!important;
+    width: 500px!important;
+    /* min-height: 400px; */
     /* height: auto; */
-    max-height: 500px;
+    /* max-height: 500px; */
 }
 
 .about-paragraph {

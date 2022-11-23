@@ -141,10 +141,18 @@ begin
     d_phi_y(theta, phi) = -r*cos(theta) * sin(phi)
     d_phi_z(theta, phi) = 0
 
-    # a vector of "d_theta" of the sphere at the point (x_0, y_0, z_0), using the theta & phi params
-    d_theta_vec = [d_theta_x(theta_param, phi_param), d_theta_y(theta_param, phi_param), d_theta_z(theta_param, phi_param)]
-    # a vector of "d_phi" of the sphere at the point (x_0, y_0, z_0), using the theta & phi params
-    d_phi_vec = [d_phi_x(theta_param, phi_param), d_phi_y(theta_param, phi_param), d_phi_z(theta_param, phi_param)]
+    # a vector of "d_theta" of the sphere at the point (x_0, y_0, z_0)
+    d_theta_vec = [
+        d_theta_x(theta_param, phi_param), 
+        d_theta_y(theta_param, phi_param), 
+        d_theta_z(theta_param, phi_param)
+    ]
+    # a vector of "d_phi" of the sphere at the point (x_0, y_0, z_0)
+    d_phi_vec = [
+        d_phi_x(theta_param, phi_param), 
+        d_phi_y(theta_param, phi_param), 
+        d_phi_z(theta_param, phi_param)
+    ]
     # plotting the respective tangent vectors
     plot!(
         [x_0-d_theta_vec[1], x_0], 
@@ -171,8 +179,12 @@ begin
         label="Normal Vector", 
         color=RGBA(0/255, 0/255, 255, 1)
     )
-    # the tangent plane, which is found by take the dot product of the cross product above with the point (x_0, y_0, z_0)
-    tangent_plane(x,y) = (d_cross[1]*(x-x_0) + d_cross[2]*(y-y_0) - d_cross[3]*z_0)/d_cross[3]
+    # the tangent plane: dot product of the cross product
+    tangent_plane(x,y) = (
+        d_cross[1]*(x-x_0) + 
+        d_cross[2]*(y-y_0) - 
+        d_cross[3]*z_0
+    )/d_cross[3]
     # range of the tangent to plot
 	x_range_tangent = range(-3, stop=3, length=100)
 	y_range_tangent = range(-3, stop=3, length=100)

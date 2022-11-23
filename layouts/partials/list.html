@@ -1,5 +1,6 @@
 <ul class="list-unstyled">
     {{ range .Data.Pages.GroupBy "Section" }}
+    <li>
     <h1 class="mx-0 blog-post-title text-bold"><a href="/{{.Key}}">{{.Key}}</a></h1>
     {{ range .Pages }}
     <li>
@@ -9,5 +10,6 @@
         <p class="meta-description">{{ .Description }}</p>
     </li>
     {{ end }}
+    </li>
     {{end}}
 </ul>

@@ -8,7 +8,14 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="referrer" content="no-referrer">
+    <meta name="title" content="{{ if .IsHome }} {{ .Site.Title }} {{ else }} {{ .Title }} - {{ .Site.Title }} {{ end }}">
+    <meta name="keywords" content="programming, mathematics, math">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Louis Meunier">
     <meta name="description" content="{{ .Description | default .Site.Params.description }}" />
+
     <meta property="og:site_name" content="{{ .Site.Title }}" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
@@ -17,11 +24,8 @@
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.meta_img | default .Site.Params.logofile }}" />
     <meta property="og:description" content="{{ .Description | default .Site.Params.description }}" />
 
+    <!-- twitter tags -->
     <meta name="twitter:card" content="{{ .Params.cardtype | default "summary_large_image" }}" />
-    {{ if .Site.Params.twitter }}
-    <meta name="twitter:site" content="@{{ .Site.Params.twitter }}">
-    <meta name="twitter:creator" content="@{{ .Site.Params.twitter }}">
-    {{ end }}
     <meta name="twitter:title" content="{{ .Title | default .Site.Title }}" />
     <meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}" />
     <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.meta_img | default .Site.Params.logofile }}" />
@@ -44,15 +48,6 @@
 
     <link rel="shortcut icon"
         href="{{ if .Site.Params.faviconfile }}{{ .Site.Params.faviconfile | absURL }}{{ else }}{{ .Site.BaseURL }}images/favicon.png{{ end }}">
-
-    {{ if .Site.RSSLink }}
-    <link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
-
-    {{ if .Site.Params.plotly }}
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    {{ end }}
-
 </head>
 
 <body>

@@ -8,7 +8,14 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="referrer" content="no-referrer">
+    <meta name="title" content=" visualizing tangent planes - louis meunier ">
+    <meta name="keywords" content="programming, mathematics, math">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Louis Meunier">
     <meta name="description" content="graphs and code of tangent planes of functions" />
+
     <meta property="og:site_name" content="louis meunier" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
@@ -17,8 +24,8 @@
     <meta property="og:image" content="https://louismeunier.net/" />
     <meta property="og:description" content="graphs and code of tangent planes of functions" />
 
-    <meta name="twitter:card" content="summary_large_image" />
     
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="visualizing tangent planes" />
     <meta name="twitter:description" content="graphs and code of tangent planes of functions" />
     <meta name="twitter:image" content="https://louismeunier.net/" />
@@ -39,15 +46,6 @@
 
     <link rel="shortcut icon"
         href="https://louismeunier.net/images/favicon.svg">
-
-    
-    <link href="https://louismeunier.net/index.xml" rel="alternate" type="application/rss+xml" title="louis meunier" />
-    
-
-    
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    
-
 </head>
 
 <body>
@@ -87,7 +85,7 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="https://notes.louismeunier.net">
+                    <a class="nav-link" href="https://louismeunier.net/notes">
                         
                         Notes
                     </a>
@@ -135,11 +133,12 @@ $$t(x,y) = -18x-5y-22$$</p>
 
 
 <div style="display: grid; place-items: center; margin:1em;">
-    <div id="./testgraph.json" class="plotly"></div>
+    <div id="/math/testgraph.json" class="plotly"></div>
 </div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script>
-    Plotly.d3.json("./testgraph.json", function(err, fig) {
-        Plotly.plot('.\/testgraph.json', fig.data, fig.layout, {responsive: true});
+    Plotly.d3.json("/math/testgraph.json", function(err, fig) {
+        Plotly.plot('\/math\/testgraph.json', fig.data, fig.layout, {responsive: true});
     });
 </script>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#008000"># Julia</span>
@@ -203,11 +202,12 @@ $$G_{\phi} = \langle r\cos\theta\cos\phi, -r\cos\theta\sin\phi, 0\rangle$$</p>
 
 
 <div style="display: grid; place-items: center; margin:1em;">
-    <div id="./tangent_plane_sphere.json" class="plotly"></div>
+    <div id="/math/tangent_plane_sphere.json" class="plotly"></div>
 </div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script>
-    Plotly.d3.json("./tangent_plane_sphere.json", function(err, fig) {
-        Plotly.plot('.\/tangent_plane_sphere.json', fig.data, fig.layout, {responsive: true});
+    Plotly.d3.json("/math/tangent_plane_sphere.json", function(err, fig) {
+        Plotly.plot('\/math\/tangent_plane_sphere.json', fig.data, fig.layout, {responsive: true});
     });
 </script>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#008000"># Julia</span>
@@ -322,7 +322,7 @@ $$G_{\phi} = \langle r\cos\theta\cos\phi, -r\cos\theta\sin\phi, 0\rangle$$</p>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-auto">
-             <p class="text-muted">© 2022 louis meunier</p>
+             <p>© 2022 louis meunier</p>
             </div>
         </div>
     </div>

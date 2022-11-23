@@ -328,10 +328,8 @@ hr {
 
 .title-page img {
     border: 2px solid black;
-    max-width: 100%;
-    min-height: 400px;
-    /* height: auto; */
-    max-height: 500px;
+    height: 50%!important;
+    width: 50%!important;
 }
 
 .about-paragraph {
@@ -340,20 +338,30 @@ hr {
     font-style: italic;
 }
 
+.plotly {
+    width: 100%;
+}
 .svg-container > svg {
     background: transparent !important;
     border: 2px solid black;
     border-radius: 5px;
 }
 
+.svg-container {
+    width: auto!important;
+}
+.main-svg {
+    width:100%!important;
+    height: 100%!important;
+}
+
 #scene {
     height: 100%!important;
-    width: 100%!important;
+    width: auto!important;
     top: 0!important;
     bottom: 0!important;
     left: 0!important;
     right: 0!important;
-
 }
 
 .math-toc {

@@ -1,8 +1,9 @@
 {{ $json := .Get "json" }}
 {{ $height := .Get "height" | default "200px" }}
-<div style="display: grid; place-items: center; margin:1em;">
+<div style="display: grid; place-items: center; width:100%!important;">
     <div id="{{$json}}" class="plotly"></div>
 </div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script>
     Plotly.d3.json({{$json}}, function(err, fig) {
         Plotly.plot('{{$json}}', fig.data, fig.layout, {responsive: true});

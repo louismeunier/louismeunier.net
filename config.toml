@@ -1,9 +1,9 @@
 baseurl = "https://louismeunier.net/"
 title = "louis meunier"
 author = "louis meunier"
+description = "louis meunier's personal site"
 canonifyurls = true
 languagecode = "en-us"
-
 
 enableEmoji = true
 hasCJKLanguage = false
@@ -14,6 +14,7 @@ pygmentscodefences = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 
 [params]
+  description = "louis meunier's personal site"
   sitename = "louis meunier"
   faviconfile = "images/favicon.svg"
   highlightjs = true
@@ -44,26 +45,27 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
 #     url = "/about/"
 #     weight = 2
 [[menu.primary]]
-    name = "Github"
-    url = "https://github.com/louismeunier"
-    weight = 6
+    name = "Projects"
+    url = "/projects"
+    weight = 2
+[[menu.primary]]
+  name = "Math"
+  url = "/math"
+  weight = 3
+[[menu.primary]]
+    name = "Notes"
+    url = "/notes"
+    weight = 4
 [[menu.primary]]
     name = "Cubing"
     url = "/cubing"
     weight = 5
 [[menu.primary]]
+    name = "Github"
+    url = "https://github.com/louismeunier"
+    weight = 6
+
+[[menu.primary]]
     name = "Linkedin"
     url = "https://linkedin.louismeunier.net"
     weight = 7
-[[menu.primary]]
-    name = "Projects"
-    url = "/projects"
-    weight = 2
-[[menu.primary]]
-    name = "Notes"
-    url = "https://notes.louismeunier.net"
-    weight = 4
-[[menu.primary]]
-  name = "Math"
-  url = "/math"
-  weight = 3
