@@ -1,5 +1,5 @@
 ---
-title: "visualizing tangent planes"
+title: "⬜️ visualizing tangent planes"
 description: "graphs and code of tangent planes of functions"
 ---
 
