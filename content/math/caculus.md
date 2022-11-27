@@ -3,6 +3,90 @@ title: "⨋ calculus"
 description: "miscellaneous calculus-related visuals and code"
 ---
 
+<u class="subtitle">Visualizing a parametrically defined curve orthogonal to a surface</u>
+
+The curve $F$ is defined parametrically by $x(t) = \frac{2(t^3+2)}{3}$, $y(t) = 2t^2$, and $z(t) = 3t-2$. The surface $G$ is defined implicitly as $15 = x^2+2y^2+3z^2$. $F$ is perpendicular to $G$ at $P = (2,2,1)$. We can prove this by finding the gradient of the two functions; if the two functions are truly perpendicular at this point, then the gradients should simply by multiples of each other.
+
+$$\nabla \vec{G}(t) = \langle 2t^2, 4t, 3\rangle$$
+
+$$\nabla \vec{F}(x,y,z) = \langle 2x, 4y, 6z\rangle$$
+
+At the point $P$, $t = 1$, so we can find the gradients at $P$:
+
+$$\nabla \vec{G}(1) = \langle 2, 4, 3\rangle$$
+
+$$\nabla \vec{F}(2,2,1) = \langle 4, 8, 6\rangle$$
+
+Clearly, $\nabla \vec{G}(1) = 2\nabla \vec{F}(2,2,1)$, indicating these two gradients are in the same direction, and as such, the curve $F$ is perpendicular to the surface $G$ at $P$. This can be understandably difficult to reason, so the following visualization may help.
+
+{{< plotly json="/math/perpendicularparametric.json" height="550px" modebar="false">}}
+
+```julia
+# julia
+# MATH150 Assignment 5, Problem 9a
+begin
+using Plots; plotly()
+# general "settings"
+t_range = range(0.95, stop=1.05, length = 100)
+P = [2,2,1]
+# F, a curve defined parametrically
+x(t) = 2(t^3+2)/3
+y(t) = 2t^2
+z(t) = 3t-2
+
+F_x_range = x.(t_range)
+F_y_range = y.(t_range)
+F_z_range = z.(t_range)
+
+plot(F_x_range, F_y_range, F_z_range, color=RGBA(0,0,255,0.5), linewidth=3, label="F", legend=false)
+
+# G
+g(x,y) = sqrt((15-x^2-2y^2)/3)
+G_x_range = range(1.9, stop=2.1, length = 100)
+G_y_range = range(1.9, stop=2.1, length = 100)
+# G_z_range = g.(G_x_range, G_y_range)
+surface!(G_x_range, G_y_range, g, color=RGBA(255,0,0,0.5), linewidth=3, label="G", legend=true)
+# plotting the point of interest
+plot!(
+    [2],[2],[1],
+    marker = (:circle, 1, 0.8, :black),
+    label = "P(2,2,1)"
+)
+
+# I multiply each vector by a scalar to make them fit within the bounds of the functions
+scalar = 0.01
+# plot the gradient of G
+grad_G_x(t) = 2t^2
+grad_G_y(t) = 4t
+grad_G_z(t) = 3
+# note that t = 1 at P = (2,2,1)
+plot!(
+    [P[1], P[1]+scalar*grad_G_x(1)],
+    [P[2], P[2]+scalar*grad_G_y(1)], 
+    [P[3], P[3]+scalar*grad_G_z(1)],
+    color=:green,
+    linewidth=6,
+    label="grad G(2,2,1)"
+)
+
+# plot the gradient of F
+grad_F_x(x,y,z) = 2x
+grad_F_y(x,y,z) = 4y
+grad_F_z(x,y,z) = 6z
+
+plot!(
+    [2, 2+scalar*grad_F_x(P[1],P[2],P[3])],
+    [2, 2+scalar*grad_F_y(P[1],P[2],P[3])], 
+    [1, 1+scalar*grad_F_z(P[1],P[2],P[3])],
+    color=:orange,
+    linewidth=6,
+    label="grad F(2,2,1)"
+)
+end
+```
+
+
+
 <u class="subtitle">Newton's method animation</u>
 
 Newton's method animated to find the root of a function, $f(x)=x^3-2x^2-x+2$, with an initial estimate of $x = 0.15$.
