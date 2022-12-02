@@ -48,6 +48,15 @@
 
     <link rel="shortcut icon"
         href="{{ if .Site.Params.faviconfile }}{{ .Site.Params.faviconfile | absURL }}{{ else }}{{ .Site.BaseURL }}images/favicon.png{{ end }}">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SREEFSD05C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-SREEFSD05C');
+    </script>
 </head>
 
 <body>
