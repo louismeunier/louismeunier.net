@@ -1,0 +1,17 @@
+{{ $percent := .Get "p" }}
+{{ $color := .Get "color" }}
+<i>
+    <span 
+        class="percent"
+        style="color:{{$color}};"
+    >(~{{ $percent }}%)</span>
+</i>
+<style>
+    i {
+        margin-left: 0.5em;
+    }
+    .percent {
+        font-size: 0.75em;
+        font-weight: bold;
+    }
+</style>
