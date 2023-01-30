@@ -82,4 +82,13 @@
         "software",
         "stats"
     ]
-}]
+},
+{
+    "name": "Searchable Regulations",
+    "url": "https://wcaregs.netlify.app/",
+    "description": "Searchable WCA Regs",
+    "tags": [
+        "software"
+    ]
+}
+]
