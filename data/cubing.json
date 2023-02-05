@@ -90,5 +90,13 @@
     "tags": [
         "software"
     ]
+},
+{
+    "name": "Cube20",
+    "url": "http://cube20.org/",
+    "description": "Some math behind God's Number",
+    "tags": [
+        "software"
+    ]
 }
 ]
