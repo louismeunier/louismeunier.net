@@ -22,6 +22,8 @@ predict(data.lm, newdata = data.frame(x = 1:10)) # predict y values for x = 1:10
 # a linear model can be added as a line to a plot
 plot(y ~ x, data = data)
 abline(data.lm, col = "red")
+
+lines(data$x[sort(x, index.return=T)$ix], data.lm[ix], col="red") # a non-linear model can also be added to a plot (just a little more complicated)
 # this can be made a little fancier with ggplot to add the confidence intervals
 library(ggplot2)
 ggplot(data, aes(x = x, y = y)) +
