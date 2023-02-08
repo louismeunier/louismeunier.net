@@ -62,4 +62,7 @@ hist(data.lm.stdres) # plot the standardized residuals
 qqnorm(data.lm.stdres) # plot the standardized residuals against a normal distribution
 qqline(data.lm.stdres) # plot the standardized residuals against a normal distribution
 # plotting these side-by-side is a good way to check if the residuals are normally distributed
+
+library(interactions)
+interact_plot(data.lm, pred = x.1, modx = x.2) # plot interactions (assuming data.lm is a model with an interaction)
 ````
