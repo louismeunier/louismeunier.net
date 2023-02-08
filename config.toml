@@ -17,7 +17,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
   description = "louis meunier's personal site"
   sitename = "louis meunier"
   faviconfile = "images/favicon.svg"
-  highlightjs = true
+  highlightjs = false
   highlightjslanguages = [
     "r",
     #"python",
