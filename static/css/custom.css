@@ -27,6 +27,7 @@ a {
     color: #333333;
     text-decoration: underline;
     background-color: transparent;
+    transition: 0.2s ease-in-out;
 }
 
 a:active, a:hover {
@@ -34,7 +35,8 @@ a:active, a:hover {
 }
 
 a:hover, a:focus {
-    color: #333333;
+    color: #A29EFF;
+    /* color: #333333; */
     text-decoration: underline;
 }
 
@@ -336,14 +338,27 @@ hr {
 }
 
 .title-page {
-    margin-top: -1em;
+    margin-top: -2em;
     margin-bottom: 3em;
 }
 
-.title-page img {
-    border: 2px solid black;
+.title-page svg {
+    /* border: 2px solid black; */
     height: 50%!important;
     width: 50%!important;
+    transition: 0.25s ease-in-out;
+    /* box-shadow: #333 0px 0px 10px; */
+}
+
+.title-page svg path {
+    filter: drop-shadow( 3px 3px 1px #333);
+}
+
+.title-page svg:hover {
+    /* scale up */
+    transform: scale(1.1);
+    filter: drop-shadow( 6px 6px 1px #333);
+
 }
 
 .about-paragraph {
