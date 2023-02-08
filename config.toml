@@ -19,7 +19,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
   faviconfile = "images/favicon.svg"
   highlightjs = true
   highlightjslanguages = [
-    #"r",
+    "r",
     #"python",
     #"javascript",
     #"typescript",
@@ -64,7 +64,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
     name = "Github"
     url = "https://github.com/louismeunier"
     weight = 6
-
 [[menu.primary]]
     name = "Linkedin"
     url = "https://linkedin.louismeunier.net"
