@@ -17,7 +17,8 @@ html {
 /* margin top */
 
 .mt-xl {
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    margin-top: 40px;
 }
 
 /* link */
@@ -61,7 +62,9 @@ hr {
 
 .header h1.name {
     font-weight: 600;
-    font-size: 2.1875rem;
+    /* font-size: 2.1875rem; */
+    font-size: 2rem;
+    /* TODO: verify works */
     color: #333333;
 }
 
@@ -92,17 +95,17 @@ hr {
     text-decoration: none;
 }
 
-.content .middot:before {
+/* .content .middot:before {
     margin: 0 3px;
     content: "·";
-}
-
-.content .caption {
+} */
+/* ! Add back if images */
+/* .content .caption {
     text-align: center;
     margin-top: 10px;
     color: #586069;
     font-size: 0.9rem;
-}
+} */
 
 .content .markdown {
     font-weight: 400;
@@ -195,7 +198,16 @@ hr {
     /* line-height: 20px; */
     line-height: 30px;
     background-color: #fff;
+    /* word-wrap: normal; */
+    /* width: max-content; */
     border-radius: 0;
+    
+}
+
+.content .markdown pre code span {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    /* word-break: break-all; */
 }
 
 .content .markdown blockquote {
