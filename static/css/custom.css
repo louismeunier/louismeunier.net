@@ -5,13 +5,22 @@ body {
     font-family: "Merriweather";
     font-feature-settings: "liga", "kern";
     background-color: #EAE2D7;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* Fix jumping scrollbar when switching to long pages */
 
 html {
+    height: 100%;
     margin-left: calc(100vw - 100%);
     margin-right: 0;
+    scroll-behavior: smooth;
+}
+
+.content {
+    flex: 1;
 }
 
 /* margin top */
@@ -54,20 +63,22 @@ hr {
 
 /* Partial: Header */
 
-.header a {
+.header a, .title-page a {
     text-decoration: none;
+    transition: 0.2s ease-in-out;
 }
 
-.header a:hover {
+.header a:hover, .title-page a:hover {
+    color: #A29EFF;
     text-decoration: underline;
 }
 
 .header h1.name {
     font-weight: 600;
     /* font-size: 2.1875rem; */
-    font-size: 2rem;
+    font-size: 1.9rem;
     /* TODO: verify works */
-    color: #333333;
+    /* color: #333333; */
 }
 
 .header ul.nav li {
@@ -285,6 +296,7 @@ hr {
 
 .footers {
     margin-top: 2em;
+    font-size: 0.9em;
 }
 
 .fake-button {
@@ -306,20 +318,6 @@ hr {
     text-decoration: none;
 }
 
-.image-wrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1em;
-}
-
-.image-wrapper img {
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
-}
-
 .back-temp {
     display: grid;
     place-items: center;
@@ -337,15 +335,104 @@ hr {
     margin-top: 2em;
 }
 
+.image-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.image-wrapper img {
+    border-radius: 10px;
+    max-width: 50vw;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .image-wrapper img {
+        max-width: 100%;
+    }
+}
+
+.title-page-wrapper {
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
 .title-page {
-    margin-top: -2em;
-    margin-bottom: 3em;
+    /* flex: 1; */
+    height: 100%;
+    width: 66%;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .title-page {
+        width: 100%;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-rows: auto auto;
+        gap: 5em;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .title-page-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .title-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
+    
+.title-page-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-page-name h1 {
+    font-size: 2em;
+    /* margin-bottom: 0; */
+}
+
+.title-nav {
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    flex-wrap: wrap;
+    height: min-content;
+    padding: 0;
+    column-gap: 1em;
+    row-gap: 0.5em;
+}
+
+.title-nav > a {
+    padding: 0;
 }
 
 .title-page svg {
     /* border: 2px solid black; */
-    height: 50%!important;
-    width: 50%!important;
+    /* height: 50%!important; */
+    /* width: 50%!important; */
     transition: 0.25s ease-in-out;
     /* box-shadow: #333 0px 0px 10px; */
 }
@@ -401,4 +488,19 @@ hr {
     /* margin-top: 50vh !important; */
     font-size: 1.3em;
     font-weight: 700;
+}
+
+#topButton {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+    margin-right: 0em;
+    /* half way down screen */
+    margin-bottom: 50vh;
+    width: 2em;
+    height: 2em;
+    color:rgba(27, 31, 35, 0.0);
+    text-decoration: none;
+    font-size: 1.8em;
 }
