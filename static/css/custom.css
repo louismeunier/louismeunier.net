@@ -296,7 +296,7 @@ hr {
 
 .footers {
     margin-top: 2em;
-    font-size: 0.9em;
+    font-size: 0.75em;
 }
 
 .fake-button {
@@ -443,7 +443,7 @@ hr {
 
 .title-page svg:hover {
     /* scale up */
-    transform: scale(1.1);
+    transform: scale(1.15);
     filter: drop-shadow( 6px 6px 1px #333);
 
 }
