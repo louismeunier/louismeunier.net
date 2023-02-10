@@ -3,6 +3,8 @@ title: "📊 basic statistics in R"
 description: "compilation of basic functions and visualizations in R"
 ---
 
+{{< upbutton >}}
+
 Some simple statistics functions in R (based on the course [MATH204](https://www.mcgill.ca/study/2022-2023/courses/math-204)).
 
 ````r
