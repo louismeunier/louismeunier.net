@@ -11,6 +11,17 @@ Some simple statistics functions in R (based on the course [MATH204](https://www
 # read data
 data <- read.csv("data.csv")
 
+# utilities for working with/summarize data
+ncol(data) # number of columns
+nrow(data) # number of rows
+colnames(data) # column names
+rownames(data) # row names (if they exist)
+head(data) # get the first "few" rows of a dataframe
+tail(data) # get the last "few" rows of a dataframe
+summary(data) # get more information then you'd ever need
+data[data$x == "something", ] # get all rows from data from matching certain parameter(s)
+
+
 data.lm <- lm(y ~ x, data = data) # fit a linear model
 
 # working with the model (also applies to non-linear models made this way)
@@ -45,6 +56,9 @@ lm(y ~ x*z, data = data) # note that this is the same as lm(y ~ x + z + x:z, dat
 alpha = 0.05
 df = 10
 # t-test
+t.test(y ~ x, data=data) # 1-tailed
+t.test(y ~ x, data=data, var.equal=T) # 2-tailed
+
 qt(1 - alpha/2, df = df) # t-statistic for a 95% confidence interval with 10 degrees of freedom
 2*pt(-abs(2.228), df = df) # p-value for a t-statistic of 2.262 with 10 degrees of freedom; two-tailed
 
@@ -69,4 +83,6 @@ qqline(data.lm.stdres) # plot the standardized residuals against a normal distri
 
 library(interactions)
 interact_plot(data.lm, pred = x.1, modx = x.2) # plot interactions (assuming data.lm is a model with an interaction)
+
+boxplot(y ~ x, data=data) # box-plot, helpful for qualitative data
 ````
