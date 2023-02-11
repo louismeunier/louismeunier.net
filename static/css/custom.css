@@ -347,25 +347,6 @@ hr {
     }
 }
 
-.about-paragraph {
-    margin-bottom: 3em;
-    font-size: 1.4em;
-}
-
-.svg-container > svg {
-    background: transparent !important;
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
-.svg-container {
-    width: auto!important;
-}
-.main-svg {
-    width:100%!important;
-    height: 100%!important;
-}
-
 .subtitle {
     /* margin-top: 50vh !important; */
     font-size: 1.3em;
