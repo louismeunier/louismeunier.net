@@ -1,6 +1,5 @@
 {{ define "main" }}
 <!-- {{ partial "header" . }} -->
-
 <div class="content">
     <div class="container">
         <div class="row justify-content-center">
@@ -29,5 +28,99 @@
         </div>
     </div>
 </div>
+<style>
+    /* index.html */
+    .title-page-wrapper {
+        height: 90vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+    }
 
+    .title-page {
+        /* flex: 1; */
+        height: 100%;
+        width: 66%;
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        .title-page {
+            width: 100%;
+            grid-template-columns: 1fr;
+            /* grid-template-rows: 1fr 1fr; */
+            grid-template-rows: auto auto;
+            gap: 5em;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+        .title-page-name {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+        .title-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+        
+    .title-page-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-page-name h1 {
+        font-size: 2em;
+        /* margin-bottom: 0; */
+    }
+
+    .title-nav {
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        flex-wrap: wrap;
+        height: min-content;
+        padding: 0;
+        column-gap: 1em;
+        row-gap: 0.5em;
+    }
+
+    .title-nav > a {
+        padding: 0;
+    }
+
+    .title-page svg {
+        /* border: 2px solid black; */
+        /* height: 50%!important; */
+        /* width: 50%!important; */
+        transition: 0.25s ease-in-out;
+        /* box-shadow: #333 0px 0px 10px; */
+    }
+
+    .title-page svg path {
+        filter: drop-shadow( 3px 3px 1px #333);
+    }
+
+    .title-page svg:hover {
+        /* scale up */
+        transform: scale(1.15);
+        filter: drop-shadow( 6px 6px 1px #333);
+
+    }
+</style>
 {{ end }}

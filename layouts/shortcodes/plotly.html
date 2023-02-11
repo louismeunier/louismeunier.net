@@ -9,3 +9,18 @@
         Plotly.plot('{{$json}}', fig.data, fig.layout, {responsive: true});
     });
 </script>
+<style>
+    /* kind of dirty but it works... */
+    #scene {
+        height: 100%!important;
+        width: auto!important;
+        top: 0!important;
+        bottom: 0!important;
+        left: 0!important;
+        right: 0!important;
+    }
+
+    .plotly {
+        width: 100%;
+    }
+</style>
