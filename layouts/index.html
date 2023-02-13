@@ -14,9 +14,13 @@
                             <div class="title-nav">
                                 {{ range .Site.Menus.primary.ByWeight }}
                                     {{ if ne .Name "Home"}}
-                                        <a class="nav-link" href="{{ .URL }}">
-                                            {{ .Name }}
-                                        </a>
+                                            <a class="nav-link" href="{{ .URL }}">
+                                                {{ .Name }}
+                                            </a>
+                                            {{if ne .Name "Linkedin"}} 
+                                            <span>&#183;</span>
+                                            <!-- <span>/</span> -->
+                                            {{ end }}
                                     {{ end }}
                                 {{ end }}
                             </div>
@@ -96,7 +100,7 @@
         flex-wrap: wrap;
         height: min-content;
         padding: 0;
-        column-gap: 1em;
+        column-gap: 0.5em;
         row-gap: 0.5em;
     }
 
@@ -135,6 +139,11 @@
 
     .svg-container {
         width: auto!important;
+    }
+
+    .title-page-name p {
+        font-size: 0.8em;
+        /* font-style: italic; */
     }
 </style>
 {{ end }}
