@@ -1,11 +1,13 @@
-<a name="back to top" id="topButton" href="#top">⬆</a>
+<a name="back to top" id="topButton"  class="no-pointer" href="#top">⬆</a>
 <script>
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = scrollFunction;
     function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             document.getElementById("topButton").style.color = "rgba(27, 31, 35, 0.6)";
+            document.getElementById("topButton").classList.remove("no-pointer");
         } else {
             document.getElementById("topButton").style.color = "rgba(27, 31, 35, 0.0)";
+            document.getElementById("topButton").classList.add("no-pointer");
         }
     }
 </script>
@@ -16,12 +18,15 @@
         bottom: 0;
         transition: 0.3s ease-in-out;
         margin-right: 0em;
-        /* half way down screen */
         margin-bottom: 50vh;
         width: 2em;
         height: 2em;
         color:rgba(27, 31, 35, 0.0);
         text-decoration: none;
         font-size: 1.8em;
+    }
+
+    #topButton.no-pointer:hover {
+        cursor: default;
     }
 </style>
