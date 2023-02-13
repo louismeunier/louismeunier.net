@@ -68,6 +68,7 @@ qnorm(1 - alpha/2) # z-statistic for a 95% confidence interval
 
 # F-test
 qf(1 - alpha, df1 = 1, df2 = df) # F-statistic for a 95% confidence interval with 1 and 10 degrees of freedom
+aov(y ~ x, data=data) # another way of doing a global F-test; wrap with summary() to get more information
 
 # residuals
 residuals(data.lm) # get the residuals of a model
@@ -85,4 +86,6 @@ library(interactions)
 interact_plot(data.lm, pred = x.1, modx = x.2) # plot interactions (assuming data.lm is a model with an interaction)
 
 boxplot(y ~ x, data=data) # box-plot, helpful for qualitative data
+aggregate(x = data$y, by = list(data$x), FUN = mean) # get the mean of y for each x
 ````
+<!-- TODO add aov, aggregate -->
