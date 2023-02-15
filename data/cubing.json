@@ -106,5 +106,21 @@
     "tags": [
         "stats"
     ]
+},
+{
+    "name": "Delegate Dashboard",
+    "url": "https://delegate-dashboard.netlify.app/",
+    "description": "Cailyn's delegate dashboard for creating groups, etc",
+    "tags": [
+        "software"
+    ]
+},
+{
+    "name": "Groupifier",
+    "url": "https://groupifier.netlify.app/",
+    "description": "Jonatan's site for creating groups and scorecards",
+    "tags": [
+        "software"
+    ]
 }
 ]
