@@ -98,5 +98,13 @@
     "tags": [
         "software"
     ]
+},
+{
+    "name": "State/Province Tracker",
+    "url": "https://tim.cubing.net/states/top_people.php?c=USA",
+    "description": "Tim's site, with various statistics about state/province participation and best results",
+    "tags": [
+        "stats"
+    ]
 }
 ]
