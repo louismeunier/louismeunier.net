@@ -87,5 +87,6 @@ interact_plot(data.lm, pred = x.1, modx = x.2) # plot interactions (assuming dat
 
 boxplot(y ~ x, data=data) # box-plot, helpful for qualitative data
 aggregate(x = data$y, by = list(data$x), FUN = mean) # get the mean of y for each x
+
+anova(mod_1, mod_2) # compare two models, mod_1 smaller than mod_2
 ````
-<!-- TODO add aov, aggregate -->
