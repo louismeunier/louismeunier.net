@@ -12,6 +12,7 @@ On this page:
     <li><a href="#chain-rule">Chain rule diagrams</a></li>
     <li><a href="#shark">"The shark problem"</a></li>
     <li><a href="#tangent-plane">Visualizing tangent planes</a></li>
+    <li><a href="#coord-transform">Coordinate transforms</a></li>
 </ul>
 
 <u id="orthogonal" class="subtitle">Visualizing a parametrically defined curve orthogonal to a surface</u>
@@ -493,4 +494,40 @@ begin
         color=RGBA(0, 0, 0, 0.3)
     )
 end
+```
+
+<u id="coord-transform" class="subtitle">Coordinate Transformations Visualization</u>
+
+A nice Mathematica plot of a coordinate transformation.
+
+<div class="image-wrapper">
+    <img src="/images/coordinatetransform.png" style="height:250px!important;"/>
+</div>
+
+```mathematica
+(* Mathematica *)
+Plot[
+ Piecewise[{{1 x, 1.5 > x > 0}}, {{0, x > 1.5}}],
+ {x, 0, 4},
+ TicksStyle -> Directive[Opacity[0]],
+ PlotStyle -> Red,
+ PlotRange -> {{0, 4}, {0, 5}},
+ Epilog -> {
+   Opacity[0.25], Gray, 
+   Polygon[{{1.5, 1.5}, {2.5, 2.25}, {3, 5}, {2, 4.25}}],
+    Black, Text[MaTeX["\\text{d}A"], {2.4, 2.8}],
+   Opacity[1],
+   Text[MaTeX["\\vec{R}"], {0.75, 0.4}],
+   Arrow[{{1.5, 1.5}, {3, 5}}], 
+   Text[MaTeX["\\vec{\\nabla R}"], {2.1, 3.4}],
+   Blue, Arrow[{{1.5, 1.5}, {2.5, 2.25}}], 
+   Arrow[{{2, 4.25}, {3, 5}}],
+   Orange, Arrow[{{2.5, 2.25}, {3, 5}}], 
+   Arrow[{{1.5, 1.5}, {2, 4.25}}],
+   Text[MaTeX["\\frac{\\partial R}{\\partial u}\\text{d}u"], {2.1, 
+     1.4}],
+   Text[MaTeX["\\frac{\\partial R}{\\partial v}\\text{d}v"], {1.5, 
+     3.1}]
+   }
+ ]
 ```
