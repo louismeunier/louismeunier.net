@@ -89,4 +89,8 @@ boxplot(y ~ x, data=data) # box-plot, helpful for qualitative data
 aggregate(x = data$y, by = list(data$x), FUN = mean) # get the mean of y for each x
 
 anova(mod_1, mod_2) # compare two models, mod_1 smaller than mod_2
+
+chisq.test(x_1, x_2) # chi-squared test, for categorical data
+qchisq(1 - alpha, df = df. lower.tail=T) # chi-squared significant value
+
 ````
