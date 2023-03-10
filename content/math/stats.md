@@ -93,4 +93,7 @@ anova(mod_1, mod_2) # compare two models, mod_1 smaller than mod_2
 chisq.test(x_1, x_2) # chi-squared test, for categorical data
 qchisq(1 - alpha, df = df. lower.tail=T) # chi-squared significant value
 
+fisher.test(x_1, x_2) # fisher's exact test, for categorical data
+mcnemar.test(data, correct = FALSE) # mcnemar's test, for paired categorical data
+
 ````
