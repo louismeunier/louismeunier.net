@@ -96,4 +96,7 @@ qchisq(1 - alpha, df = df. lower.tail=T) # chi-squared significant value
 fisher.test(x_1, x_2) # fisher's exact test, for categorical data
 mcnemar.test(data, correct = FALSE) # mcnemar's test, for paired categorical data
 
+wilcox.test(x_1, x_2, alternative="greater", correct = F) # wilcoxon rank sum test
+wilcox.test(x_1, x_2, alternative="greater", correct = F, exact = F) # wilcoxon rank sum test, larger samples, approximates normal distribution
+
 ````
