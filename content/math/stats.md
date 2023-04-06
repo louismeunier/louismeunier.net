@@ -1,6 +1,7 @@
 ---
 title: "📊 basic statistics in R"
 description: "compilation of basic functions and visualizations in R"
+weight: 2
 ---
 
 {{< upbutton >}}
