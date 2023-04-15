@@ -13,5 +13,6 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 - [Calculus 2](http://notes.louismeunier.net/Calculus%202/calculus2.pdf)
 - [Calculus 1, 2, 3](http://notes.louismeunier.net/Calculus%20A%2C%20B/calculus.pdf)
 - [Intro to CS](http://notes.louismeunier.net/Intro%20to%20CS/introtocs.pdf) 
+- [Intro to Linguistics](http://notes.louismeunier.net/Linguistics/ling.pdf)
 
 Many of these use my [notes template](https://github.com/louismeunier/latex-templates).
