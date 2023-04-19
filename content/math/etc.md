@@ -4,6 +4,7 @@ description: "random scripts/snippets"
 weight: 3
 ---
 
+{{< upbutton >}}
 
 ```mathematica
 % interactive normal distribution plot, playing around with manipulate function
