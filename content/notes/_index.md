@@ -14,5 +14,6 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 - [Calculus 1, 2, 3](http://notes.louismeunier.net/Calculus%20A%2C%20B/calculus.pdf) (MATH150, MATH151)
 - [Intro to CS](http://notes.louismeunier.net/Intro%20to%20CS/introtocs.pdf) (COMP250)
 - [Intro to Linguistics](http://notes.louismeunier.net/Linguistics/ling.pdf) (LING201)
+- [Principles of Statistics](http://notes.louismeunier.net/Principles%20of%20Statistics/math204.pdf) (MATH204)
 
 Many of these use my [notes template](https://github.com/louismeunier/latex-templates).
