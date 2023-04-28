@@ -8,6 +8,7 @@ weight: 1
 
 On this page:
 <ul id="#top">
+    <li><a href="#vivianis-curve">Viviani's Curve with the TNB frame</a></li>
     <li><a href="#orthogonal">Visualizing a parametrically defined curve orthogonal to a surface</a></li>
     <li><a href="#newtons-method">Newton's method animation</a></li>
     <li><a href="#chain-rule">Chain rule diagrams</a></li>
@@ -15,6 +16,56 @@ On this page:
     <li><a href="#tangent-plane">Visualizing tangent planes</a></li>
     <li><a href="#coord-transform">Coordinate transforms</a></li>
 </ul>
+
+<u id="vivianis-curve" class="subtitle">
+    <a href="https://mathworld.wolfram.com/VivianisCurve.html">Viviani's curve</a> with the TNB frame
+</u>
+
+Viviani's curve describes the intersection of a sphere and cylinder, specifically $$(x-r)^2+y^2=r^2, \quad x^2+y^2+z^2=4r^2.$$ The intersection curve can be parametrized $$x = r(1+\cos t)$$
+$$y= r\sin t$$
+$$z=2r\sin(\frac{t}{2})$$
+<div class="image-wrapper">
+<img src="/images/tnb.gif">
+</div>
+
+```
+begin
+    using Plots
+
+    r = 10
+    x(t) = r*(1+cos(t))
+    y(t) = r*sin(t)
+    z(t) = 2*r*sin(0.5*t)
+    R(t) = [x(t), y(t), z(t)]
+    t_range = range(-2π, 2π, length=100)
+
+    tnb_anim = @animate for t_at in t_range
+        plot3d(x.(t_range), y.(t_range), z.(t_range), legend=false, aspect_ratio=:equal,
+        xlims=(-5,25),
+        ylims=(-11,11),
+        zlims=(-21,21),
+        camera=(30, 15),
+        color=RGBA(241/255,90/255,34/255,0.5),
+        linewidth=5,
+        )
+
+        plot3d!([R(t_at)[1]], [R(t_at)[2]], [R(t_at)[3]], color=:black, marker=:circle, markersize=3, label="t = $t_at")
+
+        # T
+        T_hat = R'(t_at)/norm(R'(t_at))
+        arrow!(R(t_at), 2.5*T_hat, color=:red, label="T", linewidth=3, aspect_ratio=:equal)
+
+        # N
+        N_hat = cross(R'(t_at), cross(R''(t_at), R'(t_at)))/(norm(R'(t_at))*norm(cross(R''(t_at), R'(t_at))))
+        arrow!(R(t_at), 2.5*N_hat, color=:green, label="N", linewidth=3, aspect_ratio=:equal)
+
+        # B
+        B_hat = cross(T_hat,N_hat)
+        arrow!(R(t_at), 2.5*B_hat, color=:blue, label="B", linewidth=3, aspect_ratio=:equal)
+    end
+    gif(tnb_anim, "tnb.gif", fps=20)
+end
+```
 
 <u id="orthogonal" class="subtitle">Visualizing a parametrically defined curve orthogonal to a surface</u>
 
