@@ -1,4 +1,13 @@
-[{
+[
+    {
+        "name": "My 4x4 algs",
+        "url": "https://docs.google.com/spreadsheets/d/1svfL8-N4_7aDo9hxMv5nyLj2P-vSZ7utbyZdUgmP2yc/edit#gid=0",
+        "description": "My personal 4x4 algs",
+        "tags": [
+            "algs"
+        ]
+    },
+    {
     "name": "Jonatan Kłosko's WCA statistics",
     "url": "https://jonatanklosko.github.io/wca_statistics/",
     "description": "Huge variety of WCA statistics created by Jonatan Kłosko",
