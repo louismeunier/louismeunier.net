@@ -17,7 +17,7 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 - [Principles of Statistics](http://notes.louismeunier.net/Principles%20of%20Statistics/math204.pdf) (MATH204)
 - [Analysis I](https://notes.louismeunier.net/Analysis/analysis.pdf) (MATH254)
 - [Algebra I](https://notes.louismeunier.net/Algebra/algebra.pdf) (MATH235)
-- [Nonlinear Dynamics and Chaos](https://notes.louismeunier.net/NonlinearDynamics/nonlinear.pdf) (MATH376)
+- [Nonlinear Dynamics and Chaos](https://notes.louismeunier.net/NonlinearDynamics/nonlinear.pdf) (MATH326/MATH376)
 - [Classical Mechanics I](https://notes.louismeunier.net/ClassMech/classmech.pdf) (PHYS251)
 
 Many of these use my [notes template](https://github.com/louismeunier/latex-templates).
