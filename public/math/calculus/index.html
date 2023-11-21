@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> ⨋ calculus - louis meunier </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="title" content=" ⨋ calculus - louis meunier ">
+    <meta name="keywords" content="programming, mathematics, math">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Louis Meunier">
+    <meta name="description" content="miscellaneous calculus-related visuals and code" />
+
+    <meta property="og:site_name" content="louis meunier" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://louismeunier.net/math/calculus/" />
+    <meta property="og:title" content="⨋ calculus" />
+    <meta property="og:image" content="https://louismeunier.net/" />
+    <meta property="og:description" content="miscellaneous calculus-related visuals and code" />
+
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="⨋ calculus" />
+    <meta name="twitter:description" content="miscellaneous calculus-related visuals and code" />
+    <meta name="twitter:image" content="https://louismeunier.net/" />
+
+    <link rel="canonical" href="https://louismeunier.net/math/calculus/">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://louismeunier.net/css/custom.css" />
+
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://louismeunier.net/images/favicon.svg">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SREEFSD05C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-SREEFSD05C');
+    </script>
+</head>
+
+<body>
+    
+    <div class="mt-xl header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                
+                    <h1 class="name">louis meunier</h1>
+                
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <ul class="nav nav-primary justify-content-center">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://louismeunier.net/">
+                        
+                        Home
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://louismeunier.net/coding">
+                        
+                        Coding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://louismeunier.net/math">
+                        
+                        Math
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://louismeunier.net/notes">
+                        
+                        Notes
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://louismeunier.net/cubing">
+                        
+                        Cubing
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/louismeunier">
+                        
+                        Github
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://linkedin.louismeunier.net">
+                        
+                        Linkedin
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-10">
+                    <h1 class="mx-0 mx-md-4 text-center display-5 ">⨋ calculus</h1>
+                    <div class="markdown">
+                        
+    <a name="back to top" id="topButton"  class="no-pointer" href="#">top</a>
+<script>
+    window.onscroll = scrollFunction;
+    function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            document.getElementById("topButton").style.color = "rgba(27, 31, 35, 0.6)";
+            document.getElementById("topButton").classList.remove("no-pointer");
+        } else {
+            document.getElementById("topButton").style.color = "rgba(27, 31, 35, 0.0)";
+            document.getElementById("topButton").classList.add("no-pointer");
+        }
+    }
+</script>
+<style>
+    #topButton {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        transition: 0.3s ease-in-out;
+        margin-right: 0.5em;
+        margin-bottom: 50vh;
+        width: 2em;
+        height: 2em;
+        color:rgba(27, 31, 35, 0.0);
+        text-decoration: none;
+        font-size: 0.8em;
+    }
+    #topButton.no-pointer:hover {
+        cursor: default;
+    }
+    #topButton:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+</style>
+<p>On this page:</p>
+<ul id="#top">
+    <li><a href="#vivianis-curve">Viviani's Curve with the TNB frame</a></li>
+    <li><a href="#orthogonal">Visualizing a parametrically defined curve orthogonal to a surface</a></li>
+    <li><a href="#newtons-method">Newton's method animation</a></li>
+    <li><a href="#chain-rule">Chain rule diagrams</a></li>
+    <li><a href="#shark">"The shark problem"</a></li>
+    <li><a href="#tangent-plane">Visualizing tangent planes</a></li>
+    <li><a href="#coord-transform">Coordinate transforms</a></li>
+</ul>
+<u id="vivianis-curve" class="subtitle">
+    <a href="https://mathworld.wolfram.com/VivianisCurve.html">Viviani's curve</a> with the TNB frame
+</u>
+<p>Viviani&rsquo;s curve describes the intersection of a sphere and cylinder, specifically $$(x-r)^2+y^2=r^2, \quad x^2+y^2+z^2=4r^2.$$ The intersection curve can be parametrized $$x = r(1+\cos t)$$
+$$y= r\sin t$$
+$$z=2r\sin(\frac{t}{2})$$</p>
+<div class="image-wrapper">
+<img src="https://louismeunier.net/images/tnb.gif">
+</div>
+<pre tabindex="0"><code>begin
+    using Plots
+
+    r = 10
+    x(t) = r*(1+cos(t))
+    y(t) = r*sin(t)
+    z(t) = 2*r*sin(0.5*t)
+    R(t) = [x(t), y(t), z(t)]
+    t_range = range(-2π, 2π, length=100)
+
+    tnb_anim = @animate for t_at in t_range
+        plot3d(x.(t_range), y.(t_range), z.(t_range), legend=false, aspect_ratio=:equal,
+        xlims=(-5,25),
+        ylims=(-11,11),
+        zlims=(-21,21),
+        camera=(30, 15),
+        color=RGBA(241/255,90/255,34/255,0.5),
+        linewidth=5,
+        )
+
+        plot3d!([R(t_at)[1]], [R(t_at)[2]], [R(t_at)[3]], color=:black, marker=:circle, markersize=3, label=&#34;t = $t_at&#34;)
+
+        # T
+        T_hat = R&#39;(t_at)/norm(R&#39;(t_at))
+        arrow!(R(t_at), 2.5*T_hat, color=:red, label=&#34;T&#34;, linewidth=3, aspect_ratio=:equal)
+
+        # N
+        N_hat = cross(R&#39;(t_at), cross(R&#39;&#39;(t_at), R&#39;(t_at)))/(norm(R&#39;(t_at))*norm(cross(R&#39;&#39;(t_at), R&#39;(t_at))))
+        arrow!(R(t_at), 2.5*N_hat, color=:green, label=&#34;N&#34;, linewidth=3, aspect_ratio=:equal)
+
+        # B
+        B_hat = cross(T_hat,N_hat)
+        arrow!(R(t_at), 2.5*B_hat, color=:blue, label=&#34;B&#34;, linewidth=3, aspect_ratio=:equal)
+    end
+    gif(tnb_anim, &#34;tnb.gif&#34;, fps=20)
+end
+</code></pre><p><u id="orthogonal" class="subtitle">Visualizing a parametrically defined curve orthogonal to a surface</u></p>
+<p>The curve $F$ is defined parametrically by $x(t) = \frac{2(t^3+2)}{3}$, $y(t) = 2t^2$, and $z(t) = 3t-2$. The surface $G$ is defined implicitly as $15 = x^2+2y^2+3z^2$. $F$ is perpendicular to $G$ at $P = (2,2,1)$. We can prove this by finding the gradient of the two functions; if the two functions are truly perpendicular at this point, then the gradients should simply by multiples of each other.</p>
+<p>$$\nabla \vec{G}(t) = \langle 2t^2, 4t, 3\rangle$$</p>
+<p>$$\nabla \vec{F}(x,y,z) = \langle 2x, 4y, 6z\rangle$$</p>
+<p>At the point $P$, $t = 1$, so we can find the gradients at $P$:</p>
+<p>$$\nabla \vec{G}(1) = \langle 2, 4, 3\rangle$$</p>
+<p>$$\nabla \vec{F}(2,2,1) = \langle 4, 8, 6\rangle$$</p>
+<p>Clearly, $\nabla \vec{G}(1) = 2\nabla \vec{F}(2,2,1)$, indicating these two gradients are in the same direction, and as such, the curve $F$ is perpendicular to the surface $G$ at $P$. This can be understandably difficult to reason, so the following visualization may help.</p>
+
+
+<div style="display: grid; place-items: center; width:100%!important;">
+    <div id="/math/perpendicularparametric.json" class="plotly"></div>
+</div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    Plotly.d3.json("/math/perpendicularparametric.json", function(err, fig) {
+        Plotly.plot('\/math\/perpendicularparametric.json', fig.data, fig.layout, {responsive: true});
+    });
+</script>
+<style>
+   
+.main-svg {
+    width:100%!important;
+    height: 100%!important;
+}
+
+.plotly {
+    width: 100%;
+}
+.svg-container > svg {
+    background: transparent !important;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.svg-container {
+    width: auto!important;
+}
+.main-svg {
+    width:100%!important;
+    height: 100%!important;
+}
+
+#scene {
+    height: 100%!important;
+    width: auto!important;
+    top: 0!important;
+    bottom: 0!important;
+    left: 0!important;
+    right: 0!important;
+}
+
+</style>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#008000"># julia</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000"># MATH150 Assignment 5, Problem 9a</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">begin</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">using</span> Plots; plotly()
+</span></span><span style="display:flex;"><span><span style="color:#008000"># general &#34;settings&#34;</span>
+</span></span><span style="display:flex;"><span>t_range = range(0.95, stop=1.05, length = 100)
+</span></span><span style="display:flex;"><span>P = [2,2,1]
+</span></span><span style="display:flex;"><span><span style="color:#008000"># F, a curve defined parametrically</span>
+</span></span><span style="display:flex;"><span>x(t) = 2(t^3+2)/3
+</span></span><span style="display:flex;"><span>y(t) = 2t^2
+</span></span><span style="display:flex;"><span>z(t) = 3t-2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>F_x_range = x.(t_range)
+</span></span><span style="display:flex;"><span>F_y_range = y.(t_range)
+</span></span><span style="display:flex;"><span>F_z_range = z.(t_range)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plot(F_x_range, F_y_range, F_z_range, color=RGBA(0,0,255,0.5), linewidth=3, label=<span style="color:#a31515">&#34;F&#34;</span>, legend=false)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000"># G</span>
+</span></span><span style="display:flex;"><span>g(x,y) = sqrt((15-x^2-2y^2)/3)
+</span></span><span style="display:flex;"><span>G_x_range = range(1.9, stop=2.1, length = 100)
+</span></span><span style="display:flex;"><span>G_y_range = range(1.9, stop=2.1, length = 100)
+</span></span><span style="display:flex;"><span><span style="color:#008000"># G_z_range = g.(G_x_range, G_y_range)</span>
+</span></span><span style="display:flex;"><span>surface!(G_x_range, G_y_range, g, color=RGBA(255,0,0,0.5), linewidth=3, label=<span style="color:#a31515">&#34;G&#34;</span>, legend=true)
+</span></span><span style="display:flex;"><span><span style="color:#008000"># plotting the point of interest</span>
+</span></span><span style="display:flex;"><span>plot!(
+</span></span><span style="display:flex;"><span>    [2],[2],[1],
+</span></span><span style="display:flex;"><span>    marker = (<span style="color:#a31515">:circle</span>, 1, 0.8, <span style="color:#a31515">:black</span>),
+</span></span><span style="display:flex;"><span>    label = <span style="color:#a31515">&#34;P(2,2,1)&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000"># I multiply each vector by a scalar to make them fit within the bounds of the functions</span>
+</span></span><span style="display:flex;"><span>scalar = 0.01
+</span></span><span style="display:flex;"><span><span style="color:#008000"># plot the gradient of G</span>
+</span></span><span style="display:flex;"><span>grad_G_x(t) = 2t^2
+</span></span><span style="display:flex;"><span>grad_G_y(t) = 4t
+</span></span><span style="display:flex;"><span>grad_G_z(t) = 3
+</span></span><span style="display:flex;"><span><span style="color:#008000"># note that t = 1 at P = (2,2,1)</span>
+</span></span><span style="display:flex;"><span>plot!(
+</span></span><span style="display:flex;"><span>    [P[1], P[1]+scalar*grad_G_x(1)],
+</span></span><span style="display:flex;"><span>    [P[2], P[2]+scalar*grad_G_y(1)], 
+</span></span><span style="display:flex;"><span>    [P[3], P[3]+scalar*grad_G_z(1)],
+</span></span><span style="display:flex;"><span>    color=<span style="color:#a31515">:green</span>,
+</span></span><span style="display:flex;"><span>    linewidth=6,
+</span></span><span style="display:flex;"><span>    label=<span style="color:#a31515">&#34;grad G(2,2,1)&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000"># plot the gradient of F</span>
+</span></span><span style="display:flex;"><span>grad_F_x(x,y,z) = 2x
+</span></span><span style="display:flex;"><span>grad_F_y(x,y,z) = 4y
+</span></span><span style="display:flex;"><span>grad_F_z(x,y,z) = 6z
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plot!(
+</span></span><span style="display:flex;"><span>    [2, 2+scalar*grad_F_x(P[1],P[2],P[3])],
+</span></span><span style="display:flex;"><span>    [2, 2+scalar*grad_F_y(P[1],P[2],P[3])], 
+</span></span><span style="display:flex;"><span>    [1, 1+scalar*grad_F_z(P[1],P[2],P[3])],
+</span></span><span style="display:flex;"><span>    color=<span style="color:#a31515">:orange</span>,
+</span></span><span style="display:flex;"><span>    linewidth=6,
+</span></span><span style="display:flex;"><span>    label=<span style="color:#a31515">&#34;grad F(2,2,1)&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span><span style="color:#00f">end</span>
+</span></span></code></pre></div><p><u id="newtons-method" class="subtitle">Newton&rsquo;s method animation</u></p>
+<p>Newton&rsquo;s method animated to find the root of a function, $f(x)=x^3-2x^2-x+2$, with an initial estimate of $x = 0.15$.</p>
+<p>$$
+x_n = x_{n-1} - \frac{f(x_{n-1})}{f&rsquo;(x_{n-1})}
+$$</p>
+<div class="image-wrapper">
+<img src="https://louismeunier.net/images/newtonsmethod.gif">
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#008000"># Julia</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">begin</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">using</span> LaTeXStrings, Plots;
+</span></span><span style="display:flex;"><span>	f(x) = x^3-2x^2-x+2
+</span></span><span style="display:flex;"><span>	g(x) = 3x^2-4x-1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	max_est = 6
+</span></span><span style="display:flex;"><span>	true_value = 1
+</span></span><span style="display:flex;"><span>	z = ones(max_est)
+</span></span><span style="display:flex;"><span>	z[1] = 0.15
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">for</span> i=2:max_est
+</span></span><span style="display:flex;"><span>		z[i] = z[i-1] - f(z[i-1])/g(z[i-1])
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	newtons_methods_animation = @animate <span style="color:#00f">for</span> i = 1:max_est
+</span></span><span style="display:flex;"><span>	    plot(
+</span></span><span style="display:flex;"><span>			f,
+</span></span><span style="display:flex;"><span>			-1, 2,
+</span></span><span style="display:flex;"><span>			framestyle=<span style="color:#a31515">:origin</span>,
+</span></span><span style="display:flex;"><span>			legend=<span style="color:#a31515">:none</span>,
+</span></span><span style="display:flex;"><span>		)
+</span></span><span style="display:flex;"><span>		plot!(
+</span></span><span style="display:flex;"><span>			[z[i]],
+</span></span><span style="display:flex;"><span>			[0],
+</span></span><span style="display:flex;"><span>			color=<span style="color:#a31515">:red</span>, marker=<span style="color:#a31515">:circle</span>, markersize=5,
+</span></span><span style="display:flex;"><span>		)
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (i &gt; 1)
+</span></span><span style="display:flex;"><span>            est(x) = (
+</span></span><span style="display:flex;"><span>                g(z[i-1])*(x-z[i-1])
+</span></span><span style="display:flex;"><span>                )+f(z[i-1])
+</span></span><span style="display:flex;"><span>            plot!(est)
+</span></span><span style="display:flex;"><span>            plot!(
+</span></span><span style="display:flex;"><span>                [z[i-1], z[i-1]],
+</span></span><span style="display:flex;"><span>                [0, f(z[i-1])],
+</span></span><span style="display:flex;"><span>                color=<span style="color:#a31515">:pink</span>
+</span></span><span style="display:flex;"><span>            )
+</span></span><span style="display:flex;"><span>            plot!(
+</span></span><span style="display:flex;"><span>                [z[i-1]],
+</span></span><span style="display:flex;"><span>                [0],
+</span></span><span style="display:flex;"><span>                color=<span style="color:#a31515">:red</span>, 
+</span></span><span style="display:flex;"><span>                marker=<span style="color:#a31515">:circle</span>, 
+</span></span><span style="display:flex;"><span>                markersize=5,
+</span></span><span style="display:flex;"><span>            )
+</span></span><span style="display:flex;"><span>            annotate!(
+</span></span><span style="display:flex;"><span>                [z[i-1]],
+</span></span><span style="display:flex;"><span>                [-0.2],
+</span></span><span style="display:flex;"><span>                latexstring(<span style="color:#a31515">&#34;x_{&#34;</span>, i-1, <span style="color:#a31515">&#34;}&#34;</span>),
+</span></span><span style="display:flex;"><span>            ) 
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">end</span>
+</span></span><span style="display:flex;"><span>        plot!(
+</span></span><span style="display:flex;"><span>            [z[i], z[i]],
+</span></span><span style="display:flex;"><span>            [0, f(z[i])],
+</span></span><span style="display:flex;"><span>            color=<span style="color:#a31515">:purple</span>
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>        annotate!(
+</span></span><span style="display:flex;"><span>            [z[i]],
+</span></span><span style="display:flex;"><span>            [0.2],
+</span></span><span style="display:flex;"><span>            latexstring(<span style="color:#a31515">&#34;x_{&#34;</span>, i, <span style="color:#a31515">&#34;}&#34;</span>),
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>		annotate!(
+</span></span><span style="display:flex;"><span>			1.5,1.5, 
+</span></span><span style="display:flex;"><span>			text(
+</span></span><span style="display:flex;"><span>				latexstring(<span style="color:#a31515">&#34;x_&#34;</span>, string(i), <span style="color:#a31515">&#34; = &#34;</span>, string(round(z[i],digits=3)))
+</span></span><span style="display:flex;"><span>			)
+</span></span><span style="display:flex;"><span>		)
+</span></span><span style="display:flex;"><span>		annotate!(
+</span></span><span style="display:flex;"><span>			1.5, 1, 
+</span></span><span style="display:flex;"><span>			text(
+</span></span><span style="display:flex;"><span>				latexstring(<span style="color:#a31515">&#34;</span><span style="color:#a31515">\\</span><span style="color:#a31515">% e</span><span style="color:#a31515">rror = &#34;</span>, string(round(100*(abs(true_value - z[i]))/true_value, digits=3)))
+</span></span><span style="display:flex;"><span>			)
+</span></span><span style="display:flex;"><span>		)
+</span></span><span style="display:flex;"><span>		ylims!(-1,2.5)
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">end</span> 
+</span></span><span style="display:flex;"><span>	gif(newtons_methods_animation, <span style="color:#a31515">&#34;tutorial_heatmap_anim.gif&#34;</span>, fps = 1)
+</span></span><span style="display:flex;"><span><span style="color:#00f">end</span>
+</span></span></code></pre></div><p><u id="chain-rule" class="subtitle">chain rule tree diagrams</u></p>
+<div class="image-wrapper">
+<img src="https://louismeunier.net/images/treegraph.png" style="height:250px!important;"/>
+</div>
+<p>How I make trees to visualize the chain rule of derivatives (in Mathematica). I used the <code>MaTeX</code> package to render the labels as latex, but this could be replace with just normal text strings.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mathematica" data-lang="mathematica"><span style="display:flex;"><span><span style="color:#008000">(* mathematica *)</span>
+</span></span><span style="display:flex;"><span>&lt;&lt; MaTeX`
+</span></span><span style="display:flex;"><span>Graph[
+</span></span><span style="display:flex;"><span> {
+</span></span><span style="display:flex;"><span>  Labeled[1, MaTeX[<span style="color:#a31515">&#34;z&#34;</span>, FontSize -&gt; 16]],
+</span></span><span style="display:flex;"><span>  Labeled[2, MaTeX[<span style="color:#a31515">&#34;x&#34;</span>, FontSize -&gt; 16]],
+</span></span><span style="display:flex;"><span>  Labeled[3, MaTeX[<span style="color:#a31515">&#34;y&#34;</span>, FontSize -&gt; 16]],
+</span></span><span style="display:flex;"><span>  Labeled[4, MaTeX[<span style="color:#a31515">&#34;s&#34;</span>, FontSize -&gt; 16]],
+</span></span><span style="display:flex;"><span>  Labeled[5, MaTeX[<span style="color:#a31515">&#34;t&#34;</span>, FontSize -&gt; 16]],
+</span></span><span style="display:flex;"><span>  Labeled[6, MaTeX[<span style="color:#a31515">&#34;s&#34;</span>, FontSize -&gt; 16]],
+</span></span><span style="display:flex;"><span>  Labeled[7, MaTeX[<span style="color:#a31515">&#34;t&#34;</span>, FontSize -&gt; 16]]
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span> {
+</span></span><span style="display:flex;"><span>  1 &lt;-&gt; 2,
+</span></span><span style="display:flex;"><span>  2 &lt;-&gt; 4,
+</span></span><span style="display:flex;"><span>  1 &lt;-&gt; 3,
+</span></span><span style="display:flex;"><span>  2 &lt;-&gt; 5,
+</span></span><span style="display:flex;"><span>  3 &lt;-&gt; 6,
+</span></span><span style="display:flex;"><span>  3 &lt;-&gt; 7
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span> EdgeLabels -&gt; {
+</span></span><span style="display:flex;"><span>   1 &lt;-&gt; 2 -&gt; 
+</span></span><span style="display:flex;"><span>    MaTeX[<span style="color:#a31515">&#34;\\frac{\partial z}{\partial x}&#34;</span>, FontSize -&gt; 16],
+</span></span><span style="display:flex;"><span>   2 &lt;-&gt; 4 -&gt; 
+</span></span><span style="display:flex;"><span>    MaTeX[<span style="color:#a31515">&#34;\\frac{\partial x}{\partial s}&#34;</span>, FontSize -&gt; 16],
+</span></span><span style="display:flex;"><span>   1 &lt;-&gt; 3 -&gt; 
+</span></span><span style="display:flex;"><span>    MaTeX[<span style="color:#a31515">&#34;\\frac{\partial z}{\partial y}&#34;</span>, FontSize -&gt; 16],
+</span></span><span style="display:flex;"><span>   2 &lt;-&gt; 5 -&gt; 
+</span></span><span style="display:flex;"><span>    MaTeX[<span style="color:#a31515">&#34;\\frac{\partial x}{\partial t}&#34;</span>, FontSize -&gt; 16],
+</span></span><span style="display:flex;"><span>   3 &lt;-&gt; 6 -&gt; 
+</span></span><span style="display:flex;"><span>    MaTeX[<span style="color:#a31515">&#34;\\frac{\partial y}{\partial s}&#34;</span>, FontSize -&gt; 16],
+</span></span><span style="display:flex;"><span>   3 &lt;-&gt; 7 -&gt; MaTeX[<span style="color:#a31515">&#34;\\frac{\partial y}{\partial t}&#34;</span>, FontSize -&gt; 16]
+</span></span><span style="display:flex;"><span>   },
+</span></span><span style="display:flex;"><span> GraphLayout -&gt; <span style="color:#a31515">&#34;LayeredEmbedding&#34;</span>,
+</span></span><span style="display:flex;"><span> EdgeStyle -&gt; {
+</span></span><span style="display:flex;"><span>   1 &lt;-&gt; 2 -&gt; Red,
+</span></span><span style="display:flex;"><span>   2 &lt;-&gt; 4 -&gt; Red,
+</span></span><span style="display:flex;"><span>   1 &lt;-&gt; 3 -&gt; Red,
+</span></span><span style="display:flex;"><span>   2 &lt;-&gt; 5 -&gt; Gray,
+</span></span><span style="display:flex;"><span>   3 &lt;-&gt; 6 -&gt; Red,
+</span></span><span style="display:flex;"><span>   3 &lt;-&gt; 7 -&gt; Gray
+</span></span><span style="display:flex;"><span>   },
+</span></span><span style="display:flex;"><span> VertexSize -&gt; 0.05,
+</span></span><span style="display:flex;"><span> VertexStyle -&gt; LightPurple
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><p><u id="shark" class="subtitle">&ldquo;the shark problem&rdquo;</u>
+From the James Stewart Calculus book (pg. 985, no. 2).</p>
+<p><em>&ldquo;Marine biologists have determined that when a shark detects the presence of blood in the water, it will swim in the direction in which the concentration of the blood increases most rapidly. Based on certain tests, the concentration of blood (in parts per million) at a point $P(x,y)$ on the surface of seawater is approximated by $$C(x,y) = e^{\frac{-(x^2+2y^2)}{10^4}}$$ where $x$ and $y$ are measured in meters in a rectangular coordinate system with the blood source at the origin.&rdquo;</em></p>
+<p>The graph below represents the situation, where $T(x)$ is the function of the direction that the shark will take given a particular starting point $P(x_0,y_0)$.</p>
+<div class="image-wrapper">
+    <img src="https://louismeunier.net/images/shark-question.png">
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#00f">begin</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">using</span> Plots, LaTeXStrings; pyplot() 
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># initial condition</span>
+</span></span><span style="display:flex;"><span>    x_0 = 8
+</span></span><span style="display:flex;"><span>    y_0 = -2
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># the &#34;concentration of blood&#34; on the surface of the water</span>
+</span></span><span style="display:flex;"><span>    C(x,y) = ℯ^(-(x^2+2y^2)/(10^4))
+</span></span><span style="display:flex;"><span>    x_range = -10:0.1:10
+</span></span><span style="display:flex;"><span>    y_range = -10:0.1:10
+</span></span><span style="display:flex;"><span>    C_range = [C(x,y) <span style="color:#00f">for</span> x <span style="color:#00f">in</span> x_range, y <span style="color:#00f">in</span> y_range]
+</span></span><span style="display:flex;"><span>    contourf(
+</span></span><span style="display:flex;"><span>        x_range,
+</span></span><span style="display:flex;"><span>        y_range,
+</span></span><span style="display:flex;"><span>        C_range, 
+</span></span><span style="display:flex;"><span>        color=<span style="color:#a31515">:vikO</span>,
+</span></span><span style="display:flex;"><span>        levels=20,
+</span></span><span style="display:flex;"><span>        dpi=300
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    t(x) = (y_0/(x_0)^2)*x^2
+</span></span><span style="display:flex;"><span>    t_range = t.(x_range)
+</span></span><span style="display:flex;"><span>    z_path_range = C.(x_range, t_range)
+</span></span><span style="display:flex;"><span>    plot!(
+</span></span><span style="display:flex;"><span>        x_range,
+</span></span><span style="display:flex;"><span>        t_range,
+</span></span><span style="display:flex;"><span>        color=<span style="color:#a31515">:gray</span>,
+</span></span><span style="display:flex;"><span>        linewidth = 2,
+</span></span><span style="display:flex;"><span>        label=<span style="color:#a31515">L</span><span style="color:#a31515">&#34;T(x)&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    plot!(
+</span></span><span style="display:flex;"><span>        [x_0],
+</span></span><span style="display:flex;"><span>        [y_0],
+</span></span><span style="display:flex;"><span>        color = <span style="color:#a31515">:black</span>,
+</span></span><span style="display:flex;"><span>        markersize = 4,
+</span></span><span style="display:flex;"><span>        marker = <span style="color:#a31515">:circle</span>,
+</span></span><span style="display:flex;"><span>        label = <span style="color:#a31515">L</span><span style="color:#a31515">&#34;P(x_0, y_0)&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    xlims!(-10,10)
+</span></span><span style="display:flex;"><span>    ylims!(-10,10)
+</span></span><span style="display:flex;"><span><span style="color:#00f">end</span>
+</span></span></code></pre></div><p><u id="tangent-plane" class="subtitle">tangent plane of a function of $x$ and $y$</u></p>
+<p>Finding the tangent plane of: $$f(x,y) = 4x^2+4xy+y^2+2x+5y+3$$ at: $$(x_0,y_0,z_0) = (-3,1,27)$$</p>
+<p>$$
+t(x,y) - z_0 = \frac{\partial f}{\partial x}(x,y)(x-x_0) + \frac{\partial f}{\partial y}(x,y)(y-y_0)
+$$
+$$t(x,y) = -18x-5y-22$$</p>
+
+
+<div style="display: grid; place-items: center; width:100%!important;">
+    <div id="/math/testgraph.json" class="plotly"></div>
+</div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    Plotly.d3.json("/math/testgraph.json", function(err, fig) {
+        Plotly.plot('\/math\/testgraph.json', fig.data, fig.layout, {responsive: true});
+    });
+</script>
+<style>
+   
+.main-svg {
+    width:100%!important;
+    height: 100%!important;
+}
+
+.plotly {
+    width: 100%;
+}
+.svg-container > svg {
+    background: transparent !important;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.svg-container {
+    width: auto!important;
+}
+.main-svg {
+    width:100%!important;
+    height: 100%!important;
+}
+
+#scene {
+    height: 100%!important;
+    width: auto!important;
+    top: 0!important;
+    bottom: 0!important;
+    left: 0!important;
+    right: 0!important;
+}
+
+</style>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#008000"># Julia</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">begin</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">using</span>  Plots;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	plotly()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	transparent_red = RGBA(200/255,60/255,60/255,200/255)
+</span></span><span style="display:flex;"><span>	transparent_gray = RGBA(30/255,30/255,30/255,230/255)
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	abc(x,y) = 4x^2+4x*y+y^2+2x+5y+3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	x_range = range(-10,stop=10,length=100)
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	surface(
+</span></span><span style="display:flex;"><span>		x_range,
+</span></span><span style="display:flex;"><span>		x_range,
+</span></span><span style="display:flex;"><span>		abc,
+</span></span><span style="display:flex;"><span>		color = transparent_red,
+</span></span><span style="display:flex;"><span>		label = <span style="color:#a31515">&#34;f(x,y)&#34;</span>,
+</span></span><span style="display:flex;"><span>		legend = <span style="color:#a31515">:none</span>
+</span></span><span style="display:flex;"><span>	)
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	surface!(
+</span></span><span style="display:flex;"><span>		x_range,
+</span></span><span style="display:flex;"><span>		x_range,
+</span></span><span style="display:flex;"><span>		(x,y) -&gt; -18x-5y-22,
+</span></span><span style="display:flex;"><span>		color = transparent_gray,
+</span></span><span style="display:flex;"><span>		label = <span style="color:#a31515">&#34;t(x,y)&#34;</span>
+</span></span><span style="display:flex;"><span>	)
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	plot!(
+</span></span><span style="display:flex;"><span>		[-3], [1], [27], 
+</span></span><span style="display:flex;"><span>		color=<span style="color:#a31515">:blue</span>, 
+</span></span><span style="display:flex;"><span>		marker=<span style="color:#a31515">:circle</span>, 
+</span></span><span style="display:flex;"><span>		markersize=2, 
+</span></span><span style="display:flex;"><span>		label = <span style="color:#a31515">&#34;point&#34;</span>
+</span></span><span style="display:flex;"><span>	)
+</span></span><span style="display:flex;"><span><span style="color:#00f">end</span>
+</span></span></code></pre></div><p><u class="subtitle">tangent plane of a parametric function</u></p>
+<p>Given a sphere defined parametrically as a function $F(x,y,z)$:</p>
+<p>$$x = r\cos\theta\sin\phi$$
+$$y = r\cos\theta\cos\phi$$
+$$z = r\sin\theta$$</p>
+<p>where $r$ is the radius of the sphere, $\theta$ is the polar angle (along the $x-z$ plane), and $\phi$ is the azimuthal angle (along the $x-y$ plane). Since $x$, $y$, and $z$ are all functions of $\theta$ and $\phi$, we can define a vector function $G(\theta,\phi)$:</p>
+<p>$$G(\theta,\phi) = \langle x(\theta,\phi), y(\theta,\phi), z(\theta,\phi)\rangle$$
+$$=\langle r\cos\theta\sin\phi,\cos\theta\cos\phi,r\sin\theta \rangle$$</p>
+<p>Taking the derivative of $G$ with respect to $\theta$ and $\phi$:</p>
+<p>$$G_{\theta} = \langle -r\sin\theta\sin\phi, -r\sin\theta\cos\phi, r\cos\theta\rangle$$
+$$G_{\phi} = \langle r\cos\theta\cos\phi, -r\cos\theta\sin\phi, 0\rangle$$</p>
+<p>These functions represent vectors, clearly, and are tangent to the sphere at some point, say, $P(\theta_0, \phi_0)$. Intuitively, we can find the equation for a normal line to the sphere at $P$ by taking the cross product of $G_{\theta}$ and $G_{\phi}$, as this yields the vector normal to both:</p>
+<p>$$G_{\perp} = G_{\theta}\times G_{\phi} = \langle r^2 \cos \theta \sin \theta \sin \phi, -r^2 \cos \theta \sin \theta \cos \phi, -r^2 \cos^2 \theta\rangle$$</p>
+<p>The tangent plane to the sphere at $P$, intuitively, is also normal to this vector. Thus, we can find an equation for the plane by taking the dot product of the normal vector with the corresponding $(x_0,y_0,z_0)$ to $P$:</p>
+<p>$$0 = G_{\perp} \cdot \langle x-x_0, y-y_0, z-z_0 \rangle$$</p>
+<p>$$0 = r^2 \cos \theta \sin \theta \sin \phi (x-x_0) -r^2 \cos \theta \sin \theta \cos \phi (y-y_0) -r^2 \cos^2 \theta (z-z_0) $$</p>
+<p>Rearranging for $z$ as a function of $x$ and $y$:</p>
+<p>$$z = \frac{r^2 \cos \theta \sin \theta \sin \phi (x-x_0) -r^2 \cos \theta \sin \theta \cos \phi (y-y_0)}{r^2 \cos^2 \theta} -z_0 $$</p>
+<p>For instance, take $P = (x,y,z) = (1,1,\sqrt{2})$. The tangent plane at this point, simplified:</p>
+<p>$$z = \frac{1}{2}x + \frac{1}{2}y - \sqrt{2}$$</p>
+
+
+<div style="display: grid; place-items: center; width:100%!important;">
+    <div id="/math/tangent_plane_sphere.json" class="plotly"></div>
+</div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    Plotly.d3.json("/math/tangent_plane_sphere.json", function(err, fig) {
+        Plotly.plot('\/math\/tangent_plane_sphere.json', fig.data, fig.layout, {responsive: true});
+    });
+</script>
+<style>
+   
+.main-svg {
+    width:100%!important;
+    height: 100%!important;
+}
+
+.plotly {
+    width: 100%;
+}
+.svg-container > svg {
+    background: transparent !important;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.svg-container {
+    width: auto!important;
+}
+.main-svg {
+    width:100%!important;
+    height: 100%!important;
+}
+
+#scene {
+    height: 100%!important;
+    width: auto!important;
+    top: 0!important;
+    bottom: 0!important;
+    left: 0!important;
+    right: 0!important;
+}
+
+</style>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#008000"># Julia</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">begin</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">using</span> Plots; plotly()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># radius of the sphere</span>
+</span></span><span style="display:flex;"><span>    r = 2
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># point to find the tangent at</span>
+</span></span><span style="display:flex;"><span>    x_0 = 1
+</span></span><span style="display:flex;"><span>    y_0 = 1
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># working with square roots is a little finicky... </span>
+</span></span><span style="display:flex;"><span>    z_0 = -sqrt(2)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># parametric equations of the sphere in terms of theta and phi</span>
+</span></span><span style="display:flex;"><span>	x_sphere(theta, phi) = r*cos(theta) * sin(phi) 
+</span></span><span style="display:flex;"><span>	y_sphere(theta, phi) = r*cos(theta) * cos(phi) 
+</span></span><span style="display:flex;"><span>	z_sphere(theta, phi) = r*sin(theta)
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># the corresponding theta and phi to the point (x_0, y_0, z_0)</span>
+</span></span><span style="display:flex;"><span>    theta_param = asin(z_0/r)
+</span></span><span style="display:flex;"><span>    phi_param = acos(y_0 / (r * cos(theta_param)))
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># range of theta and phi to plot the sphere</span>
+</span></span><span style="display:flex;"><span>	theta_range =range(-2pi, stop=2pi, length=100)
+</span></span><span style="display:flex;"><span>	phi_range = range(-2pi, stop=2pi, length=100)
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># plot ranges for sphere</span>
+</span></span><span style="display:flex;"><span>	x_range_sphere = [x_sphere(t, p) <span style="color:#00f">for</span> t <span style="color:#00f">in</span> theta_range, p <span style="color:#00f">in</span> phi_range]
+</span></span><span style="display:flex;"><span>	y_range_sphere = [y_sphere(t, p) <span style="color:#00f">for</span> t <span style="color:#00f">in</span> theta_range, p <span style="color:#00f">in</span> phi_range]
+</span></span><span style="display:flex;"><span>	z_range_sphere = [z_sphere(t, p) <span style="color:#00f">for</span> t <span style="color:#00f">in</span> theta_range, p <span style="color:#00f">in</span> phi_range]
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># sphere plot</span>
+</span></span><span style="display:flex;"><span>	surface(
+</span></span><span style="display:flex;"><span>        x_range_sphere, 
+</span></span><span style="display:flex;"><span>        y_range_sphere, 
+</span></span><span style="display:flex;"><span>        z_range_sphere, 
+</span></span><span style="display:flex;"><span>        label=<span style="color:#a31515">&#34;Sphere&#34;</span>, 
+</span></span><span style="display:flex;"><span>        color=RGBA(172/255, 39/255, 245/255, 1),
+</span></span><span style="display:flex;"><span>        legend=<span style="color:#a31515">:none</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># derivatives the parametric equations of the sphere:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># in terms of theta</span>
+</span></span><span style="display:flex;"><span>    d_theta_x(theta, phi) = -r*sin(theta) * sin(phi)
+</span></span><span style="display:flex;"><span>    d_theta_y(theta, phi) = -r*sin(theta) * cos(phi)
+</span></span><span style="display:flex;"><span>    d_theta_z(theta, phi) = r*cos(theta)
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># in terms of phi</span>
+</span></span><span style="display:flex;"><span>    d_phi_x(theta, phi) = r*cos(theta) * cos(phi)
+</span></span><span style="display:flex;"><span>    d_phi_y(theta, phi) = -r*cos(theta) * sin(phi)
+</span></span><span style="display:flex;"><span>    d_phi_z(theta, phi) = 0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># a vector of &#34;d_theta&#34; of the sphere at the point (x_0, y_0, z_0)</span>
+</span></span><span style="display:flex;"><span>    d_theta_vec = [
+</span></span><span style="display:flex;"><span>        d_theta_x(theta_param, phi_param), 
+</span></span><span style="display:flex;"><span>        d_theta_y(theta_param, phi_param), 
+</span></span><span style="display:flex;"><span>        d_theta_z(theta_param, phi_param)
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># a vector of &#34;d_phi&#34; of the sphere at the point (x_0, y_0, z_0)</span>
+</span></span><span style="display:flex;"><span>    d_phi_vec = [
+</span></span><span style="display:flex;"><span>        d_phi_x(theta_param, phi_param), 
+</span></span><span style="display:flex;"><span>        d_phi_y(theta_param, phi_param), 
+</span></span><span style="display:flex;"><span>        d_phi_z(theta_param, phi_param)
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># plotting the respective tangent vectors</span>
+</span></span><span style="display:flex;"><span>    plot!(
+</span></span><span style="display:flex;"><span>        [x_0-d_theta_vec[1], x_0], 
+</span></span><span style="display:flex;"><span>        [y_0-d_theta_vec[2], y_0], 
+</span></span><span style="display:flex;"><span>        [-z_0+d_theta_vec[3], -z_0],
+</span></span><span style="display:flex;"><span>        label=<span style="color:#a31515">&#34;Tangent Vector, theta&#34;</span>, 
+</span></span><span style="display:flex;"><span>        color=RGBA(0/255, 255, 0/255, 1)
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    plot!(
+</span></span><span style="display:flex;"><span>        [x_0, x_0 + d_phi_vec[1]], 
+</span></span><span style="display:flex;"><span>        [y_0, y_0 + d_phi_vec[2]], 
+</span></span><span style="display:flex;"><span>        [-z_0, -z_0 + d_phi_vec[3]], 
+</span></span><span style="display:flex;"><span>        label=<span style="color:#a31515">&#34;Tangent Vector, phi&#34;</span>, 
+</span></span><span style="display:flex;"><span>        color=RGBA(255, 0/255, 0/255, 1)
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># the cross product of the two vectors above</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># this returns the line normal to the sphere at the point (x_0, y_0, z_0)</span>
+</span></span><span style="display:flex;"><span>    d_cross = cross( d_theta_vec, d_phi_vec )
+</span></span><span style="display:flex;"><span>    plot!(
+</span></span><span style="display:flex;"><span>        [x_0, x_0+d_cross[1]], 
+</span></span><span style="display:flex;"><span>        [y_0,  y_0+d_cross[2]], 
+</span></span><span style="display:flex;"><span>        [-z_0,  -z_0-d_cross[3]], 
+</span></span><span style="display:flex;"><span>        label=<span style="color:#a31515">&#34;Normal Vector&#34;</span>, 
+</span></span><span style="display:flex;"><span>        color=RGBA(0/255, 0/255, 255, 1)
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># the tangent plane: dot product of the cross product</span>
+</span></span><span style="display:flex;"><span>    tangent_plane(x,y) = (
+</span></span><span style="display:flex;"><span>        d_cross[1]*(x-x_0) + 
+</span></span><span style="display:flex;"><span>        d_cross[2]*(y-y_0) - 
+</span></span><span style="display:flex;"><span>        d_cross[3]*z_0
+</span></span><span style="display:flex;"><span>    )/d_cross[3]
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># range of the tangent to plot</span>
+</span></span><span style="display:flex;"><span>	x_range_tangent = range(-3, stop=3, length=100)
+</span></span><span style="display:flex;"><span>	y_range_tangent = range(-3, stop=3, length=100)
+</span></span><span style="display:flex;"><span>    z_range_tangent = [tangent_plane(a,b) <span style="color:#00f">for</span> a <span style="color:#00f">in</span> x_range_tangent, b <span style="color:#00f">in</span> y_range_tangent]
+</span></span><span style="display:flex;"><span>    <span style="color:#008000"># plot tangent</span>
+</span></span><span style="display:flex;"><span>	surface!(
+</span></span><span style="display:flex;"><span>        x_range_tangent, 
+</span></span><span style="display:flex;"><span>        y_range_tangent, 
+</span></span><span style="display:flex;"><span>        z_range_tangent, 
+</span></span><span style="display:flex;"><span>        label=<span style="color:#a31515">&#34;Tangent Plane&#34;</span>,
+</span></span><span style="display:flex;"><span>        color=RGBA(0, 0, 0, 0.3)
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span><span style="color:#00f">end</span>
+</span></span></code></pre></div><p><u id="coord-transform" class="subtitle">Coordinate Transformations Visualization</u></p>
+<p>A nice Mathematica plot of a coordinate transformation.</p>
+<div class="image-wrapper">
+    <img src="https://louismeunier.net/images/coordinatetransform.png" style="height:250px!important;"/>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mathematica" data-lang="mathematica"><span style="display:flex;"><span><span style="color:#008000">(* Mathematica *)</span>
+</span></span><span style="display:flex;"><span>Plot[
+</span></span><span style="display:flex;"><span> Piecewise[{{1 x, 1.5 &gt; x &gt; 0}}, {{0, x &gt; 1.5}}],
+</span></span><span style="display:flex;"><span> {x, 0, 4},
+</span></span><span style="display:flex;"><span> TicksStyle -&gt; Directive[Opacity[0]],
+</span></span><span style="display:flex;"><span> PlotStyle -&gt; Red,
+</span></span><span style="display:flex;"><span> PlotRange -&gt; {{0, 4}, {0, 5}},
+</span></span><span style="display:flex;"><span> Epilog -&gt; {
+</span></span><span style="display:flex;"><span>   Opacity[0.25], Gray, 
+</span></span><span style="display:flex;"><span>   Polygon[{{1.5, 1.5}, {2.5, 2.25}, {3, 5}, {2, 4.25}}],
+</span></span><span style="display:flex;"><span>    Black, Text[MaTeX[<span style="color:#a31515">&#34;\\text{d}A&#34;</span>], {2.4, 2.8}],
+</span></span><span style="display:flex;"><span>   Opacity[1],
+</span></span><span style="display:flex;"><span>   Text[MaTeX[<span style="color:#a31515">&#34;\\vec{R}&#34;</span>], {0.75, 0.4}],
+</span></span><span style="display:flex;"><span>   Arrow[{{1.5, 1.5}, {3, 5}}], 
+</span></span><span style="display:flex;"><span>   Text[MaTeX[<span style="color:#a31515">&#34;\\vec{\\nabla R}&#34;</span>], {2.1, 3.4}],
+</span></span><span style="display:flex;"><span>   Blue, Arrow[{{1.5, 1.5}, {2.5, 2.25}}], 
+</span></span><span style="display:flex;"><span>   Arrow[{{2, 4.25}, {3, 5}}],
+</span></span><span style="display:flex;"><span>   Orange, Arrow[{{2.5, 2.25}, {3, 5}}], 
+</span></span><span style="display:flex;"><span>   Arrow[{{1.5, 1.5}, {2, 4.25}}],
+</span></span><span style="display:flex;"><span>   Text[MaTeX[<span style="color:#a31515">&#34;\\frac{\\partial R}{\\partial u}\\text{d}u&#34;</span>], {2.1, 
+</span></span><span style="display:flex;"><span>     1.4}],
+</span></span><span style="display:flex;"><span>   Text[MaTeX[<span style="color:#a31515">&#34;\\frac{\\partial R}{\\partial v}\\text{d}v&#34;</span>], {1.5, 
+</span></span><span style="display:flex;"><span>     3.1}]
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span> ]
+</span></span></code></pre></div>
+
+
+                    </div>
+                    <div class="back-temp">
+                        <a class="fake-button" href="https://louismeunier.net/math">
+                            <button class="btn btn-outline-secondary text-center">
+                            back to: math
+                            </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footers">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+             <p><a href="https://github.com/louismeunier/louismeunier.net" target="_blank">source code</a> | built with <a href="https://gohugo.io/" target="_blank">hugo 🔨</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+
+    
+
+    
+
+    
+    
+        
+<script src="https://louismeunier.net/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+      
+
+
+    
+</body>
+
+</html>

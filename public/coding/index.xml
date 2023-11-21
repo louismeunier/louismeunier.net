@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>louis meunier</title>
-    <link>https://louismeunier.net/</link>
-    <description>Recent content on louis meunier</description>
+    <title>coding on louis meunier</title>
+    <link>https://louismeunier.net/coding/</link>
+    <description>Recent content in coding on louis meunier</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://louismeunier.net/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>⨋ calculus</title>
-      <link>https://louismeunier.net/math/calculus/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://louismeunier.net/math/calculus/</guid>
-      <description>top On this page:
-Viviani&#39;s Curve with the TNB frame Visualizing a parametrically defined curve orthogonal to a surface Newton&#39;s method animation Chain rule diagrams &#34;The shark problem&#34; Visualizing tangent planes Coordinate transforms Viviani&#39;s curve with the TNB frame Viviani&amp;rsquo;s curve describes the intersection of a sphere and cylinder, specifically $$(x-r)^2+y^2=r^2, \quad x^2+y^2+z^2=4r^2.$$ The intersection curve can be parametrized $$x = r(1+\cos t)$$ $$y= r\sin t$$ $$z=2r\sin(\frac{t}{2})$$
-begin using Plots r = 10 x(t) = r*(1+cos(t)) y(t) = r*sin(t) z(t) = 2*r*sin(0.</description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://louismeunier.net/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🚲 biking</title>
       <link>https://louismeunier.net/coding/biking/</link>
@@ -36,31 +25,12 @@ begin using Plots r = 10 x(t) = r*(1+cos(t)) y(t) = r*sin(t) z(t) = 2*r*sin(0.</
     </item>
     
     <item>
-      <title>📊 basic statistics in R</title>
-      <link>https://louismeunier.net/math/stats/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://louismeunier.net/math/stats/</guid>
-      <description>top Some simple statistics functions in R (based on the course MATH204).
-# read data data &amp;lt;- read.csv(&amp;#34;data.csv&amp;#34;) # utilities for working with/summarize data ncol(data) # number of columns nrow(data) # number of rows colnames(data) # column names rownames(data) # row names (if they exist) head(data) # get the first &amp;#34;few&amp;#34; rows of a dataframe tail(data) # get the last &amp;#34;few&amp;#34; rows of a dataframe summary(data) # get more information then you&amp;#39;d ever need data[data$x == &amp;#34;something&amp;#34;, ] # get all rows from data from matching certain parameter(s) data.</description>
-    </item>
-    
-    <item>
       <title>✉️ college email analysis</title>
       <link>https://louismeunier.net/coding/collegemails/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://louismeunier.net/coding/collegemails/</guid>
       <description>source code live site A set of scripts and website I created as a senior in high school to analyze the emails I received from colleges. The data was generated using the gmail API and ran automatically using Github Actions. The actual site is made with Svelte, and while the data isn&amp;rsquo;t updated anymore (as I, thankfully, no longer receive hundreds of college emails a week), the site is still live!</description>
-    </item>
-    
-    <item>
-      <title>🗑 etc</title>
-      <link>https://louismeunier.net/math/etc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://louismeunier.net/math/etc/</guid>
-      <description>top % interactive normal distribution plot, playing around with manipulate function Manipulate[ Show[ Plot[ PDF[NormalDistribution[\[Mu], \[Sigma]], x], {x, -10, 10}, AxesOrigin -&amp;gt; {0, 0}, PlotRange -&amp;gt; {-0.1, 0.5}, PlotLabel -&amp;gt; &amp;#34;\[ScriptCapitalN](&amp;#34; &amp;lt;&amp;gt; ToString[\[Mu]] &amp;lt;&amp;gt; &amp;#34;,&amp;#34; &amp;lt;&amp;gt; ToString[\[Sigma]] &amp;lt;&amp;gt; &amp;#34;)&amp;#34;, PlotStyle -&amp;gt; Directive[Gray, Thickness[0.007]] ], Plot[ {PDF[NormalDistribution[\[Mu], \[Sigma]], x], 0}, {x, T, 10}, Filling -&amp;gt; 1 -&amp;gt; {2}, FillingStyle -&amp;gt; RGBColor[255/255, 148/255, 112/255, 0.8], PlotRange -&amp;gt; {-0.1, 0.5}, PlotStyle -&amp;gt; None ] ], {{\[Mu], 0.</description>
     </item>
     
     <item>
@@ -88,15 +58,6 @@ begin using Plots r = 10 x(t) = r*(1+cos(t)) y(t) = r*sin(t) z(t) = 2*r*sin(0.</
       
       <guid>https://louismeunier.net/coding/random/</guid>
       <description>top inspired by the artwork &#34;Innumerable Life/Buddha&#34; by Miyajima Tatsuo </description>
-    </item>
-    
-    <item>
-      <title>cubing</title>
-      <link>https://louismeunier.net/cubing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://louismeunier.net/cubing/</guid>
-      <description></description>
     </item>
     
   </channel>

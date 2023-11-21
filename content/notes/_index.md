@@ -6,7 +6,7 @@ layout: "notes"
 
 <h1 class="blog-post-title text-bold">notes</h1>
 
-A variety of notes for different courses I've taken, some more complete than others. All of the source "code" (if you can call it that) is hosted on [Github](https://github.com/louismeunier/notes).
+A variety of notes for different courses I've taken, some more complete than others. The LaTeX files can be found [here](https://github.com/louismeunier/notes). Many of these use my [notes template](https://github.com/louismeunier/latex-templates).
 
 You can also [report a typo or mistake](https://github.com/louismeunier/notes/issues/new?assignees=&labels=&template=typo-report.md&title=Typo+in+%5BFILE_NAME%5D) if you feel so inclined.
 - [Linear Algebra](http://notes.louismeunier.net/Linear%20Algebra/linearalgebra.pdf) (MATH133)
@@ -19,5 +19,3 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 - [Algebra I](https://notes.louismeunier.net/Algebra/algebra.pdf) (MATH235)
 - [Nonlinear Dynamics and Chaos](https://notes.louismeunier.net/NonlinearDynamics/nonlinear.pdf) (MATH326/MATH376)
 - [Classical Mechanics I](https://notes.louismeunier.net/ClassMech/classmech.pdf) (PHYS251)
-
-Many of these use my [notes template](https://github.com/louismeunier/latex-templates).

@@ -5,19 +5,29 @@ body {
     font-family: "Merriweather";
     font-feature-settings: "liga", "kern";
     background-color: #EAE2D7;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* Fix jumping scrollbar when switching to long pages */
 
 html {
+    height: 100%;
     margin-left: calc(100vw - 100%);
     margin-right: 0;
+    scroll-behavior: smooth;
+}
+
+.content {
+    flex: 1;
 }
 
 /* margin top */
 
 .mt-xl {
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    margin-top: 40px;
 }
 
 /* link */
@@ -26,6 +36,7 @@ a {
     color: #333333;
     text-decoration: underline;
     background-color: transparent;
+    transition: 0.2s ease-in-out;
 }
 
 a:active, a:hover {
@@ -33,7 +44,8 @@ a:active, a:hover {
 }
 
 a:hover, a:focus {
-    color: #333333;
+    color: #A29EFF;
+    /* color: #333333; */
     text-decoration: underline;
 }
 
@@ -51,18 +63,22 @@ hr {
 
 /* Partial: Header */
 
-.header a {
+.header a, .title-page a {
     text-decoration: none;
+    transition: 0.2s ease-in-out;
 }
 
-.header a:hover {
+.header a:hover, .title-page a:hover {
+    color: #A29EFF;
     text-decoration: underline;
 }
 
 .header h1.name {
     font-weight: 600;
-    font-size: 2.1875rem;
-    color: #333333;
+    /* font-size: 2.1875rem; */
+    font-size: 1.9rem;
+    /* TODO: verify works */
+    /* color: #333333; */
 }
 
 .header ul.nav li {
@@ -92,17 +108,17 @@ hr {
     text-decoration: none;
 }
 
-.content .middot:before {
+/* .content .middot:before {
     margin: 0 3px;
     content: "·";
-}
-
-.content .caption {
+} */
+/* ! Add back if images */
+/* .content .caption {
     text-align: center;
     margin-top: 10px;
     color: #586069;
     font-size: 0.9rem;
-}
+} */
 
 .content .markdown {
     font-weight: 400;
@@ -190,10 +206,21 @@ hr {
 .content .markdown pre code, .content .markdown pre output {
     /* enclosed by 4 backticks (````) */
     padding: 0;
-    font-size: 0.75rem;
-    line-height: 20px;
+    /* font-size: 0.75rem; */
+    font-size: 0.9rem;
+    /* line-height: 20px; */
+    line-height: 30px;
     background-color: #fff;
+    /* word-wrap: normal; */
+    /* width: max-content; */
     border-radius: 0;
+    
+}
+
+.content .markdown pre code span {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    /* word-break: break-all; */
 }
 
 .content .markdown blockquote {
@@ -247,14 +274,6 @@ hr {
     height: 16px;
 }
 
-/* Partial: Utterances Comments */
-
-.comments {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    max-width: 100%;
-}
-
 /* < medium screens */
 
 @media (max-width: 767.98px) {
@@ -269,6 +288,7 @@ hr {
 
 .footers {
     margin-top: 2em;
+    font-size: 0.75em;
 }
 
 .fake-button {
@@ -290,20 +310,6 @@ hr {
     text-decoration: none;
 }
 
-.image-wrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1em;
-}
-
-.image-wrapper img {
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
-}
-
 .back-temp {
     display: grid;
     place-items: center;
@@ -321,46 +327,24 @@ hr {
     margin-top: 2em;
 }
 
-.title-page {
-    margin-top: -1em;
-    margin-bottom: 3em;
+.image-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
 }
 
-.title-page img {
-    border: 2px solid black;
-    /* max-width: 100%; */
-    height: 500px!important;
-    width: 500px!important;
-    /* min-height: 400px; */
-    /* height: auto; */
-    /* max-height: 500px; */
+.image-wrapper img {
+    border-radius: 10px;
+    max-width: 50vw;
+    height: auto;
 }
 
-.about-paragraph {
-    margin-bottom: 3em;
-    font-size: 1.4em;
-    font-style: italic;
-}
-
-.svg-container > svg {
-    background: transparent !important;
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
-#scene {
-    height: 100%!important;
-    width: 100%!important;
-    top: 0!important;
-    bottom: 0!important;
-    left: 0!important;
-    right: 0!important;
-
-}
-
-.math-toc {
-    margin-top: 2em;
-    margin-bottom: 4em;
+@media screen and (max-width: 768px) {
+    .image-wrapper img {
+        max-width: 100%;
+    }
 }
 
 .subtitle {

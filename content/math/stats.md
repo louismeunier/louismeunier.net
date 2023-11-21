@@ -101,3 +101,4 @@ wilcox.test(x_1, x_2, alternative="greater", correct = F) # wilcoxon rank sum te
 wilcox.test(x_1, x_2, alternative="greater", correct = F, exact = F) # wilcoxon rank sum test, larger samples, approximates normal distribution
 
 ````
+<!-- todo: anova, kw, spearman -->

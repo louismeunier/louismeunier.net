@@ -1,10 +1,60 @@
 ---
 title: "🗑 etc"
-description: "random scripts/snippets"
+description: "random scripts/snippets/mathing"
 weight: 3
 ---
 
 {{< upbutton >}}
+
+<div class="image-wrapper">
+<img src="/images/wcaraster.png">
+</div>
+
+```r
+# raster map of us with points from wca competitions
+library("sf")
+library("rgdal")
+library("raster")
+library("RMySQL")
+
+# competition data from sql
+mysqlconnection = dbConnect(RMySQL::MySQL(),
+                            dbname='wca_dev',
+                            host='localhost',
+                            port=3306,
+                            user='root',
+                            password='password')
+
+all_comps = dbGetQuery(mysqlconnection, "select id, latitude/1000000 as lat, longitude/1000000 as lon from competitions")
+
+# shp file
+us_shp <- read_sf("/users/louismeunier/downloads/cb_2018_us_state_20m/cb_2018_us_state_20m.shp")
+
+# only want cont. us
+continental <- us_shp[!us_shp$NAME %in% c("Alaska", "Hawaii", "Puerto Rico"), ]
+
+# rasterize
+r <- raster(ncol=100, nrow=100)
+extent(r) <- extent(continental)
+rr <- rasterize(continental, r)
+
+coords <- cbind(all_comps$lon, all_comps$lat)
+
+D <- distanceFromPoints(object=rr, xy=coords)
+
+# ignore points outside cont. us
+D[which(is.na(rr[]))] <- NA
+
+plot(D, xaxt='n', yaxt='n')
+points(coords, pch=19, cex=0.25)
+lines(continental)
+
+# get max point
+D.dataframe <- data.frame(rasterToPoints(D))
+D.dataframe.sorted <- D.dataframe[order(D.dataframe$layer),]
+maxpoint <- D.dataframe[D.dataframe$layer ==max(D.dataframe$layer),]
+points(maxpoint$x, maxpoint$y, pch=19, cex=1, col='red')
+```
 
 ```mathematica
 % interactive normal distribution plot, playing around with manipulate function
