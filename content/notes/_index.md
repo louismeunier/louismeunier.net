@@ -20,4 +20,5 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 - [Nonlinear Dynamics and Chaos](https://notes.louismeunier.net/NonlinearDynamics/nonlinear.pdf) (MATH326/MATH376)
 - [Classical Mechanics I](https://notes.louismeunier.net/ClassMech/classmech.pdf) (PHYS251)
 - [Analysis II](https://notes.louismeunier.net/Analysis%202/analysis2.pdf) (MATH255)
+- [Algebra II](https://notes.louismeunier.net/Algebra%202/algebra2.pdf) (MATH251)
 - [ODEs](https://notes.louismeunier.net/ODEs/odes.pdf) (MATH325)
