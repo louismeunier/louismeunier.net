@@ -114,3 +114,34 @@ ParametricPlot3D[
  Axes -> False, Background -> Black
  ]
 ```
+
+```matlab
+% henon map plotter
+% initial condition
+
+x1=0;
+y1=0;
+
+% parameters
+a=1.4;
+b=0.3;
+
+xs = zeros(10000);
+ys = zeros(10000);
+xs(1)=x1;
+ys(1)=y1;
+
+figure;
+hold on;
+axis([-2 2 -2 2]);
+plot(xs(1), ys(1), '--.', Color='red')
+for n=2:10000
+ 
+    xs(n)=1-a*xs(n-1)^2+ys(n-1);
+    ys(n)=b*xs(n-1);
+    plot(xs(n), ys(n), '--.', Color='black')
+    pause(0.01);
+end
+
+hold off;
+```
