@@ -291,6 +291,7 @@ hr {
 .footers {
     margin-top: 2em;
     font-size: 0.75em;
+    min-height: 1em;
 }
 
 .fake-button {
@@ -315,6 +316,20 @@ hr {
 .back-temp {
     display: grid;
     place-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 1em;
+}
+
+.back-temp button {
+    opacity: 0.2;
+    transition: 0.33s ease-in-out;
+}
+
+.back-temp button:hover {
+    opacity: .8;
 }
 
 .meta-description {
