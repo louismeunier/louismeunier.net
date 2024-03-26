@@ -1,5 +1,5 @@
 ---
-title: "🗑 etc"
+title: "etc"
 description: "random scripts/snippets/mathing"
 weight: 3
 ---
@@ -9,6 +9,8 @@ weight: 3
 <div class="image-wrapper">
 <img src="/images/wcaraster.png">
 </div>
+
+Raster map representing distance from nearest WCA competition (USA)
 
 ```r
 # raster map of us with points from wca competitions
@@ -56,6 +58,7 @@ maxpoint <- D.dataframe[D.dataframe$layer ==max(D.dataframe$layer),]
 points(maxpoint$x, maxpoint$y, pch=19, cex=1, col='red')
 ```
 
+Interactive normal distribution PDF plot
 ```mathematica
 % interactive normal distribution plot, playing around with manipulate function
 Manipulate[
@@ -93,7 +96,7 @@ Manipulate[
  ]
  ```
 
-
+<a href="https://diversityinmath.ssmu.ca/">McGill Diversity in Math</a> logo (roughly) remade in Mathematica
  ```mathematica
 % diversity in math logo made in mathematica!
 % just a mobius strip with fancy colors...
@@ -115,6 +118,9 @@ ParametricPlot3D[
  ]
 ```
 
+Henon map in MatLab (single initial condition)
+$$x_{n+1} = 1 - ax_{n}^2+y_n$$
+$$y_{n+1}=bx_n$$
 ```matlab
 % henon map plotter
 % initial condition

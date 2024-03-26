@@ -1,5 +1,5 @@
 ---
-title: "⌨️ ennuikeyboards"
+title: "ennuikeyboards"
 # date: 2020-11-26
 description: A portfolio website for a custom keyboard maker.
 weight: 4

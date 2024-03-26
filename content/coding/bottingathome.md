@@ -1,5 +1,5 @@
 ---
-title: "🤖 BottingAtHome"
+title: "BottingAtHome"
 # date: 2020-11-26
 description: A Discord bot for CubingUSA's CubingAtHome server.
 weight: 1

@@ -1,5 +1,5 @@
 ---
-title: "🍩 flows on a torus"
+title: "flows on a torus"
 description: "3D visualizer of vector flows on a torus"
 weight: 2
 ---

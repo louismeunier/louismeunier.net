@@ -1,5 +1,5 @@
 ---
-title: "⨋ calculus"
+title: "calculus"
 description: "miscellaneous calculus-related visuals and code"
 weight: 1
 ---

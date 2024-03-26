@@ -1,5 +1,5 @@
 ---
-title: "꩜ phase plotter"
+title: "phase plotter"
 description: "html phase diagram"
 weight: 2
 ---

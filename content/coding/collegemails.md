@@ -1,5 +1,5 @@
 ---
-title: "✉️ college email analysis"
+title: "college email analysis"
 # date: 2020-11-26
 description: An analysis of advertisements colleges sent me as a high school senior.
 weight: 3
