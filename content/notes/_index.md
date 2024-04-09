@@ -19,7 +19,7 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 - [Algebra I](https://notes.louismeunier.net/Algebra%201/algebra.pdf) (MATH235)
 - [Nonlinear Dynamics and Chaos](https://notes.louismeunier.net/NonlinearDynamics/nonlinear.pdf) (MATH326/MATH376) <span style="color:red"> [Incomplete]</span>
 - [Classical Mechanics I](https://notes.louismeunier.net/ClassMech/classmech.pdf) (PHYS251) <span style="color:red"> [Incomplete]</span>
-- [Analysis II](https://notes.louismeunier.net/Analysis%202/analysis2.pdf) (MATH255) <span style="color:red"> [Incomplete]</span>
+- [Analysis II](https://notes.louismeunier.net/Analysis%202/analysis2.pdf) (MATH255)
 - [Algebra II](https://notes.louismeunier.net/Algebra%202/algebra2.pdf) (MATH251) <span style="color:red"> [Incomplete]</span>
     - [Algebra II, Summary](https://notes.louismeunier.net/Algebra%202%20Review/main.pdf) (MATH251) <span style="color:red"> [Incomplete]</span>
 - [ODEs](https://notes.louismeunier.net/ODEs/odes.pdf) (MATH325)
