@@ -22,4 +22,5 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 - [Analysis II](https://notes.louismeunier.net/Analysis%202/analysis2.pdf) (MATH255) <span style="color:red"> [Incomplete]</span>
 - [Algebra II](https://notes.louismeunier.net/Algebra%202/algebra2.pdf) (MATH251) <span style="color:red"> [Incomplete]</span>
     - [Algebra II, Summary](https://notes.louismeunier.net/Algebra%202%20Review/main.pdf) (MATH251) <span style="color:red"> [Incomplete]</span>
-- [ODEs](https://notes.louismeunier.net/ODEs/odes.pdf) (MATH325) <span style="color:red"> [Incomplete]</span>
+- [ODEs](https://notes.louismeunier.net/ODEs/odes.pdf) (MATH325)
+    - [ODEs, Summary](https://notes.louismeunier.net/ODEs%20Review/main.pdf) (MATH325) <span style="color:red">
