@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "ennuikeyboards"
 # date: 2020-11-26
 description: A portfolio website for a custom keyboard maker.
@@ -22,4 +22,4 @@ weight: 4
 </a>
 </div>
 
-A portfolio website for a friend's custom keyboard business. The site is made with <a class="in-text-link" href="https://nextjs.org/">NextJS</a> and <a class="in-text-link" href="https://firebase.google.com/">Firebase</a> is used for authentication, database storage, analytics, etc.
+A portfolio website for a friend's custom keyboard business. The site is made with <a class="in-text-link" href="https://nextjs.org/">NextJS</a> and <a class="in-text-link" href="https://firebase.google.com/">Firebase</a> is used for authentication, database storage, analytics, etc. -->
