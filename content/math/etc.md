@@ -1,6 +1,6 @@
 ---
 title: "etc"
-description: "random scripts/snippets/mathing"
+description: "Random scripts/snippets/mathing"
 weight: 3
 ---
 

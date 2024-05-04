@@ -1,6 +1,6 @@
 ---
 title: "phase plotter"
-description: "html phase diagram"
+description: "HTML-based phase diagram"
 weight: 2
 ---
 
