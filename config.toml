@@ -48,11 +48,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
 [[menu.primary]]
     name = "Coding"
     url = "/coding"
-    weight = 2
+    weight = 3
 [[menu.primary]]
   name = "Math"
   url = "/math"
-  weight = 3
+  weight = 2
 [[menu.primary]]
     name = "Notes"
     url = "/notes"

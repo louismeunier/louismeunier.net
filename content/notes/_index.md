@@ -13,6 +13,7 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 
 - [Analysis III](https://notes.louismeunier.net/Analysis%203/analysis3.pdf) (MATH454)<span style="color:blue;font-size:5pt;vertical-align:middle;margin-left:1em;">[In Progress]</span>
 - [Algebra III](https://notes.louismeunier.net/Algebra%203/algebra3.pdf) (MATH456) <span style="color:blue;font-size:5pt;vertical-align:middle;margin-left:1em;">[In Progress]</span>
+- [Probability](https://notes.louismeunier.net/Probability/probability.pdf) (MATH356) <span style="color:blue;font-size:5pt;vertical-align:middle;margin-left:1em;">[In Progress]</span>
 - [Analysis II](https://notes.louismeunier.net/Analysis%202/analysis2.pdf) (MATH255)
     - [Analysis II, Summary](https://notes.louismeunier.net/Analysis%202%20Review/main.pdf) 
 - [Algebra II](https://notes.louismeunier.net/Algebra%202/algebra2.pdf) (MATH251)

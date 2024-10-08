@@ -1,4 +1,4 @@
 ---
 title: "math"
-weight: 2
+weight: 1
 ---
