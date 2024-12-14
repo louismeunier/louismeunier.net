@@ -11,10 +11,10 @@ A variety of notes for different courses I've taken, some more complete than oth
 You can also [report a typo or mistake](https://github.com/louismeunier/notes/issues/new?assignees=&labels=&template=typo-report.md&title=Typo+in+%5BFILE_NAME%5D) if you feel so inclined. 
 
 
-- [Analysis III](https://notes.louismeunier.net/Analysis%203/analysis3.pdf) (MATH454)<span style="color:blue;font-size:5pt;vertical-align:middle;margin-left:1em;">[In Progress]</span>
-- [Algebra III](https://notes.louismeunier.net/Algebra%203/algebra3.pdf) (MATH456) <span style="color:blue;font-size:5pt;vertical-align:middle;margin-left:1em;">[In Progress]</span>
-- [Probability](https://notes.louismeunier.net/Probability/probability.pdf) (MATH356) <span style="color:blue;font-size:5pt;vertical-align:middle;margin-left:1em;">[In Progress]</span>
-- [PDEs, Summary](https://notes.louismeunier.net/PDES-Summary/pdes.pdf) (MATH475) <span style="color:blue;font-size:5pt;vertical-align:middle;margin-left:1em;">[In Progress]</span>
+- [Analysis III](https://notes.louismeunier.net/Analysis%203/analysis3.pdf) (MATH454)
+- [Algebra III](https://notes.louismeunier.net/Algebra%203/algebra3.pdf) (MATH456) 
+- [Probability](https://notes.louismeunier.net/Probability/probability.pdf) (MATH356) 
+- [PDEs, Summary](https://notes.louismeunier.net/PDES-Summary/pdes.pdf) (MATH475)
 - [Analysis II](https://notes.louismeunier.net/Analysis%202/analysis2.pdf) (MATH255)
     - [Analysis II, Summary](https://notes.louismeunier.net/Analysis%202%20Review/main.pdf) 
 - [Algebra II](https://notes.louismeunier.net/Algebra%202/algebra2.pdf) (MATH251)
