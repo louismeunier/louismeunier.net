@@ -4,30 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title> 🗑 etc - louis meunier </title>
+    <title> etc - louis meunier </title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="referrer" content="no-referrer">
-    <meta name="title" content=" 🗑 etc - louis meunier ">
+    <meta name="title" content=" etc - louis meunier ">
     <meta name="keywords" content="programming, mathematics, math">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="Louis Meunier">
-    <meta name="description" content="random scripts/snippets" />
+    <meta name="description" content="Random scripts/snippets/mathing" />
 
     <meta property="og:site_name" content="louis meunier" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://louismeunier.net/math/etc/" />
-    <meta property="og:title" content="🗑 etc" />
+    <meta property="og:title" content="etc" />
     <meta property="og:image" content="https://louismeunier.net/" />
-    <meta property="og:description" content="random scripts/snippets" />
+    <meta property="og:description" content="Random scripts/snippets/mathing" />
 
     
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="🗑 etc" />
-    <meta name="twitter:description" content="random scripts/snippets" />
+    <meta name="twitter:title" content="etc" />
+    <meta name="twitter:description" content="Random scripts/snippets/mathing" />
     <meta name="twitter:image" content="https://louismeunier.net/" />
 
     <link rel="canonical" href="https://louismeunier.net/math/etc/">
@@ -78,16 +78,16 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="https://louismeunier.net/coding">
+                    <a class="nav-link" href="https://louismeunier.net/math">
                         
-                        Coding
+                        Math
                     </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="https://louismeunier.net/math">
+                    <a class="nav-link" href="https://louismeunier.net/coding">
                         
-                        Math
+                        Coding
                     </a>
                 </li>
                 
@@ -128,7 +128,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-lg-10">
-                    <h1 class="mx-0 mx-md-4 text-center display-5 ">🗑 etc</h1>
+                    <h1 class="mx-0 mx-md-4 text-center display-5 ">etc</h1>
                     <div class="markdown">
                         
     <a name="back to top" id="topButton"  class="no-pointer" href="#">top</a>
@@ -166,6 +166,54 @@
         text-decoration: underline;
     }
 </style>
+<div class="image-wrapper">
+<img src="https://louismeunier.net/images/wcaraster.png">
+</div>
+<p>Raster map representing distance from nearest WCA competition (USA)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#008000"># raster map of us with points from wca competitions</span>
+</span></span><span style="display:flex;"><span>library(<span style="color:#a31515">&#34;sf&#34;</span>)
+</span></span><span style="display:flex;"><span>library(<span style="color:#a31515">&#34;rgdal&#34;</span>)
+</span></span><span style="display:flex;"><span>library(<span style="color:#a31515">&#34;raster&#34;</span>)
+</span></span><span style="display:flex;"><span>library(<span style="color:#a31515">&#34;RMySQL&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000"># competition data from sql</span>
+</span></span><span style="display:flex;"><span>mysqlconnection = dbConnect(RMySQL::MySQL(),
+</span></span><span style="display:flex;"><span>                            dbname=<span style="color:#a31515">&#39;wca_dev&#39;</span>,
+</span></span><span style="display:flex;"><span>                            host=<span style="color:#a31515">&#39;localhost&#39;</span>,
+</span></span><span style="display:flex;"><span>                            port=3306,
+</span></span><span style="display:flex;"><span>                            user=<span style="color:#a31515">&#39;root&#39;</span>,
+</span></span><span style="display:flex;"><span>                            password=<span style="color:#a31515">&#39;password&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>all_comps = dbGetQuery(mysqlconnection, <span style="color:#a31515">&#34;select id, latitude/1000000 as lat, longitude/1000000 as lon from competitions&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000"># shp file</span>
+</span></span><span style="display:flex;"><span>us_shp &lt;- read_sf(<span style="color:#a31515">&#34;/users/louismeunier/downloads/cb_2018_us_state_20m/cb_2018_us_state_20m.shp&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000"># only want cont. us</span>
+</span></span><span style="display:flex;"><span>continental &lt;- us_shp[!us_shp$NAME %in% c(<span style="color:#a31515">&#34;Alaska&#34;</span>, <span style="color:#a31515">&#34;Hawaii&#34;</span>, <span style="color:#a31515">&#34;Puerto Rico&#34;</span>), ]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000"># rasterize</span>
+</span></span><span style="display:flex;"><span>r &lt;- raster(ncol=100, nrow=100)
+</span></span><span style="display:flex;"><span>extent(r) &lt;- extent(continental)
+</span></span><span style="display:flex;"><span>rr &lt;- rasterize(continental, r)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>coords &lt;- cbind(all_comps$lon, all_comps$lat)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>D &lt;- distanceFromPoints(object=rr, xy=coords)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000"># ignore points outside cont. us</span>
+</span></span><span style="display:flex;"><span>D[which(is.na(rr[]))] &lt;- <span style="color:#00f">NA</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plot(D, xaxt=<span style="color:#a31515">&#39;n&#39;</span>, yaxt=<span style="color:#a31515">&#39;n&#39;</span>)
+</span></span><span style="display:flex;"><span>points(coords, pch=19, cex=0.25)
+</span></span><span style="display:flex;"><span>lines(continental)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000"># get max point</span>
+</span></span><span style="display:flex;"><span>D.dataframe &lt;- data.frame(rasterToPoints(D))
+</span></span><span style="display:flex;"><span>D.dataframe.sorted &lt;- D.dataframe[order(D.dataframe$layer),]
+</span></span><span style="display:flex;"><span>maxpoint &lt;- D.dataframe[D.dataframe$layer ==max(D.dataframe$layer),]
+</span></span><span style="display:flex;"><span>points(maxpoint$x, maxpoint$y, pch=19, cex=1, col=<span style="color:#a31515">&#39;red&#39;</span>)
+</span></span></code></pre></div><p>Interactive normal distribution PDF plot</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mathematica" data-lang="mathematica"><span style="display:flex;"><span><span style="">%</span> interactive normal distribution plot, playing around with manipulate function
 </span></span><span style="display:flex;"><span>Manipulate[
 </span></span><span style="display:flex;"><span> Show[
@@ -200,7 +248,8 @@
 </span></span><span style="display:flex;"><span>         T, Infinity}]
 </span></span><span style="display:flex;"><span>       , 0.001]], FontSize -&gt; 15]], Alignment -&gt; Center]
 </span></span><span style="display:flex;"><span> ]
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mathematica" data-lang="mathematica"><span style="display:flex;"><span><span style="">%</span> diversity in math logo made in mathematica!
+</span></span></code></pre></div><p><a href="https://diversityinmath.ssmu.ca/">McGill Diversity in Math</a> logo (roughly) remade in Mathematica</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mathematica" data-lang="mathematica"><span style="display:flex;"><span><span style="">%</span> diversity in math logo made in mathematica!
 </span></span><span style="display:flex;"><span><span style="">%</span> just a mobius strip with fancy colors<span style="">...</span>
 </span></span><span style="display:flex;"><span>x[r_, <span style="">\</span>[Theta]_] := (1 + r/2 Cos[<span style="">\</span>[Theta]/2]) Cos[<span style="">\</span>[Theta]]
 </span></span><span style="display:flex;"><span>y[r_, <span style="">\</span>[Theta]_] := (1 + r/2 Cos[<span style="">\</span>[Theta]/2]) Sin[<span style="">\</span>[Theta]]
@@ -218,6 +267,37 @@
 </span></span><span style="display:flex;"><span>  RGBColor[<span style="color:#a31515">&#34;#FF5252&#34;</span>]}, MeshFunctions -&gt; {#5 &amp;}, Boxed -&gt; False, 
 </span></span><span style="display:flex;"><span>Axes -&gt; False, Background -&gt; Black
 </span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><p>Henon map in MatLab (single initial condition)
+$$x_{n+1} = 1 - ax_{n}^2+y_n$$
+$$y_{n+1}=bx_n$$</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span><span style="color:#008000">% henon map plotter</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">% initial condition</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x1=0;
+</span></span><span style="display:flex;"><span>y1=0;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">% parameters</span>
+</span></span><span style="display:flex;"><span>a=1.4;
+</span></span><span style="display:flex;"><span>b=0.3;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>xs = zeros(10000);
+</span></span><span style="display:flex;"><span>ys = zeros(10000);
+</span></span><span style="display:flex;"><span>xs(1)=x1;
+</span></span><span style="display:flex;"><span>ys(1)=y1;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>figure;
+</span></span><span style="display:flex;"><span>hold on;
+</span></span><span style="display:flex;"><span>axis([-2 2 -2 2]);
+</span></span><span style="display:flex;"><span>plot(xs(1), ys(1), <span style="color:#a31515">&#39;--.&#39;</span>, Color=<span style="color:#a31515">&#39;red&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#00f">for</span> n=2:10000
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    xs(n)=1-a*xs(n-1)^2+ys(n-1);
+</span></span><span style="display:flex;"><span>    ys(n)=b*xs(n-1);
+</span></span><span style="display:flex;"><span>    plot(xs(n), ys(n), <span style="color:#a31515">&#39;--.&#39;</span>, Color=<span style="color:#a31515">&#39;black&#39;</span>)
+</span></span><span style="display:flex;"><span>    pause(0.01);
+</span></span><span style="display:flex;"><span><span style="color:#00f">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>hold off;
 </span></span></code></pre></div>
 
 
@@ -240,7 +320,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-auto">
-             <p><a href="https://github.com/louismeunier/louismeunier.net" target="_blank">source code</a> | built with <a href="https://gohugo.io/" target="_blank">hugo 🔨</a>
+             
+                
             </div>
         </div>
     </div>

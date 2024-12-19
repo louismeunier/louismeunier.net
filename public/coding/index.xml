@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://louismeunier.net/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>🚲 biking</title>
+      <title>biking</title>
       <link>https://louismeunier.net/coding/biking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -16,30 +16,12 @@
     </item>
     
     <item>
-      <title>🤖 BottingAtHome</title>
-      <link>https://louismeunier.net/coding/bottingathome/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://louismeunier.net/coding/bottingathome/</guid>
-      <description>source code A Discord bot for CubingUSA&amp;rsquo;s CubingAtHome (an online international Rubik&amp;rsquo;s Cube competition series) server, written in Javascript and hosted on Heroku. It was used primarily to provide basic utilities (such as scramble generation, event announcement, etc) to the server, and while CubingAtHome is no longer active, the bot is still active today! You can add it here.</description>
-    </item>
-    
-    <item>
-      <title>✉️ college email analysis</title>
+      <title>college email analysis</title>
       <link>https://louismeunier.net/coding/collegemails/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://louismeunier.net/coding/collegemails/</guid>
       <description>source code live site A set of scripts and website I created as a senior in high school to analyze the emails I received from colleges. The data was generated using the gmail API and ran automatically using Github Actions. The actual site is made with Svelte, and while the data isn&amp;rsquo;t updated anymore (as I, thankfully, no longer receive hundreds of college emails a week), the site is still live!</description>
-    </item>
-    
-    <item>
-      <title>⌨️ ennuikeyboards</title>
-      <link>https://louismeunier.net/coding/ennuikeyboards/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://louismeunier.net/coding/ennuikeyboards/</guid>
-      <description>live site A portfolio website for a friend&amp;rsquo;s custom keyboard business. The site is made with NextJS and Firebase is used for authentication, database storage, analytics, etc.</description>
     </item>
     
     <item>
@@ -52,12 +34,39 @@
     </item>
     
     <item>
-      <title>📂 random</title>
+      <title>mcgill printers</title>
+      <link>https://louismeunier.net/coding/printers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://louismeunier.net/coding/printers/</guid>
+      <description>site Searchable map of printers on McGill campus.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://louismeunier.net/coding/bottingathome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://louismeunier.net/coding/bottingathome/</guid>
+      <description>source code A Discord bot for CubingUSA&amp;rsquo;s CubingAtHome (an online international Rubik&amp;rsquo;s Cube competition series) server, written in Javascript and hosted on Heroku. It was used primarily to provide basic utilities (such as scramble generation, event announcement, etc) to the server, and while CubingAtHome is no longer active, the bot is still active today! You can add it here. &amp;ndash;&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://louismeunier.net/coding/ennuikeyboards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://louismeunier.net/coding/ennuikeyboards/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://louismeunier.net/coding/random/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://louismeunier.net/coding/random/</guid>
-      <description>top inspired by the artwork &#34;Innumerable Life/Buddha&#34; by Miyajima Tatsuo </description>
+      <description></description>
     </item>
     
   </channel>

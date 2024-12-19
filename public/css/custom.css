@@ -250,7 +250,9 @@ hr {
 
 .content .meta-title {
     /* font-size: 1.5625rem; */
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
+    /* font-size: 1.2rem; */
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
 }
@@ -289,6 +291,7 @@ hr {
 .footers {
     margin-top: 2em;
     font-size: 0.75em;
+    min-height: 1em;
 }
 
 .fake-button {
@@ -313,10 +316,25 @@ hr {
 .back-temp {
     display: grid;
     place-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 1em;
+}
+
+.back-temp button {
+    opacity: 0.2;
+    transition: 0.33s ease-in-out;
+}
+
+.back-temp button:hover {
+    opacity: .8;
 }
 
 .meta-description {
-    margin-bottom: 3em;
+    margin-bottom: 1.2em;
+    padding-left: 1.2em;
 }
 
 .website-preview {
@@ -352,3 +370,16 @@ hr {
     font-size: 1.3em;
     font-weight: 700;
 }
+
+.list-unstyled {
+    padding: 0rem;
+}
+
+p {
+    font-size: 0.95em;
+}
+
+ul li {
+    font-size: 0.9em;
+}
+/* my bootstrap (?) */

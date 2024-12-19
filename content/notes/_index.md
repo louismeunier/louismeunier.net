@@ -12,6 +12,7 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 
 
 - [Analysis III](https://notes.louismeunier.net/Analysis%203/analysis3.pdf) (MATH454)
+    - [Analysis III, Summary](https://notes.louismeunier.net/Analysis%203%20Summary/analysis3-summary.pdf)
 - [Algebra III](https://notes.louismeunier.net/Algebra%203/algebra3.pdf) (MATH456) 
 - [Probability](https://notes.louismeunier.net/Probability/probability.pdf) (MATH356) 
 - [PDEs, Summary](https://notes.louismeunier.net/PDES-Summary/pdes.pdf) (MATH475)
