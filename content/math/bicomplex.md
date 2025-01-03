@@ -4,6 +4,12 @@ description: "Research done between May and December, 2024"
 weight: -2
 ---
 
+<div style="font-size:1.1em";>
+$$
+J^\infty (E) \hookrightarrow \Omega^{0,0} (E) \overset{\mathsf{d}_H}{\to} \Omega^{0,1} (E) \overset{\mathsf{d}_H}{\to}\cdots \overset{\mathsf{d}_H}{\to}\Omega^{0,p} (E) \overset{\pi^0}{\to} \mathcal{F}^0 \overset{\delta}{\to} \mathcal{F}^1 \overset{\delta}{\to} \cdots
+$$
+</div>
+
 Conservation laws are ubiquitous in the study of differential equations. They often represent fundamental physical quantities, and can lead to stability and existence results for possible solutions. We researched the concept of conservation laws for discrete difference equations, such as those that arise from finite difference discretizations of partial differential equations. The goal was to study the relationship between such discrete conservation laws and their continuous counterparts. We approached this by considering the variational bicomplex, a double chain complex which in the smooth case is defined on the infinite jet bundle of a fibered manifold, and provides a natural algebraic setting for studying conservation laws. By constructing an appropriate counterpart structure over a discrete space, we aimed to be able to fundamentally understand discrete conservation laws and moreover contrast the smooth and discrete theory.
 <!-- 
 The variational bicomplex is a double chain complex defined on the infinite jet bundle of a fibered manifold, $\pi : E \to M$. Differential equations on $E$ can naturally be thought of as smooth, real-valued functions on the jet bundle and thus live in various subspaces of the bicomplex. Of particular interest is the outer edge portion of the complex, the so-called Euler-Lagrange complex:
