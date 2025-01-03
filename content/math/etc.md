@@ -1,7 +1,7 @@
 ---
 title: "etc"
 description: "Random scripts/snippets/mathing"
-weight: 3
+weight: 1000
 ---
 
 {{< upbutton >}}

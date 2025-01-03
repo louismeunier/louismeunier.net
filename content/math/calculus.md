@@ -1,7 +1,7 @@
 ---
 title: "calculus"
 description: "Miscellaneous calculus-related visuals and code"
-weight: 1
+weight: 4
 ---
 
 {{< upbutton >}}

@@ -10,25 +10,40 @@ A variety of notes for different courses I've taken, some more complete than oth
 
 You can also [report a typo or mistake](https://github.com/louismeunier/notes/issues/new?assignees=&labels=&template=typo-report.md&title=Typo+in+%5BFILE_NAME%5D) if you feel so inclined. 
 
+__Winter, '25__
+
+Coming
+
+__Fall, '24__
 
 - [Analysis III](https://notes.louismeunier.net/Analysis%203/analysis3.pdf) (MATH454)
     - [Analysis III, Summary](https://notes.louismeunier.net/Analysis%203%20Summary/analysis3-summary.pdf)
 - [Algebra III](https://notes.louismeunier.net/Algebra%203/algebra3.pdf) (MATH456) 
 - [Probability](https://notes.louismeunier.net/Probability/probability.pdf) (MATH356) 
 - [PDEs, Summary](https://notes.louismeunier.net/PDES-Summary/pdes.pdf) (MATH475)
+
+__Winter, '24__
 - [Analysis II](https://notes.louismeunier.net/Analysis%202/analysis2.pdf) (MATH255)
     - [Analysis II, Summary](https://notes.louismeunier.net/Analysis%202%20Review/main.pdf) 
 - [Algebra II](https://notes.louismeunier.net/Algebra%202/algebra2.pdf) (MATH251)
     - [Algebra II, Summary](https://notes.louismeunier.net/Algebra%202%20Review/main.pdf)
 - [ODEs](https://notes.louismeunier.net/ODEs/odes.pdf) (MATH325)
     - [ODEs, Summary](https://notes.louismeunier.net/ODEs%20Review/main.pdf)
+
+__Fall, '23__
 - [Analysis I](https://notes.louismeunier.net/Analysis%201/analysis.pdf) (MATH254)
 - [Algebra I](https://notes.louismeunier.net/Algebra%201/algebra.pdf) (MATH235)
 - [Nonlinear Dynamics and Chaos](https://notes.louismeunier.net/NonlinearDynamics/nonlinear.pdf) (MATH326/MATH376)<span style="color:red;font-size:5pt;vertical-align:middle;margin-left:1em;">[Incomplete]</span>
 - [Classical Mechanics I](https://notes.louismeunier.net/ClassMech/classmech.pdf) (PHYS251) <span style="color:red;font-size:5pt;vertical-align:middle;margin-left:1em;">[Incomplete]</span>
-- [Calculus 1, 2, 3](http://notes.louismeunier.net/Calculus%20A%2C%20B/calculus.pdf) (MATH150, MATH151)
-- [Intro to CS](http://notes.louismeunier.net/Intro%20to%20CS/introtocs.pdf) (COMP250)
+
+__Winter, '23__
 - [Intro to Linguistics](http://notes.louismeunier.net/Linguistics/ling.pdf) (LING201)
 - [Principles of Statistics](http://notes.louismeunier.net/Principles%20of%20Statistics/math204.pdf) (MATH204)
+
+__Fall, '22__
+- [Calculus 1, 2, 3](http://notes.louismeunier.net/Calculus%20A%2C%20B/calculus.pdf) (MATH150, MATH151)
+- [Intro to CS](http://notes.louismeunier.net/Intro%20to%20CS/introtocs.pdf) (COMP250)
 - [Linear Algebra](http://notes.louismeunier.net/Linear%20Algebra/linearalgebra.pdf) (MATH133)
+
+__Old__
 - [Calculus 2](http://notes.louismeunier.net/Calculus%202/calculus2.pdf)
