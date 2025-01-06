@@ -10,9 +10,22 @@ A variety of notes for different courses I've taken, some more complete than oth
 
 You can also [report a typo or mistake](https://github.com/louismeunier/notes/issues/new?assignees=&labels=&template=typo-report.md&title=Typo+in+%5BFILE_NAME%5D) if you feel so inclined. 
 
+
+<!-- <table>
+    <tr>
+        <td><b>Winter, '25</b></td>
+        <td><b>Fall, '24</b></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            
+        </td>
+    </tr>
+</table> -->
 __Winter, '25__
 
-Coming
+- [Algebra IV](https://notes.louismeunier.net/Algebra%204/algebra4.pdf) (MATH457)
 
 __Fall, '24__
 
