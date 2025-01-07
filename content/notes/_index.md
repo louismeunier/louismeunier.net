@@ -26,7 +26,7 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 __Winter, '25__
 
 - [Algebra IV](https://notes.louismeunier.net/Algebra%204/algebra4.pdf) (MATH457)
-- [Statistics](https://notes.louismeunier.net/stats/stats.pdf) (MATH357)
+- [Statistics](https://notes.louismeunier.net/Statistics/stats.pdf) (MATH357)
 
 __Fall, '24__
 
