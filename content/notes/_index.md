@@ -25,8 +25,10 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 </table> -->
 __Winter, '25__
 
+- [Analysis IV](https://notes.louismeunier.net/Analysis%204/analysis4.pdf) (MATH455)
 - [Algebra IV](https://notes.louismeunier.net/Algebra%204/algebra4.pdf) (MATH457)
 - [Statistics](https://notes.louismeunier.net/Statistics/stats.pdf) (MATH357)
+- [Advanced Calculus](https://notes.louismeunier.net/Advanced%20Calculus/calc.pdf) (MATH357)
 
 __Fall, '24__
 
