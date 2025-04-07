@@ -34,6 +34,7 @@ __Winter, '25__
     - [Analysis IV, Summary](https://notes.louismeunier.net/Analysis%204%20Summary/analysis4-summary.pdf) 
 - [Algebra IV](https://notes.louismeunier.net/Algebra%204/algebra4.pdf) (MATH457)
 - [Statistics](https://notes.louismeunier.net/Statistics/stats.pdf) (MATH357)
+    - [Statistics, Summary](https://notes.louismeunier.net/Statistics%20Summary/statistics-summary.pdf) 
 - [Dynamical Systems](https://notes.louismeunier.net/Dynamical%20Systems/dynamicalsystems.pdf) (MATH574)
 <!-- - [Advanced Calculus](https://notes.louismeunier.net/Advanced%20Calculus/calc.pdf) (MATH358) -->
 </div>
