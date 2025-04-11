@@ -20,7 +20,7 @@ The space $\mathcal{F}^0$ is in natural bijection with the space of differential
 
 As such, it is the natural place where Lagrangians of variational problems live, and thus where one develops a variational calculus. Indeed, the map $\delta : \mathcal{F}^0 \to \mathcal{F}^1$ gives rise to the Euler-Lagrange operator, $\mathsf{E} = \sum_{\alpha, I} (-D_x)^I \frac{\partial}{\partial u_I^\alpha}$. -->
 
-<div style="display:flex; flex-direction:column;">
+<div style="display:flex; flex-direction:column; text-align: center;">
     <div>
         <p><a href="/images/MATH470Report-LouisMeunier.pdf" target="_blank">Paper (long)</a> <em>(The Discrete Variational Bicomplex)</em></p>
         <p><a href="/images/discretevariational-paper-short.pdf" target="_blank">Paper (short)</a> <em>(Conservation Laws: from Differential to Difference)</em></p>

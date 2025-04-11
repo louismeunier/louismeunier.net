@@ -289,7 +289,7 @@ hr {
 }
 
 .footers {
-    margin-top: 2em;
+    margin-top: 5em;
     font-size: 0.75em;
     min-height: 1em;
 }
@@ -383,3 +383,7 @@ ul li {
     font-size: 0.9em;
 }
 /* my bootstrap (?) */
+
+#text-box-1 {
+    border: .5em solid blue;
+}
