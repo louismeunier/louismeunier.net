@@ -1,7 +1,7 @@
 ---
-title: "college email analysis"
+title: "College Email Analysis"
 # date: 2020-11-26
-description: An analysis of advertisements colleges sent me as a high school senior.
+description: An analysis of advertisements colleges sent me when I was a high school senior.
 weight: 3
 
 ---

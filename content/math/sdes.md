@@ -1,5 +1,5 @@
 ---
-title: "stochastic differential equations"
+title: "Stochastic Differential Equations"
 description: "Final project for McGill MATH574 - Dynamical Systems, Winter 2025"
 weight: -1
 ---

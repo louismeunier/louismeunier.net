@@ -4,33 +4,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title> math - louis meunier </title>
+    <title> the discrete variational bicomplex - louis meunier </title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="referrer" content="no-referrer">
-    <meta name="title" content=" math - louis meunier ">
+    <meta name="title" content=" the discrete variational bicomplex - louis meunier ">
     <meta name="keywords" content="programming, mathematics, math">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="Louis Meunier">
-    <meta name="description" content="louis meunier&#39;s personal site" />
+    <meta name="description" content="Research done between May and December, 2024" />
 
     <meta property="og:site_name" content="louis meunier" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://louismeunier.net/math/" />
-    <meta property="og:title" content="math" />
+    <meta property="og:url" content="https://louismeunier.net/math/bicomplex/" />
+    <meta property="og:title" content="the discrete variational bicomplex" />
     <meta property="og:image" content="https://louismeunier.net/" />
-    <meta property="og:description" content="louis meunier&#39;s personal site" />
+    <meta property="og:description" content="Research done between May and December, 2024" />
 
     
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="math" />
-    <meta name="twitter:description" content="louis meunier&#39;s personal site" />
+    <meta name="twitter:title" content="the discrete variational bicomplex" />
+    <meta name="twitter:description" content="Research done between May and December, 2024" />
     <meta name="twitter:image" content="https://louismeunier.net/" />
 
-    <link rel="canonical" href="https://louismeunier.net/math/">
+    <link rel="canonical" href="https://louismeunier.net/math/bicomplex/">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -127,89 +127,49 @@
     <div class="content">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-sm-12 col-lg-8">
+                <div class="col-sm-12 col-lg-10">
+                    <h1 class="mx-0 mx-md-4 text-center display-5 ">the discrete variational bicomplex</h1>
                     <div class="markdown">
                         
-    
+    <div style="font-size:1.1em";>
+$$
+J^\infty (E) \hookrightarrow \Omega^{0,0} (E) \overset{\mathsf{d}_H}{\to} \Omega^{0,1} (E) \overset{\mathsf{d}_H}{\to}\cdots \overset{\mathsf{d}_H}{\to}\Omega^{0,p} (E) \overset{\pi^0}{\to} \mathcal{F}^0 \overset{\delta}{\to} \mathcal{F}^1 \overset{\delta}{\to} \cdots
+$$
+</div>
+<p>Conservation laws are ubiquitous in the study of differential equations. They often represent fundamental physical quantities, and can lead to stability and existence results for possible solutions. We researched the concept of conservation laws for discrete difference equations, such as those that arise from finite difference discretizations of partial differential equations. The goal was to study the relationship between such discrete conservation laws and their continuous counterparts. We approached this by considering the variational bicomplex, a double chain complex which in the smooth case is defined on the infinite jet bundle of a fibered manifold, and provides a natural algebraic setting for studying conservation laws. By constructing an appropriate counterpart structure over a discrete space, we aimed to be able to fundamentally understand discrete conservation laws and moreover contrast the smooth and discrete theory.</p>
+<!-- 
+The variational bicomplex is a double chain complex defined on the infinite jet bundle of a fibered manifold, $\pi : E \to M$. Differential equations on $E$ can naturally be thought of as smooth, real-valued functions on the jet bundle and thus live in various subspaces of the bicomplex. Of particular interest is the outer edge portion of the complex, the so-called Euler-Lagrange complex:
+$$
+J^\infty (E) \hookrightarrow \Omega^{0,0} (E) \overset{\mathsf{d}_H}{\to} \Omega^{0,1} (E) \overset{\mathsf{d}_H}{\to}\cdots \overset{\mathsf{d}_H}{\to}\Omega^{0,p} (E) \overset{\pi^0}{\to} \mathcal{F}^0 \overset{\delta}{\to} \mathcal{F}^1 \overset{\delta}{\to} \cdots
+$$
+The space $\mathcal{F}^0$ is in natural bijection with the space of differential functions on $E$ modulo total divergences, $\mathsf{d}_H$.
+
+As such, it is the natural place where Lagrangians of variational problems live, and thus where one develops a variational calculus. Indeed, the map $\delta : \mathcal{F}^0 \to \mathcal{F}^1$ gives rise to the Euler-Lagrange operator, $\mathsf{E} = \sum_{\alpha, I} (-D_x)^I \frac{\partial}{\partial u_I^\alpha}$. -->
+<div style="display:flex; flex-direction:column;">
+    <div>
+        <p><a href="https://louismeunier.net/images/MATH470Report-LouisMeunier.pdf" target="_blank">Paper (long)</a> <em>(The Discrete Variational Bicomplex)</em></p>
+        <p><a href="https://louismeunier.net/images/discretevariational-paper-short.pdf" target="_blank">Paper (short)</a> <em>(Conservation Laws: from Differential to Difference)</em></p>
+         <!-- <p><a href="" target="_blank">Presentation</a> <em>The D</em></p> -->
+    </div>
+</div>
+<!-- <div style="position:fixed;"> -->
+<p>Funded by the McGill SURA grant during the summer of 2024. Continued for course credit as part of McGill&rsquo;s MATH470 (Honours Research Project) course.</p>
+<!-- </div> -->
 
 
-                    </div>
-                    <div class="mx-0 mx-md-4 posts">
-                        <ul class="list-unstyled">
-    
-    <li>
-    <h1 class="mx-0 blog-post-title text-bold"><a href="https://louismeunier.net/math">math</a></h1>
-    
-    <li>
-        <h2 class="meta-title"><a href="https://louismeunier.net/math/bicomplex/">the discrete variational bicomplex</a></h2>
-        
-        <p class="meta-description">Research done between May and December, 2024</p>
-    </li>
-    
-    <li>
-        <h2 class="meta-title"><a href="https://louismeunier.net/math/sdes/">stochastic differential equations</a></h2>
-        
-        <p class="meta-description">Final project for McGill MATH574 - Dynamical Systems</p>
-    </li>
-    
-    <li>
-        <h2 class="meta-title"><a href="https://louismeunier.net/math/drp/">symmetry methods for differential equations</a></h2>
-        
-        <p class="meta-description">Work from the McGill Directed Reading Program, 2024</p>
-    </li>
-    
-    <li>
-        <h2 class="meta-title"><a href="https://louismeunier.net/math/dynamics/">dynamics</a></h2>
-        
-        <p class="meta-description">Dynamics-related code, simulations</p>
-    </li>
-    
-    <li>
-        <h2 class="meta-title"><a href="https://louismeunier.net/math/onatorus/">flows on a torus</a></h2>
-        
-        <p class="meta-description">3D visualizer of vector flows on a torus</p>
-    </li>
-    
-    <li>
-        <h2 class="meta-title"><a href="https://louismeunier.net/math/phase/">phase plotter</a></h2>
-        
-        <p class="meta-description">HTML-based phase diagram</p>
-    </li>
-    
-    <li>
-        <h2 class="meta-title"><a href="https://louismeunier.net/math/stats/">basic statistics in R</a></h2>
-        
-        <p class="meta-description">Compilation of functions, visualizations in R</p>
-    </li>
-    
-    <li>
-        <h2 class="meta-title"><a href="https://louismeunier.net/math/calculus/">calculus</a></h2>
-        
-        <p class="meta-description">Miscellaneous calculus-related visuals and code</p>
-    </li>
-    
-    <li>
-        <h2 class="meta-title"><a href="https://louismeunier.net/math/etc/">etc</a></h2>
-        
-        <p class="meta-description">Random scripts/snippets/mathing</p>
-    </li>
-    
-    </li>
-    
-</ul>
                     </div>
                     <div class="back-temp">
-                        <a class="fake-button" href="https://louismeunier.net/">
+                        <a class="fake-button" href="https://louismeunier.net/math">
                             <button class="btn btn-outline-secondary text-center">
-                            go home
+                            back to: math
                             </button>
                         </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     
 
     <footer class="footers">
@@ -233,6 +193,18 @@
     
     
         
+<script src="https://louismeunier.net/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+      
+
 
     
 </body>

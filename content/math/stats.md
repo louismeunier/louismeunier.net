@@ -1,5 +1,5 @@
 ---
-title: "basic statistics in R"
+title: "Basic Statistics in R"
 description: "Compilation of functions, visualizations in R"
 weight: 3
 ---

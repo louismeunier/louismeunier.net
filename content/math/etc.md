@@ -1,5 +1,5 @@
 ---
-title: "etc"
+title: "Etc"
 description: "Random scripts/snippets/mathing"
 weight: 1000
 ---

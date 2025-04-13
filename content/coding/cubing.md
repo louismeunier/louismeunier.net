@@ -1,5 +1,5 @@
 ---
-title: cubing state explorer (WIP)
+title: Cubing State Explorer (WIP)
 description: A graphical state explorer for the Rubik's Cube.
 weight: 6
 ---

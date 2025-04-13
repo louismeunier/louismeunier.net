@@ -1,12 +1,12 @@
 <ul class="list-unstyled">
     {{ range .Data.Pages.GroupBy "Section" }}
     <li>
-    <h1 class="mx-0 blog-post-title text-bold"><a href="/{{.Key}}">{{.Key}}</a></h1>
+    <h1 class="mx-0 blog-post-title text-bold"><a href="/{{.Key}}" style="text-transform: capitalize;">{{.Key}}</a></h1>
     {{ range .Pages }}
     <li>
         <h2 class="meta-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <!-- description -->
-        <p class="meta-description">{{ .Description }}</p>
+        <p class="meta-description">{{ .Description }}</p> 
     </li>
     {{ end }}
     </li>

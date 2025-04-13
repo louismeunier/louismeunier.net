@@ -1,4 +1,4 @@
 ---
-title: "coding"
+title: "Coding"
 weight: 2
 ---

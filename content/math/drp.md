@@ -1,5 +1,5 @@
 ---
-title: "symmetry methods for differential equations"
+title: "Symmetry Methods for Differential Equations"
 description: "Work from the McGill Directed Reading Program, 2024"
 weight: -1
 ---

@@ -4,7 +4,7 @@ title: "notes"
 layout: "notes"
 ---
 
-<h1 class="blog-post-title text-bold">notes</h1>
+<h1 class="blog-post-title text-bold">Notes</h1>
 
 A variety of notes for different courses I've taken, some more complete than others. The LaTeX files can be found [here](https://github.com/louismeunier/notes). Many of these use my [notes template](https://github.com/louismeunier/latex-templates).
 

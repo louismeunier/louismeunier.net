@@ -1,5 +1,5 @@
 ---
-title: links
+title: Links
 ---
 
 [github](https://github.com/louismeunier)

@@ -1,5 +1,5 @@
 ---
-title: "the discrete variational bicomplex"
+title: "The Discrete Variational Bicomplex"
 description: "Research done between May and December, 2024"
 weight: -2
 ---

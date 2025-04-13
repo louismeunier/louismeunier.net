@@ -7,6 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://louismeunier.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>the discrete variational bicomplex</title>
+      <link>https://louismeunier.net/math/bicomplex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://louismeunier.net/math/bicomplex/</guid>
+      <description>$$ J^\infty (E) \hookrightarrow \Omega^{0,0} (E) \overset{\mathsf{d}_H}{\to} \Omega^{0,1} (E) \overset{\mathsf{d}_H}{\to}\cdots \overset{\mathsf{d}_H}{\to}\Omega^{0,p} (E) \overset{\pi^0}{\to} \mathcal{F}^0 \overset{\delta}{\to} \mathcal{F}^1 \overset{\delta}{\to} \cdots $$ Conservation laws are ubiquitous in the study of differential equations. They often represent fundamental physical quantities, and can lead to stability and existence results for possible solutions. We researched the concept of conservation laws for discrete difference equations, such as those that arise from finite difference discretizations of partial differential equations.</description>
+    </item>
+    
+    <item>
+      <title>stochastic differential equations</title>
+      <link>https://louismeunier.net/math/sdes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://louismeunier.net/math/sdes/</guid>
+      <description>top My final paper for MATH574 - Dynamical Systems, on Stochastic Differential Equations.
+Paper (SDEs)
+Presentation (Symmetries and Differential Equations - Applications of Lie Groups)</description>
+    </item>
+    
+    <item>
       <title>symmetry methods for differential equations</title>
       <link>https://louismeunier.net/math/drp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -24,17 +44,6 @@ Presentation (Symmetries and Differential Equations - Applications of Lie Groups
       
       <guid>https://louismeunier.net/coding/biking/</guid>
       <description>source code live site An interactive map and analyzer of my bike rides. Data is automatically updated every time I enter a ride into Strava. The map is created with Leaflet, the site is made with Svelte, and the data is automatically synced to Firebase from Strava&amp;rsquo;s API.</description>
-    </item>
-    
-    <item>
-      <title>calculus</title>
-      <link>https://louismeunier.net/math/calculus/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://louismeunier.net/math/calculus/</guid>
-      <description>top On this page:
-Viviani&#39;s Curve with the TNB frame Visualizing a parametrically defined curve orthogonal to a surface Newton&#39;s method animation Chain rule diagrams &#34;The shark problem&#34; Visualizing tangent planes Coordinate transforms Viviani&#39;s curve with the TNB frame Viviani&amp;rsquo;s curve describes the intersection of a sphere and cylinder, specifically $$(x-r)^2+y^2=r^2, \quad x^2+y^2+z^2=4r^2.$$ The intersection curve can be parametrized $$x = r(1+\cos t)$$ $$y= r\sin t$$ $$z=2r\sin(\frac{t}{2})$$
-begin using Plots r = 10 x(t) = r*(1+cos(t)) y(t) = r*sin(t) z(t) = 2*r*sin(0.</description>
     </item>
     
     <item>
@@ -86,13 +95,14 @@ The animation above shows the effect of applying this map repeatedly to 1000 ran
     </item>
     
     <item>
-      <title>etc</title>
-      <link>https://louismeunier.net/math/etc/</link>
+      <title>calculus</title>
+      <link>https://louismeunier.net/math/calculus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://louismeunier.net/math/etc/</guid>
-      <description>top Raster map representing distance from nearest WCA competition (USA)
-# raster map of us with points from wca competitions library(&amp;#34;sf&amp;#34;) library(&amp;#34;rgdal&amp;#34;) library(&amp;#34;raster&amp;#34;) library(&amp;#34;RMySQL&amp;#34;) # competition data from sql mysqlconnection = dbConnect(RMySQL::MySQL(), dbname=&amp;#39;wca_dev&amp;#39;, host=&amp;#39;localhost&amp;#39;, port=3306, user=&amp;#39;root&amp;#39;, password=&amp;#39;password&amp;#39;) all_comps = dbGetQuery(mysqlconnection, &amp;#34;select id, latitude/1000000 as lat, longitude/1000000 as lon from competitions&amp;#34;) # shp file us_shp &amp;lt;- read_sf(&amp;#34;/users/louismeunier/downloads/cb_2018_us_state_20m/cb_2018_us_state_20m.shp&amp;#34;) # only want cont. us continental &amp;lt;- us_shp[!us_shp$NAME %in% c(&amp;#34;Alaska&amp;#34;, &amp;#34;Hawaii&amp;#34;, &amp;#34;Puerto Rico&amp;#34;), ] # rasterize r &amp;lt;- raster(ncol=100, nrow=100) extent(r) &amp;lt;- extent(continental) rr &amp;lt;- rasterize(continental, r) coords &amp;lt;- cbind(all_comps$lon, all_comps$lat) D &amp;lt;- distanceFromPoints(object=rr, xy=coords) # ignore points outside cont.</description>
+      <guid>https://louismeunier.net/math/calculus/</guid>
+      <description>top On this page:
+Viviani&#39;s Curve with the TNB frame Visualizing a parametrically defined curve orthogonal to a surface Newton&#39;s method animation Chain rule diagrams &#34;The shark problem&#34; Visualizing tangent planes Coordinate transforms Viviani&#39;s curve with the TNB frame Viviani&amp;rsquo;s curve describes the intersection of a sphere and cylinder, specifically $$(x-r)^2+y^2=r^2, \quad x^2+y^2+z^2=4r^2.$$ The intersection curve can be parametrized $$x = r(1+\cos t)$$ $$y= r\sin t$$ $$z=2r\sin(\frac{t}{2})$$
+begin using Plots r = 10 x(t) = r*(1+cos(t)) y(t) = r*sin(t) z(t) = 2*r*sin(0.</description>
     </item>
     
     <item>
@@ -111,6 +121,16 @@ The animation above shows the effect of applying this map repeatedly to 1000 ran
       
       <guid>https://louismeunier.net/coding/printers/</guid>
       <description>site Searchable map of printers on McGill campus.</description>
+    </item>
+    
+    <item>
+      <title>etc</title>
+      <link>https://louismeunier.net/math/etc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://louismeunier.net/math/etc/</guid>
+      <description>top Raster map representing distance from nearest WCA competition (USA)
+# raster map of us with points from wca competitions library(&amp;#34;sf&amp;#34;) library(&amp;#34;rgdal&amp;#34;) library(&amp;#34;raster&amp;#34;) library(&amp;#34;RMySQL&amp;#34;) # competition data from sql mysqlconnection = dbConnect(RMySQL::MySQL(), dbname=&amp;#39;wca_dev&amp;#39;, host=&amp;#39;localhost&amp;#39;, port=3306, user=&amp;#39;root&amp;#39;, password=&amp;#39;password&amp;#39;) all_comps = dbGetQuery(mysqlconnection, &amp;#34;select id, latitude/1000000 as lat, longitude/1000000 as lon from competitions&amp;#34;) # shp file us_shp &amp;lt;- read_sf(&amp;#34;/users/louismeunier/downloads/cb_2018_us_state_20m/cb_2018_us_state_20m.shp&amp;#34;) # only want cont. us continental &amp;lt;- us_shp[!us_shp$NAME %in% c(&amp;#34;Alaska&amp;#34;, &amp;#34;Hawaii&amp;#34;, &amp;#34;Puerto Rico&amp;#34;), ] # rasterize r &amp;lt;- raster(ncol=100, nrow=100) extent(r) &amp;lt;- extent(continental) rr &amp;lt;- rasterize(continental, r) coords &amp;lt;- cbind(all_comps$lon, all_comps$lat) D &amp;lt;- distanceFromPoints(object=rr, xy=coords) # ignore points outside cont.</description>
     </item>
     
     <item>

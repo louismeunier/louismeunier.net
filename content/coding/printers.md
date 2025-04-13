@@ -1,5 +1,5 @@
 ---
-title: mcgill printers
+title: McGill Printers
 description: Search for printers on McGill campus.
 weight: 6
 ---

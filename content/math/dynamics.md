@@ -1,5 +1,5 @@
 ---
-title: "dynamics"
+title: "Dynamics"
 description: "Dynamics-related code, simulations"
 weight: 1
 ---

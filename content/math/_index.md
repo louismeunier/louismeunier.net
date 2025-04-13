@@ -1,4 +1,4 @@
 ---
-title: "math"
+title: "Math"
 weight: 1
 ---

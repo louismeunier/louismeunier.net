@@ -2,11 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://louismeunier.net/math/bicomplex/</loc>
+  </url><url>
+    <loc>https://louismeunier.net/math/sdes/</loc>
+  </url><url>
     <loc>https://louismeunier.net/math/drp/</loc>
   </url><url>
     <loc>https://louismeunier.net/coding/biking/</loc>
-  </url><url>
-    <loc>https://louismeunier.net/math/calculus/</loc>
   </url><url>
     <loc>https://louismeunier.net/math/dynamics/</loc>
   </url><url>
@@ -22,11 +24,13 @@
   </url><url>
     <loc>https://louismeunier.net/coding/collegemails/</loc>
   </url><url>
-    <loc>https://louismeunier.net/math/etc/</loc>
+    <loc>https://louismeunier.net/math/calculus/</loc>
   </url><url>
     <loc>https://louismeunier.net/coding/cubing/</loc>
   </url><url>
     <loc>https://louismeunier.net/coding/printers/</loc>
+  </url><url>
+    <loc>https://louismeunier.net/math/etc/</loc>
   </url><url>
     <loc>https://louismeunier.net/coding/bottingathome/</loc>
   </url><url>
