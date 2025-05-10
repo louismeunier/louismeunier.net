@@ -17,10 +17,7 @@ $$ where $A^{\ast}$ the hermitian adjoint of $A$; rotation matrices are unitary,
 From this observation, then, we may assume without loss of generality that $z$ is a scalar of the usual basis vector, $e_1$, namely say $z = |z| \cdot e_1$, with $|\cdot|$ the Euclidean norm. With this, $$
 I(z) = \int_{\partial B(0, t)} \exp{(i |z| y_1)} \mathsf{d} y,
 $$ with $y = (y_1, \dots, y_d)$. Finally, rewriting this exponential using Euler's formula and writing the integral using [$d$-dim spherical coordinates](https://en.wikipedia.org/wiki/N-sphere#Spherical_coordinates), we find (identifying $y_1 = t \cos \phi_1$) $$
-I(z) = \int_0^\pi \cdots \int_0^{2\pi} [\cos (|z| t \cos (\phi_1)) + i \sin(|z| t \cos (\phi_1))] \times \\\
-\hspace{7em} t^{d - 1} \sin^{d - 2} (\phi_1) \cdots \sin (\phi_{d - 2}) \mathsf{d} \phi_1 \cdots \mathsf{d} \phi_{d - 1} \\\
-= 2\pi t^{d - 1}  \left[\prod_{j=1}^{d - 3} \int_{0}^\pi \sin^j (\phi) \mathsf{d} \phi\right] \times \\\ 
-\left[\int_0^\pi \cos{(|z| t \cos \phi) \sin^{d - 2} (\phi) \mathsf{d} \phi} + \int_0^\pi i \sin{(|z| t \cos \phi) \sin^{d - 2} (\phi) \mathsf{d} \phi} \right].
+I(z) = \int_0^\pi \cdots \int_0^{2\pi} [\cos (|z| t \cos (\phi_1)) + i \sin(|z| t \cos (\phi_1))] \times \\\ \hspace{8em} t^{d - 1} \sin^{d - 2} (\phi_1) \cdots \sin (\phi_{d - 2}) \mathsf{d} \phi_1 \cdots \mathsf{d} \phi_{d - 1} \\\ = 2\pi t^{d - 1}  \left[\prod_{j=1}^{d - 3} \int_{0}^\pi \sin^j (\phi) \mathsf{d} \phi\right] \times \\\ \left[\int_0^\pi \cos{(|z| t \cos \phi) \sin^{d - 2} (\phi) \mathsf{d} \phi} + \int_0^\pi i \sin{(|z| t \cos \phi) \sin^{d - 2} (\phi) \mathsf{d} \phi} \right].
 $$ The iterated product term simplifies using a well-known Gamma-function identity $$
 \prod_{j=1}^{d - 3} \int_{0}^\pi \sin^j (\phi) \mathsf{d} \phi= \pi^{(d - 3)/2} \prod_{j=1}^{d - 3} \frac{\Gamma(\frac{j + 1}{2})}{\Gamma(\frac{j+2}{2})} = \frac{\pi^{(d - 3)/2}}{\Gamma(\frac{d - 1}{2})},
 $$ and the right-most integral is identically zero, since the sin terms are symmetric about $\pi/2$. Finally, the first integral term is, up to a constant depending only on $d$, $t$, and $|z|$, equal to the Bessel function $J_{\frac{d - 2}{2}} (t |z|)$ (see [here](https://dn790007.ca.archive.org/0/items/treatiseontheory00watsuoft/treatiseontheory00watsuoft.pdf), section 3.3). All together, and explicitly writing out this constant, we find $$

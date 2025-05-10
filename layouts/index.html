@@ -10,7 +10,11 @@
                         {{ partial "lambda" . }}
                         <div class="title-page-name">
                             <h1>Louis Meunier</h1>
-                            <p>Math major @ McGill University</p>
+                            <p>Math major @ McGill University
+                                <!-- <br><br> -->
+                                <!-- Currently learning functional analysis (MATH455), Galois theory (MATH457), dynamical systems (MATH574) and mathematical statistics (MATH357). -->
+                            </p>
+
                             <div class="title-nav">
                                 {{ range .Site.Menus.primary.ByWeight }}
                                     {{ if ne .Name "Home"}}

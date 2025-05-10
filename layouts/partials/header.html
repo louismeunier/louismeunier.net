@@ -3,13 +3,13 @@
         <div class="row justify-content-center">
             <div class="col-auto">
                 <!-- <a href="{{ .Site.BaseURL }}"> -->
-                    <h1 class="name">{{ .Site.Params.sitename }}</h1>
+                    <h1 class="name">  {{ .Site.Params.sitename }}</h1>
                 <!-- </a> -->
             </div>
         </div>
 
         <div class="row justify-content-center">
-            <ul class="nav nav-primary justify-content-center">
+            <ul class="nav nav-primary justify-content-center align-items-center">
                 {{ range .Site.Menus.primary.ByWeight }}
                 <li class="nav-item">
                     <a class="nav-link{{ if .Identifier }} text-{{ .Identifier }}{{ end }}" href="{{ .URL }}">
@@ -17,6 +17,9 @@
                         {{ .Name }}
                     </a>
                 </li>
+                {{if ne .Name "Linkedin"}} 
+                <span>&#183;</span>
+                {{end}}
                 {{ end }}
             </ul>
         </div>

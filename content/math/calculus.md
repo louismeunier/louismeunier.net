@@ -2,11 +2,12 @@
 title: "Calculus"
 description: "Miscellaneous calculus-related visuals and code"
 weight: 4
+toc: true
 ---
 
 {{< upbutton >}}
-
-On this page:
+{{< toc >}}
+<!-- On this page:
 <ul id="#top">
     <li><a href="#vivianis-curve">Viviani's Curve with the TNB frame</a></li>
     <li><a href="#orthogonal">Visualizing a parametrically defined curve orthogonal to a surface</a></li>
@@ -15,11 +16,11 @@ On this page:
     <li><a href="#shark">"The shark problem"</a></li>
     <li><a href="#tangent-plane">Visualizing tangent planes</a></li>
     <li><a href="#coord-transform">Coordinate transforms</a></li>
-</ul>
+</ul> -->
 
-<u id="vivianis-curve" class="subtitle">
-    <a href="https://mathworld.wolfram.com/VivianisCurve.html">Viviani's curve</a> with the TNB frame
-</u>
+<!-- <u id="vivianis-curve" class="subtitle"> -->
+## Viviani's curve with the TNB frame
+<!-- </u> -->
 
 Viviani's curve describes the intersection of a sphere and cylinder, specifically $$(x-r)^2+y^2=r^2, \quad x^2+y^2+z^2=4r^2.$$ The intersection curve can be parametrized $$x = r(1+\cos t)$$
 $$y= r\sin t$$
@@ -67,7 +68,9 @@ begin
 end
 ```
 
-<u id="orthogonal" class="subtitle">Visualizing a parametrically defined curve orthogonal to a surface</u>
+<!-- <u id="orthogonal" class="subtitle"> -->
+## Visualizing a parametrically defined curve orthogonal to a surface
+<!-- </u> -->
 
 The curve $F$ is defined parametrically by $x(t) = \frac{2(t^3+2)}{3}$, $y(t) = 2t^2$, and $z(t) = 3t-2$. The surface $G$ is defined implicitly as $15 = x^2+2y^2+3z^2$. $F$ is perpendicular to $G$ at $P = (2,2,1)$. We can prove this by finding the gradient of the two functions; if the two functions are truly perpendicular at this point, then the gradients should simply by multiples of each other.
 
@@ -151,7 +154,10 @@ end
 
 
 
-<u id="newtons-method" class="subtitle">Newton's method animation</u>
+<!-- <u id="newtons-method" class="subtitle"> -->
+## Newton's method animation
+
+<!-- </u> -->
 
 Newton's method animated to find the root of a function, $f(x)=x^3-2x^2-x+2$, with an initial estimate of $x = 0.15$.
 
@@ -242,7 +248,9 @@ begin
 end
 ```
 
-<u id="chain-rule" class="subtitle">chain rule tree diagrams</u>
+<!-- <u id="chain-rule" class="subtitle"> -->
+## Chain rule tree diagrams
+<!-- </u> -->
 
 <div class="image-wrapper">
 <img src="/images/treegraph.png" style="height:250px!important;"/>
@@ -298,7 +306,9 @@ Graph[
 ]
 ```
 
-<u id="shark" class="subtitle">"the shark problem"</u>
+<!-- <u id="shark" class="subtitle"> -->
+## "The shark problem"
+<!-- </u> -->
 From the James Stewart Calculus book (pg. 985, no. 2).
 
 *"Marine biologists have determined that when a shark detects the presence of blood in the water, it will swim in the direction in which the concentration of the blood increases most rapidly. Based on certain tests, the concentration of blood (in parts per million) at a point $P(x,y)$ on the surface of seawater is approximated by $$C(x,y) = e^{\frac{-(x^2+2y^2)}{10^4}}$$ where $x$ and $y$ are measured in meters in a rectangular coordinate system with the blood source at the origin."*
@@ -351,7 +361,9 @@ begin
 end
 ```
 
-<u id="tangent-plane" class="subtitle">tangent plane of a function of $x$ and $y$</u>
+<!-- <u id="tangent-plane" class="subtitle"> -->
+## Tangent plane of a function of $x$ and $y$
+<!-- </u> -->
 
 Finding the tangent plane of: $$f(x,y) = 4x^2+4xy+y^2+2x+5y+3$$ at: $$(x_0,y_0,z_0) = (-3,1,27)$$
 
@@ -403,7 +415,9 @@ begin
 end
 ```
 
-<u class="subtitle">tangent plane of a parametric function</u>
+<!-- <u class="subtitle"> -->
+## Tangent plane of a parametric function
+<!-- </u> -->
 
 Given a sphere defined parametrically as a function $F(x,y,z)$:
 
@@ -548,7 +562,9 @@ begin
 end
 ```
 
-<u id="coord-transform" class="subtitle">Coordinate Transformations Visualization</u>
+<!-- <u id="coord-transform" class="subtitle"> -->
+## Coordinate Transformations Visualization
+<!-- </u> -->
 
 A nice Mathematica plot of a coordinate transformation.
 
