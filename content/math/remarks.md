@@ -29,9 +29,9 @@ I = e^{i z \cdot y}\rvert_{y= x - t}^{x + t} = e^{i z (x + t)} - e^{i z (x - t)}
 = e^{i z x} [e^{i z t} - e^{- i z t}] \\\ =2 i e^{i z x} \sin(x) = 2 i \cos(x z) \sin(x) - 2 \sin(x) \sin(x z).
 $$
 
-[*A similar computation can be made for the same integral but now over the ball $B(x, t)$. I'll omit the details but describe some necessary computations. If we call the surface integral above $I(\tau)$ (over the sphere $\partial B(x, \tau)$), the analogous integral can be written as $$
+*[A similar computation can be made for the same integral but now over the ball $B(x, t)$. I'll omit the details but describe some necessary computations. If we call the surface integral above $I(\tau)$ (over the sphere $\partial B(x, \tau)$), the analogous integral can be written as $$
 \int_{0}^t I(\tau) \mathsf{d} \tau,
 $$
 which eventually leads to having to compute the integral (up to some constants related to $x, t, \xi$, and the dimension $d$)* $$
 \int_{0}^t \tau^{\frac{d}{2}} J_{\frac{d-2}{2}} (\tau |\xi|) \mathsf{d} \tau,
-$$ *which citing again [this reference](https://dn790007.ca.archive.org/0/items/treatiseontheory00watsuoft/treatiseontheory00watsuoft.pdf), equals $t^{\frac{d}{2}} |\xi|^{-1} J_{\frac{d}{2}} (t)$.*]
+$$ *which citing again [this reference](https://dn790007.ca.archive.org/0/items/treatiseontheory00watsuoft/treatiseontheory00watsuoft.pdf), equals $t^{\frac{d}{2}} |\xi|^{-1} J_{\frac{d}{2}} (t)$.]*

@@ -2,6 +2,7 @@
 title: "Symmetry Methods for Differential Equations"
 description: "Work from the McGill Directed Reading Program, 2024"
 weight: -1
+image: /images/drp-linearization.png
 ---
 
 {{< upbutton >}}

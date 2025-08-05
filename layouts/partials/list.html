@@ -3,10 +3,19 @@
     <li>
     <h1 class="mx-0 blog-post-title text-bold"><a href="/{{.Key}}" style="text-transform: capitalize;">{{.Key}}</a></h1>
     {{ range .Pages }}
-    <li>
-        <h2 class="meta-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <!-- description -->
-        <p class="meta-description">{{ .Description }}</p> 
+    <li style="margin-bottom: 3em;">
+        <div class="list-item-image" >
+            <div style="width: fit-content;">
+                <h2 class="meta-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <!-- description -->
+                <p class="meta-description">{{ .Description }}</p>
+            </div>
+            <div class="list-item-item-wrapper">
+                {{ if .Params.Image }}
+                <img src="{{ .Page.Params.Image }}" height="180px" style="border-radius: 1rem; border: 1px solid black;"/>
+                {{ end }}
+            </div>
+        </div>
     </li>
     {{ end }}
     </li>

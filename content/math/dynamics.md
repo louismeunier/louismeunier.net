@@ -1,7 +1,7 @@
 ---
 title: "Dynamics"
 description: "Dynamics-related code, simulations"
-weight: 1
+weight: 3
 ---
 
 ## Baker's Map

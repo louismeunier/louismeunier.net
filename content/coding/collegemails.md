@@ -3,7 +3,6 @@ title: "College Email Analysis"
 # date: 2020-11-26
 description: An analysis of advertisements colleges sent me when I was a high school senior.
 weight: 3
-
 ---
 
 <div align="middle">

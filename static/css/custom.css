@@ -334,7 +334,7 @@ hr {
 
 .meta-description {
     margin-bottom: 1.2em;
-    padding-left: 1.2em;
+    /* padding-left: 1.2em; */
 }
 
 .website-preview {
@@ -386,4 +386,19 @@ ul li {
 
 #text-box-1 {
     border: .5em solid blue;
+}
+
+
+
+.list-item-image {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .list-item-item-wrapper {
+        display: none;
+    }
 }

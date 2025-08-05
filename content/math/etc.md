@@ -2,6 +2,7 @@
 title: "Etc"
 description: "Random scripts/snippets/mathing"
 weight: 1000
+image: /images/wcaraster.png
 ---
 
 {{< upbutton >}}

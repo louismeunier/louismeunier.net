@@ -1,7 +1,8 @@
 ---
 title: "Stochastic Differential Equations"
 description: "Final project for McGill MATH574 - Dynamical Systems, Winter 2025"
-weight: -1
+weight: -2
+image: /images/geometricbt.png
 ---
 
 {{< upbutton >}}

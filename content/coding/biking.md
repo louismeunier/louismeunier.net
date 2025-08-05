@@ -3,7 +3,6 @@ title: "Biking"
 # date: 2020-11-26
 description: An interactive map and analyzer of my bike rides.
 weight: 1
-
 ---
 <!-- 
 

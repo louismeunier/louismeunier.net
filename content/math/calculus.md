@@ -1,6 +1,7 @@
 ---
 title: "Calculus"
 description: "Miscellaneous calculus-related visuals and code"
+image: "/images/tnb.gif"
 weight: 4
 toc: true
 ---
