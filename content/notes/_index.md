@@ -28,6 +28,15 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 
 <div>
 
+__Fall, '25__
+- [Advanced PDES 1](https://notes.louismeunier.net/AdvancedPDEs/pdes.pdf) (MATH580)
+- [Nonlinear Optimization](https://notes.louismeunier.net/NonlinearOptimization/opt.pdf) (MATH378)
+- [Numerical Analysis 1](https://notes.louismeunier.net/NumericalAnalysis/num.pdf) (MATH578)
+</div>
+
+
+<div>
+
 __Winter, '25__
 
 - [Analysis IV](https://notes.louismeunier.net/Analysis%204/analysis4.pdf) (MATH455)
