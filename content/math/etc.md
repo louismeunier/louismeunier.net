@@ -13,7 +13,15 @@ image: /images/wcaraster.png
 
 Raster map representing distance from nearest WCA competition (USA)
 
-```r
+
+<div class="links">
+<a class="fake-button" target="_blank" href="https://gist.github.com/louismeunier/4897b653f2c40411d25ab6082a75df35">
+<button class="btn btn-info">source code</button>
+</a>
+</div>
+
+
+<!-- ```r
 # raster map of us with points from wca competitions
 library("sf")
 library("rgdal")
@@ -57,10 +65,17 @@ D.dataframe <- data.frame(rasterToPoints(D))
 D.dataframe.sorted <- D.dataframe[order(D.dataframe$layer),]
 maxpoint <- D.dataframe[D.dataframe$layer ==max(D.dataframe$layer),]
 points(maxpoint$x, maxpoint$y, pch=19, cex=1, col='red')
-```
+``` -->
 
 Interactive normal distribution PDF plot
-```mathematica
+
+<div class="links">
+<a class="fake-button" target="_blank" href="https://gist.github.com/louismeunier/a8199ce43dea4152d1f35fd526f59d88">
+<button class="btn btn-info">source code</button>
+</a>
+</div>
+
+<!-- ```mathematica
 % interactive normal distribution plot, playing around with manipulate function
 Manipulate[
  Show[
@@ -95,10 +110,18 @@ Manipulate[
          T, Infinity}]
        , 0.001]], FontSize -> 15]], Alignment -> Center]
  ]
- ```
+ ``` -->
 
 <a href="https://diversityinmath.ssmu.ca/">McGill Diversity in Math</a> logo (roughly) remade in Mathematica
- ```mathematica
+
+
+<div class="links">
+<a class="fake-button" target="_blank" href="https://gist.github.com/louismeunier/8a49a140bad105116aa22d177b2968a9">
+<button class="btn btn-info">source code</button>
+</a>
+</div>
+
+ <!-- ```mathematica
 % diversity in math logo made in mathematica!
 % just a mobius strip with fancy colors...
 x[r_, \[Theta]_] := (1 + r/2 Cos[\[Theta]/2]) Cos[\[Theta]]
@@ -117,12 +140,21 @@ ParametricPlot3D[
    RGBColor["#FF5252"]}, MeshFunctions -> {#5 &}, Boxed -> False, 
  Axes -> False, Background -> Black
  ]
-```
+``` -->
 
 Henon map in MatLab (single initial condition)
 $$x_{n+1} = 1 - ax_{n}^2+y_n$$
 $$y_{n+1}=bx_n$$
-```matlab
+
+
+<div class="links">
+<a class="fake-button" target="_blank" href="https://gist.github.com/louismeunier/3a85877f82f2da993c4f39b0d04588c7">
+<button class="btn btn-info">source code</button>
+</a>
+</div>
+
+
+<!-- ```matlab
 % henon map plotter
 % initial condition
 
@@ -151,4 +183,4 @@ for n=2:10000
 end
 
 hold off;
-```
+``` -->

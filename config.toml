@@ -70,11 +70,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
  #   name = "Links"
   #  url = "/links"
    # weight = 6
+   # TODO fix links page little button thing
 [[menu.primary]]
-    name = "Github"
-    url = "https://github.com/louismeunier"
-    weight = 6
-[[menu.primary]]
-    name = "Linkedin"
-    url = "https://linkedin.louismeunier.net"
-    weight = 7
+    name = "About"
+    url = "/about"
+    weight = 5
+#[[menu.primary]]
+ #   name = "Github"
+  #  url = "https://github.com/louismeunier"
+   # weight = 6
+#[[menu.primary]]
+ #   name = "Linkedin"
+  #  url = "https://linkedin.louismeunier.net"
+   # weight = 7

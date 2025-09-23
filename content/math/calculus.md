@@ -30,7 +30,13 @@ $$z=2r\sin(\frac{t}{2})$$
 <img src="/images/tnb.gif">
 </div>
 
-```
+<div class="links">
+<a class="fake-button" target="_blank" href="https://gist.github.com/louismeunier/67ad6e589ae31198ebcdffc66d65fbcf">
+<button class="btn btn-info">source code</button>
+</a>
+</div>
+
+<!-- ```
 begin
     using Plots
 
@@ -67,7 +73,7 @@ begin
     end
     gif(tnb_anim, "tnb.gif", fps=20)
 end
-```
+``` -->
 
 <!-- <u id="orthogonal" class="subtitle"> -->
 ## Visualizing a parametrically defined curve orthogonal to a surface
@@ -89,7 +95,14 @@ Clearly, $\nabla \vec{G}(1) = 2\nabla \vec{F}(2,2,1)$, indicating these two grad
 
 {{< plotly json="/math/perpendicularparametric.json" height="550px" modebar="false">}}
 
-```julia
+<div class="links">
+<a class="fake-button" target="_blank" href="https://gist.github.com/louismeunier/b69e77565b140c8d5516f0b8f50a1312">
+<button class="btn btn-info">source code</button>
+</a>
+</div>
+
+
+<!-- ```julia
 # julia
 # MATH150 Assignment 5, Problem 9a
 begin
@@ -151,7 +164,7 @@ plot!(
     label="grad F(2,2,1)"
 )
 end
-```
+``` -->
 
 
 
@@ -170,7 +183,14 @@ $$
 <img src="/images/newtonsmethod.gif">
 </div>
 
-```julia
+
+<div class="links">
+<a class="fake-button" target="_blank" href="https://gist.github.com/louismeunier/6322a0c1f842a6ba9c34546a792fce6a">
+<button class="btn btn-info">source code</button>
+</a>
+</div>
+
+<!-- ```julia
 # Julia
 begin
     using LaTeXStrings, Plots;
@@ -247,7 +267,7 @@ begin
 	end 
 	gif(newtons_methods_animation, "tutorial_heatmap_anim.gif", fps = 1)
 end
-```
+``` -->
 
 <!-- <u id="chain-rule" class="subtitle"> -->
 ## Chain rule tree diagrams
@@ -259,7 +279,13 @@ end
 
 How I make trees to visualize the chain rule of derivatives (in Mathematica). I used the `MaTeX` package to render the labels as latex, but this could be replace with just normal text strings.
 
-```mathematica
+<div class="links">
+<a class="fake-button" target="_blank" href="https://gist.github.com/louismeunier/b4f33ddeb4b40cf5587eb56a9fb7ad34">
+<button class="btn btn-info">source code</button>
+</a>
+</div>
+
+<!-- ```mathematica
 (* mathematica *)
 << MaTeX`
 Graph[
@@ -305,7 +331,7 @@ Graph[
  VertexSize -> 0.05,
  VertexStyle -> LightPurple
 ]
-```
+``` -->
 
 <!-- <u id="shark" class="subtitle"> -->
 ## "The shark problem"
@@ -319,7 +345,15 @@ The graph below represents the situation, where $T(x)$ is the function of the di
     <img src="/images/shark-question.png">
 </div>
 
-```julia 
+
+<div class="links">
+<a class="fake-button" target="_blank" href="https://gist.github.com/louismeunier/20648b8f4c9d237296536893f8995026">
+<button class="btn btn-info">source code</button>
+</a>
+</div>
+
+
+<!-- ```julia 
 begin
     using Plots, LaTeXStrings; pyplot() 
     # initial condition
@@ -360,7 +394,7 @@ begin
     xlims!(-10,10)
     ylims!(-10,10)
 end
-```
+``` -->
 
 <!-- <u id="tangent-plane" class="subtitle"> -->
 ## Tangent plane of a function of $x$ and $y$
@@ -375,7 +409,13 @@ $$t(x,y) = -18x-5y-22$$
 
 {{< plotly json="/math/testgraph.json" height="550px" modebar="false">}}
 
-```julia
+<div class="links">
+<a class="fake-button" target="_blank" href="https://gist.github.com/louismeunier/b0456fd82218b70b3ca46d636a8d3622">
+<button class="btn btn-info">source code</button>
+</a>
+</div>
+
+<!-- ```julia
 # Julia
 begin
 	using  Plots;
@@ -414,7 +454,7 @@ begin
 		label = "point"
 	)
 end
-```
+``` -->
 
 <!-- <u class="subtitle"> -->
 ## Tangent plane of a parametric function
@@ -456,7 +496,14 @@ $$z = \frac{1}{2}x + \frac{1}{2}y - \sqrt{2}$$
 
 {{< plotly json="/math/tangent_plane_sphere.json" height="550px" modebar="false">}}
 
-```julia
+
+<div class="links">
+<a class="fake-button" target="_blank" href="https://gist.github.com/louismeunier/c59eb88aaebfae0e69e72d266f97af45">
+<button class="btn btn-info">source code</button>
+</a>
+</div>
+
+<!-- ```julia
 # Julia
 begin
     using Plots; plotly()
@@ -561,7 +608,7 @@ begin
         color=RGBA(0, 0, 0, 0.3)
     )
 end
-```
+``` -->
 
 <!-- <u id="coord-transform" class="subtitle"> -->
 ## Coordinate Transformations Visualization
@@ -573,7 +620,13 @@ A nice Mathematica plot of a coordinate transformation.
     <img src="/images/coordinatetransform.png" style="height:250px!important;"/>
 </div>
 
-```mathematica
+<div class="links">
+<a class="fake-button" target="_blank" href="https://gist.github.com/louismeunier/d304a523c426da809ac669fce31d3677">
+<button class="btn btn-info">source code</button>
+</a>
+</div>
+
+<!-- ```mathematica
 (* Mathematica *)
 Plot[
  Piecewise[{{1 x, 1.5 > x > 0}}, {{0, x > 1.5}}],
@@ -599,4 +652,4 @@ Plot[
      3.1}]
    }
  ]
-```
+``` -->

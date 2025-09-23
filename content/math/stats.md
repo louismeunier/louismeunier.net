@@ -6,7 +6,7 @@ weight: 6
 
 {{< upbutton >}}
 
-Some simple statistics functions in R (based on the course [MATH204](https://www.mcgill.ca/study/2022-2023/courses/math-204)).
+Some simple statistics functions in R (everything I used in [MATH204](https://www.mcgill.ca/study/2022-2023/courses/math-204)).
 
 ````r
 # read data
