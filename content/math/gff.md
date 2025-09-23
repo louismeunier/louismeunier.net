@@ -1,9 +1,14 @@
 ---
 title: "Transformations of the Gaussian Free Field"
 description: "Research project beginning in May, 2025"
-# image: /images/bicomplexpreview.png
+image: /images/gff_viz.png
 weight: -2
 ---
+
+
+<div class="image-wrapper">
+<img src="/images/gff_viz.png" width=60% alt="Visualization of an instance of the planar GFF on the square"/>
+</div>
 
 <div style="display:flex; flex-direction:column; text-align: center;">
     <div>
