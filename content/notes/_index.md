@@ -27,7 +27,13 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 <div style="display:grid; grid-template-columns: auto auto; row-gap: 1em; column-gap: .5em;" >
 
 <div>
+__Winter, '26__
+- [Complex Variables](https://notes.louismeunier.net/Complex/complex.pdf) (MATH249)
+- [Advanced Calculus](https://notes.louismeunier.net/AdvancedCalculus/calc.pdf) (MATH358)
+- [Theory of Machine Learning](https://notes.louismeunier.net/MachineLearning/mltheory.pdf) (MATH562)
+</div>
 
+<div>
 __Fall, '25__
 - [Advanced PDES 1](https://notes.louismeunier.net/AdvancedPDEs/pdes.pdf) (MATH580)
 - [Nonlinear Optimization](https://notes.louismeunier.net/NonlinearOptimization/opt.pdf) (MATH378)
