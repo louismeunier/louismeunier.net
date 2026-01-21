@@ -31,6 +31,7 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 __Winter, '26__
 - [Complex Variables](https://notes.louismeunier.net/Complex/complex.pdf) (MATH249)
 - [Advanced Calculus](https://notes.louismeunier.net/AdvancedCalculus/calc.pdf) (MATH358)
+- [Differential Geometry](https://notes.louismeunier.net/DiffGeo/diffgeo.pdf) (MATH458)
 - [Theory of Machine Learning](https://notes.louismeunier.net/MachineLearning/mltheory.pdf) (MATH562)
 </div>
 
