@@ -28,6 +28,25 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
 
 <div>
 
+__Misc.__
+- [Qualifying Exam Study Notes](https://notes.louismeunier.net/Quals/quals.pdf)
+
+</div>
+
+<div>
+</div>
+
+</div>
+
+<div style="display: flex; justify-content: center">
+    <h4> McGill </h4>
+</div>
+<br>
+
+<div style="display:grid; grid-template-columns: auto auto; row-gap: 1em; column-gap: .5em;" >
+
+<div>
+
 __Winter, '26__
 - [Complex Variables](https://notes.louismeunier.net/Complex/complex.pdf) (MATH249)
 - [Advanced Calculus](https://notes.louismeunier.net/AdvancedCalculus/calc.pdf) (MATH358)
