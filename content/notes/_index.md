@@ -6,7 +6,7 @@ layout: "notes"
 
 <h1 class="blog-post-title text-bold">Notes</h1>
 
-A variety of notes for different courses I've taken, some more complete than others. The LaTeX files can be found [here](https://github.com/louismeunier/notes). Many of these use my [notes template](https://github.com/louismeunier/latex-templates).
+A variety of notes for different courses I've taken, some more complete than others. The LaTeX/Typst files can be found [here](https://github.com/louismeunier/notes). Many of these use my [notes template(s)](https://github.com/louismeunier/latex-templates).
 
 You can also [report a typo or mistake](https://github.com/louismeunier/notes/issues/new?assignees=&labels=&template=typo-report.md&title=Typo+in+%5BFILE_NAME%5D) if you feel so inclined. 
 
@@ -38,9 +38,9 @@ __Misc.__
 
 </div>
 
-<div style="display: flex; justify-content: center">
-    <h4> McGill </h4>
-</div>
+
+<h4> McGill </h4>
+
 <br>
 
 <div style="display:grid; grid-template-columns: auto auto; row-gap: 1em; column-gap: .5em;" >
