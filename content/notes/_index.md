@@ -24,16 +24,25 @@ You can also [report a typo or mistake](https://github.com/louismeunier/notes/is
     </tr>
 </table> -->
 
+
+<h4> UBC </h4>
+
+<br>
+
 <div style="display:grid; grid-template-columns: auto auto; row-gap: 1em; column-gap: .5em;" >
+
+<div>
+
+__Fall '26__
+- [Differential Geometry 1]() (MATH525)
+- [PDEs 1]() (MATH516)
+- [Probability 1]() (MATH544)
+</div>
 
 <div>
 
 __Misc.__
 - [Qualifying Exam Study Notes](https://notes.louismeunier.net/Quals/quals.pdf)
-
-</div>
-
-<div>
 </div>
 
 </div>
